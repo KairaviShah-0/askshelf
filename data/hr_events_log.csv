@@ -1,0 +1,216 @@
+date,event,employeeId,details
+2025-01-02,Leave Start,M12,On leave for 2 days.
+2025-01-03,Leave End,M12,Returned from leave.
+2025-01-05,Leave Start,M11,On leave for 2 days.
+2025-01-06,Leave End,M11,Returned from leave.
+2025-01-09,Leave Start,D1,On leave for 2 days.
+2025-01-10,Leave End,D1,Returned from leave.
+2025-01-13,Leave Start,D2,On leave for 5 days.
+2025-01-17,Leave End,D2,Returned from leave.
+2025-01-28,Leave Start,D4,On leave for 4 days.
+2025-01-31,Leave End,D4,Returned from leave.
+2025-02-04,Leave Start,M7,On leave for 3 days.
+2025-02-06,Leave End,M7,Returned from leave.
+2025-02-11,Leave Start,D4,On leave for 2 days.
+2025-02-12,Leave End,D4,Returned from leave.
+2025-02-16,Leave Start,D2,On leave for 2 days.
+2025-02-17,Leave Start,M6,On leave for 5 days.
+2025-02-17,Leave End,D2,Returned from leave.
+2025-02-19,Leave Start,D3,On leave for 2 days.
+2025-02-20,Leave End,D3,Returned from leave.
+2025-02-21,Leave End,M6,Returned from leave.
+2025-03-17,Leave Start,M10,On leave for 1 days.
+2025-03-17,Leave End,M10,Returned from leave.
+2025-03-22,Leave Start,M13,On leave for 5 days.
+2025-03-26,Leave End,M13,Returned from leave.
+2025-03-27,Leave Start,M10,On leave for 5 days.
+2025-03-31,Leave Start,D4,On leave for 4 days.
+2025-03-31,Leave End,M10,Returned from leave.
+2025-04-03,Leave End,D4,Returned from leave.
+2025-04-06,Resignation,D4,Employee resigned.
+2025-04-11,Hired,D14,New low designer hired.
+2025-04-12,Leave Start,M10,On leave for 4 days.
+2025-04-12,Leave Start,M13,On leave for 4 days.
+2025-04-15,Leave End,M10,Returned from leave.
+2025-04-15,Leave End,M13,Returned from leave.
+2025-04-22,Leave Start,D14,On leave for 1 days.
+2025-04-22,Leave End,D14,Returned from leave.
+2025-05-06,Leave Start,M11,On leave for 2 days.
+2025-05-07,Leave End,M11,Returned from leave.
+2025-05-09,Leave Start,D3,On leave for 1 days.
+2025-05-09,Leave End,D3,Returned from leave.
+2025-05-13,Leave Start,M10,On leave for 4 days.
+2025-05-16,Leave End,M10,Returned from leave.
+2025-05-21,Resignation,M8,Employee resigned.
+2025-05-24,Leave Start,M11,On leave for 4 days.
+2025-05-27,Leave End,M11,Returned from leave.
+2025-05-31,Leave Start,M6,On leave for 1 days.
+2025-05-31,Leave End,M6,Returned from leave.
+2025-05-31,Hired,M15,New high maker hired.
+2025-06-06,Leave Start,D5,On leave for 2 days.
+2025-06-07,Leave Start,D1,On leave for 5 days.
+2025-06-07,Leave End,D5,Returned from leave.
+2025-06-09,Leave Start,M13,On leave for 2 days.
+2025-06-10,Leave Start,M7,On leave for 1 days.
+2025-06-10,Leave End,M7,Returned from leave.
+2025-06-10,Leave End,M13,Returned from leave.
+2025-06-11,Leave End,D1,Returned from leave.
+2025-06-23,Leave Start,M15,On leave for 4 days.
+2025-06-26,Leave End,M15,Returned from leave.
+2025-06-27,Leave Start,D2,On leave for 5 days.
+2025-07-01,Leave End,D2,Returned from leave.
+2025-07-09,Leave Start,M12,On leave for 3 days.
+2025-07-11,Leave End,M12,Returned from leave.
+2025-07-15,Resignation,D14,Employee resigned.
+2025-07-22,Resignation,D5,Employee resigned.
+2025-07-25,Hired,D16,New low designer hired.
+2025-07-27,Resignation,D2,Employee resigned.
+2025-07-31,Hired,D17,New low designer hired.
+2025-08-04,Leave Start,D16,On leave for 1 days.
+2025-08-04,Leave End,D16,Returned from leave.
+2025-08-04,Hired,D18,New high designer hired.
+2025-08-15,Leave Start,M6,On leave for 2 days.
+2025-08-16,Leave Start,M10,On leave for 2 days.
+2025-08-16,Leave End,M6,Returned from leave.
+2025-08-17,Leave End,M10,Returned from leave.
+2025-08-20,Leave Start,M9,On leave for 1 days.
+2025-08-20,Leave End,M9,Returned from leave.
+2025-08-23,Leave Start,D16,On leave for 3 days.
+2025-08-25,Leave End,D16,Returned from leave.
+2025-08-31,Leave Start,M9,On leave for 2 days.
+2025-09-01,Leave End,M9,Returned from leave.
+2025-09-19,Resignation,M15,Employee resigned.
+2025-09-22,Leave Start,M7,On leave for 1 days.
+2025-09-22,Leave End,M7,Returned from leave.
+2025-09-24,Hired,M19,New high maker hired.
+2025-09-30,Resignation,M9,Employee resigned.
+2025-09-30,Leave Start,M11,On leave for 5 days.
+2025-10-04,Leave End,M11,Returned from leave.
+2025-10-05,Leave Start,D1,On leave for 3 days.
+2025-10-06,Hired,M20,New high maker hired.
+2025-10-07,Leave End,D1,Returned from leave.
+2025-10-15,Leave Start,M13,On leave for 5 days.
+2025-10-19,Leave End,M13,Returned from leave.
+2025-10-26,Leave Start,D1,On leave for 2 days.
+2025-10-27,Leave End,D1,Returned from leave.
+2025-11-23,Leave Start,M6,On leave for 1 days.
+2025-11-23,Leave End,M6,Returned from leave.
+2025-12-14,Leave Start,M10,On leave for 5 days.
+2025-12-18,Leave End,M10,Returned from leave.
+2025-12-27,Leave Start,M20,On leave for 3 days.
+2025-12-29,Leave End,M20,Returned from leave.
+2026-01-01,Leave Start,M20,On leave for 1 days.
+2026-01-01,Leave End,M20,Returned from leave.
+2026-01-05,Leave Start,M6,On leave for 1 days.
+2026-01-05,Leave End,M6,Returned from leave.
+2026-01-11,Leave Start,M12,On leave for 2 days.
+2026-01-12,Leave End,M12,Returned from leave.
+2026-01-13,Leave Start,D16,On leave for 3 days.
+2026-01-15,Leave End,D16,Returned from leave.
+2026-01-19,Leave Start,M19,On leave for 2 days.
+2026-01-20,Resignation,D16,Employee resigned.
+2026-01-20,Leave End,M19,Returned from leave.
+2026-01-27,Leave Start,D3,On leave for 1 days.
+2026-01-27,Leave End,D3,Returned from leave.
+2026-01-29,Leave Start,D1,On leave for 3 days.
+2026-01-29,Leave Start,M7,On leave for 1 days.
+2026-01-29,Leave Start,M10,On leave for 3 days.
+2026-01-29,Leave End,M7,Returned from leave.
+2026-01-30,Hired,D21,New low designer hired.
+2026-01-31,Leave End,D1,Returned from leave.
+2026-01-31,Leave End,M10,Returned from leave.
+2026-02-04,Leave Start,M12,On leave for 2 days.
+2026-02-05,Leave End,M12,Returned from leave.
+2026-02-06,Leave Start,M20,On leave for 2 days.
+2026-02-07,Leave End,M20,Returned from leave.
+2026-02-09,Leave Start,M6,On leave for 5 days.
+2026-02-13,Leave End,M6,Returned from leave.
+2026-02-23,Leave Start,D21,On leave for 3 days.
+2026-02-25,Leave Start,M19,On leave for 1 days.
+2026-02-25,Leave End,M19,Returned from leave.
+2026-02-25,Leave End,D21,Returned from leave.
+2026-02-26,Leave Start,M11,On leave for 5 days.
+2026-03-02,Leave End,M11,Returned from leave.
+2026-03-04,Leave Start,D17,On leave for 1 days.
+2026-03-04,Leave End,D17,Returned from leave.
+2026-03-26,Leave Start,M19,On leave for 1 days.
+2026-03-26,Leave End,M19,Returned from leave.
+2026-03-30,Leave Start,M19,On leave for 5 days.
+2026-04-02,Leave Start,M11,On leave for 2 days.
+2026-04-03,Leave End,M11,Returned from leave.
+2026-04-03,Leave End,M19,Returned from leave.
+2026-04-05,Leave Start,M10,On leave for 1 days.
+2026-04-05,Leave End,M10,Returned from leave.
+2026-04-24,Leave Start,D18,On leave for 2 days.
+2026-04-25,Leave End,D18,Returned from leave.
+2026-04-30,Leave Start,D18,On leave for 4 days.
+2026-05-03,Leave End,D18,Returned from leave.
+2026-05-06,Leave Start,M12,On leave for 4 days.
+2026-05-09,Leave End,M12,Returned from leave.
+2026-05-20,Leave Start,M6,On leave for 1 days.
+2026-05-20,Leave End,M6,Returned from leave.
+2026-05-22,Leave Start,D17,On leave for 2 days.
+2026-05-23,Leave End,D17,Returned from leave.
+2026-05-30,Resignation,D17,Employee resigned.
+2026-06-01,Leave Start,D3,On leave for 4 days.
+2026-06-04,Leave End,D3,Returned from leave.
+2026-06-04,Hired,D22,New low designer hired.
+2026-06-06,Leave Start,M20,On leave for 3 days.
+2026-06-08,Leave End,M20,Returned from leave.
+2026-06-13,Leave Start,M13,On leave for 2 days.
+2026-06-14,Leave Start,D21,On leave for 4 days.
+2026-06-14,Leave End,M13,Returned from leave.
+2026-06-17,Leave End,D21,Returned from leave.
+2026-06-18,Leave Start,M10,On leave for 5 days.
+2026-06-22,Leave Start,M20,On leave for 2 days.
+2026-06-22,Leave End,M10,Returned from leave.
+2026-06-23,Leave End,M20,Returned from leave.
+2026-07-02,Leave Start,D3,On leave for 2 days.
+2026-07-03,Leave End,D3,Returned from leave.
+2026-07-07,Leave Start,D18,On leave for 4 days.
+2026-07-10,Leave End,D18,Returned from leave.
+2026-07-26,Leave Start,D1,On leave for 1 days.
+2026-07-26,Leave End,D1,Returned from leave.
+2026-08-02,Leave Start,D22,On leave for 5 days.
+2026-08-03,Leave Start,M19,On leave for 1 days.
+2026-08-03,Leave End,M19,Returned from leave.
+2026-08-06,Leave End,D22,Returned from leave.
+2026-08-08,Leave Start,M20,On leave for 5 days.
+2026-08-11,Leave Start,M7,On leave for 3 days.
+2026-08-12,Leave End,M20,Returned from leave.
+2026-08-13,Leave End,M7,Returned from leave.
+2026-08-14,Leave Start,M7,On leave for 5 days.
+2026-08-14,Leave Start,M12,On leave for 3 days.
+2026-08-16,Leave End,M12,Returned from leave.
+2026-08-18,Leave End,M7,Returned from leave.
+2026-09-01,Resignation,D1,Employee resigned.
+2026-09-11,Hired,D23,New high designer hired.
+2026-09-21,Leave Start,D23,On leave for 5 days.
+2026-09-23,Leave Start,M13,On leave for 3 days.
+2026-09-25,Leave End,M13,Returned from leave.
+2026-09-25,Leave End,D23,Returned from leave.
+2026-09-29,Leave Start,D22,On leave for 1 days.
+2026-09-29,Leave End,D22,Returned from leave.
+2026-09-30,Leave Start,M13,On leave for 5 days.
+2026-10-04,Leave Start,M12,On leave for 3 days.
+2026-10-04,Leave End,M13,Returned from leave.
+2026-10-06,Leave End,M12,Returned from leave.
+2026-10-19,Leave Start,M13,On leave for 4 days.
+2026-10-22,Leave End,M13,Returned from leave.
+2026-10-27,Leave Start,M13,On leave for 2 days.
+2026-10-28,Leave End,M13,Returned from leave.
+2026-11-01,Leave Start,D18,On leave for 5 days.
+2026-11-05,Leave End,D18,Returned from leave.
+2026-11-11,Leave Start,M13,On leave for 3 days.
+2026-11-13,Leave End,M13,Returned from leave.
+2026-11-21,Resignation,D23,Employee resigned.
+2026-11-22,Leave Start,D3,On leave for 5 days.
+2026-11-26,Leave End,D3,Returned from leave.
+2026-11-30,Hired,D24,New high designer hired.
+2026-12-06,Leave Start,M11,On leave for 3 days.
+2026-12-08,Leave End,M11,Returned from leave.
+2026-12-10,Leave Start,D3,On leave for 4 days.
+2026-12-11,Leave Start,M6,On leave for 3 days.
+2026-12-13,Leave End,D3,Returned from leave.
+2026-12-13,Leave End,M6,Returned from leave.
+2027-01-01,Resignation,D18,Employee resigned.

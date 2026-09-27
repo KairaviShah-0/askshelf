@@ -1,0 +1,5 @@
+streamlit==1.64.0
+pandas==3.0.2
+numpy==2.4.4
+plotly==7.1.0
+google-genai==2.25.0
