@@ -12,6 +12,7 @@ import re
 import time
 from dataclasses import dataclass, field
 
+from . import cost, rbac
 from . import guardrails as G
 from . import tools as T
 from .config import DEFAULT_MODELS
@@ -29,6 +30,10 @@ class AgentReply:
     trace: list[dict] = field(default_factory=list)
     redactions: list[str] = field(default_factory=list)
     notice: str | None = None
+    role: str = rbac.DEFAULT_ROLE
+    latency_ms: int = 0
+    est_cost_usd: float = 0.0
+    denied: list[str] = field(default_factory=list)
 
 
 # ----------------------------------------------------------------------------------------------- offline back-end
@@ -51,6 +56,9 @@ FOLLOW_UPS = {
     "profit_bridge": ["Forecast our profit for the next 3 months.", "Which orders in progress are most likely to be late?", "Is there anything unusual in our numbers?"],
     "anomaly_scan": ["Why did our profit change last quarter?", "Forecast our revenue for the next 3 months.", "Which orders in progress are most likely to be late?"],
     "quote_funnel": ["Should we raise our prices?", "Forecast our quotes for the next 3 months.", "Which product type is the most profitable?"],
+    "stock_cover": ["What is due for delivery this week?", "Which orders in progress are most likely to be late?", "Which timber runs low most often and what do we spend on it?"],
+    "delivery_schedule": ["Which orders in progress are most likely to be late?", "Do we have enough timber for the open orders?", "What do late deliveries cost us?"],
+    "penalty_control": ["Which orders in progress are most likely to be late?", "What if we hire 2 more makers?", "What is due for delivery this week?"],
     "executive_briefing": ["Which orders in progress are most likely to be late?", "What if we raise prices by 10% and demand grows 20%?", "Do we need to hire more makers?"],
     "data_dictionary": ["Which product type is the most profitable?", "What was our biggest production bottleneck last quarter?", "Show me the impact of employee resignations on our on-time delivery rate."],
 }
@@ -88,6 +96,12 @@ def _pro_route(q: str, period: str | None, has) -> list[tuple[str, dict]] | None
         if tim is not None:
             args["timber_cost_change_pct"] = tim
         return [("scenario_simulator", args)]
+    if has(r"re-?sequenc|expedite|prioriti[sz]e (the )?orders|penalty control|penalty exposure|save on penalt|reduce (the )?penalt|cut (the )?penalt|how much could we save"):
+        return [("penalty_control", {})]
+    if has(r"stock cover|days of (cover|stock)|run out|stock.?out|enough (timber|stock|material)|shortfall|stock availab|availability|what should we reorder"):
+        return [("stock_cover", {})]
+    if has(r"delivery schedule|due (this|next) week|due soon|upcoming deliver|overdue|deliveries due|delivery calendar|what.s due|what is due|due for deliver"):
+        return [("delivery_schedule", {})]
     if has(r"hire|hiring|how many makers|more makers|add (a )?maker|capacity plan|can we (cope|handle)|headcount plan"):
         return [("capacity_planner", {})]
     if has(r"at risk|risk|likely to be late|will (we|they) (be )?(late|deliver)|watch ?list|radar"):
@@ -99,7 +113,7 @@ def _pro_route(q: str, period: str | None, has) -> list[tuple[str, dict]] | None
                   else "on_time" if has(r"on.?time") else "costs" if has(r"cost|expense") else "revenue")
         mo = re.search(r"(\d+)[ -]?months?", q)
         return [("forecast_outlook", {"metric": metric, "horizon_months": int(mo.group(1)) if mo else 3})]
-    if has(r"why did (our )?(profit|revenue|cash)|what (drove|caused|moved) (profit|revenue)|profit (change|drop|fall|rise|bridge)|explain (the )?profit"):
+    if not has(r"month by month|over time|trend|each month|by month") and has(r"why did (our )?(profit|revenue|cash)|what (drove|caused|moved) (profit|revenue)|profit (change|drop|fall|rise|bridge)|explain (the )?profit"):
         return [("profit_bridge", {"period": period or "last_quarter"})]
     if has(r"unusual|anomal|red flag|worry|worrying|outlier|abnormal|something wrong"):
         return [("anomaly_scan", {})]
@@ -188,7 +202,7 @@ class GeminiBackend:
     """Thin wrapper around google-genai with model fall-back (handles quota / not-found errors)."""
 
     _RETRY_HINTS = ("429", "quota", "resource_exhausted", "resource exhausted", "404", "not found", "unavailable", "503", "500",
-                    "overloaded", "not supported", "deadline", "timeout")
+                    "overloaded", "not supported", "deadline", "timeout", "internal", "502", "504", "server", "temporarily")
 
     def __init__(self, api_key: str, models: list[str] | None = None):
         from google import genai
@@ -226,6 +240,19 @@ class GeminiBackend:
     def _schema(self, params: dict):
         t = self.types
         return t.Schema(type="OBJECT", properties={k: t.Schema(type=typ.upper(), description=desc) for k, (typ, desc) in params.items()})
+
+    def complete(self, system: str, prompt: str, json_mode: bool = True, temperature: float = 0.2) -> str:
+        """General-purpose single call (used by the Data Lab planner, explainer and report writer)."""
+        t = self.types
+        cfg = t.GenerateContentConfig(system_instruction=system, temperature=temperature, **({"response_mime_type": "application/json"} if json_mode else {}))
+        last: Exception | None = None
+        for attempt in range(3):                       # transient 5xx / overload errors are common: retry with a short back-off
+            try:
+                return self._text(self._generate(prompt, cfg))
+            except Exception as e:      # noqa: BLE001
+                last = e
+                time.sleep(1.2 * (attempt + 1))
+        raise last or RuntimeError("AI call failed")
 
     # -- pipeline steps
     def route(self, question: str, history: list[dict]):
@@ -271,7 +298,17 @@ def _step(trace, name, detail, t0):
     trace.append({"step": name, "detail": detail, "ms": int((time.time() - t0) * 1000)})
 
 
-def answer(question: str, history: list[dict] | None = None, backend=None, self_review: bool = True) -> AgentReply:
+def answer(question: str, history: list[dict] | None = None, backend=None, self_review: bool = True, role: str = rbac.DEFAULT_ROLE) -> AgentReply:
+    """Public entry point: runs the pipeline, then stamps role, latency and estimated cost on the reply."""
+    t0 = time.time()
+    reply = _answer(question, history, backend, self_review, role)
+    reply.role = role
+    reply.latency_ms = int((time.time() - t0) * 1000)
+    reply.est_cost_usd = cost.estimate(reply.mode, question, sum(len(r.llm_payload()) for r in reply.results), len(reply.text), bool(reply.critic))
+    return reply
+
+
+def _answer(question, history, backend, self_review, role) -> AgentReply:
     """Run one question through the whole pipeline. `backend=None` means offline mode."""
     history = history or []
     trace: list[dict] = []
@@ -310,6 +347,17 @@ def answer(question: str, history: list[dict] | None = None, backend=None, self_
                                   follow_ups=["Which product type is the most profitable?", "What was our biggest production bottleneck last quarter?",
                                               "Show me the impact of employee resignations on our on-time delivery rate."])
 
+        denied = [n for n, _ in calls if not rbac.can(role, n)]
+        if denied:
+            _step(trace, "Access check (RBAC)", f"{role}: blocked {', '.join(denied)}", t0)
+            calls = [(n, a) for n, a in calls if n not in denied]
+            if not calls:
+                return AgentReply(text=rbac.denial_message(role, denied), mode="rbac", blocked=True, trace=trace, denied=denied,
+                                  follow_ups=["What does 'production days' mean?"])
+            notice = f"Part of your question needed access your role ({role}) does not have, so it was skipped."
+        else:
+            _step(trace, "Access check (RBAC)", f"{role}: all requested analyses permitted", t0)
+
         t2 = time.time()
         seen = set()
         for name, args in calls:
@@ -344,7 +392,7 @@ def answer(question: str, history: list[dict] | None = None, backend=None, self_
         if backend is not None:
             notice = "The AI service was busy or unavailable, so this answer used the built-in analysis mode."
             _step(trace, "AI service", f"fell back to offline mode ({type(e).__name__})", t0)
-            return answer(question, history, backend=None, self_review=False)._with_notice(notice, trace)
+            return _answer(question, history, None, False, role)._with_notice(notice, trace)
         raise
 
     # 4. output filter

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: askshelf
+    runtime: docker
+    plan: starter          # Prophet needs about 1 GB RAM; the free 512 MB plan can run out of memory when generating reports
+    healthCheckPath: /api/meta
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false        # paste it in the Render dashboard; never commit it
+      - key: DAILY_AI_LIMIT
+        value: "400"

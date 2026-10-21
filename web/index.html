@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AskShelf | Ask your sales data anything</title>
+<meta name="description" content="AskShelf is the retail sales intelligence assistant. Ask questions in plain English and get answers, forecasts and early warnings from your own data in seconds.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%230b1220'/%3E%3Crect x='8' y='14' width='5' height='14' rx='1.2' fill='%232563eb'/%3E%3Crect x='14.5' y='9' width='4.5' height='19' rx='1.2' fill='%2334d399'/%3E%3Crect x='20.5' y='12' width='5.5' height='16' rx='1.2' fill='%23fbbf24'/%3E%3Crect x='27.5' y='16' width='4.5' height='12' rx='1.2' fill='%23f472b6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<header class="nav" id="nav"><div class="wrap">
+  <a href="/" class="logo"><span id="lg"></span><span>Ask<i>Shelf</i></span></a>
+  <nav class="nav-links"><a href="#features">Product</a><a href="#solutions">Solutions</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#trust">Security</a><a href="#faq">FAQ</a></nav>
+  <div class="nav-cta"><a class="btn btn-primary btn-sm" href="/app">Launch app <i data-icon="arrow"></i></a></div>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap grid">
+  <div>
+    <span class="pill"><span class="dot-live"></span><span><b>Built for furniture wholesalers and distributors</b></span></span>
+    <h1>Know which orders will be late and which stock will run out, <span class="grad" style="display:block">before it costs you.</span></h1>
+    <p class="lead">AskShelf gives purchasing, warehouse and sales teams one place to ask about purchase orders, stock availability, delivery schedules and penalties, in plain English. Answers in seconds, not analyst tickets.</p>
+    <div class="cta"><a class="btn btn-primary btn-lg" href="/app">Try the live demo <i data-icon="arrow"></i></a><a class="btn btn-ghost btn-lg" href="#pricing">See pricing</a></div>
+    <div class="note"><span><i data-icon="check"></i>14-day free trial</span><span><i data-icon="check"></i>No SQL or spreadsheets</span><span><i data-icon="check"></i>Every number traceable</span></div>
+  </div>
+  <div class="mock" id="mock">
+    <div class="window">
+      <div class="bar"><i></i><i></i><i></i><span>app.askshelf.com</span></div>
+      <div class="body">
+        <div class="bubble u" id="mq"></div>
+        <div class="bubble a" id="ma"><span class="typing"><i></i><i></i><i></i></span></div>
+        <div class="mini-kpis" id="mk"></div>
+        <div class="mini-chart" id="mc" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="float f1"><span class="ic r"><i data-icon="warn"></i></span><div><b>Delivery risk alert</b><span>16 orders need attention</span></div></div>
+    <div class="float f2"><span class="ic g"><i data-icon="layers"></i></span><div><b>Stock check done</b><span>2 materials short for open orders</span></div></div>
+  </div>
+</div></section>
+
+<section class="problem"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">The cost of waiting</div><h2>Late answers become late deliveries</h2><p>When a purchasing manager needs to know if stock will cover next week's orders, the answer sits in an analyst queue. Meanwhile the penalties run.</p></div>
+  <div class="pgrid">
+    <div class="pcard rv"><div class="pn" id="p-pen">$0</div><div class="pl">paid in late-delivery penalties</div><p>Across <b id="p-late">63</b> late orders out of <b id="p-del">460</b> delivered in the demo business. Measured from its own data.</p></div>
+    <div class="pcard rv" style="--d:1"><div class="pn">2-3 days</div><div class="pl">typical wait for a data answer</div><p>Request, queue, query, spreadsheet, email. Every follow-up question starts the loop again.</p></div>
+    <div class="pcard rv" style="--d:2"><div class="pn g">&lt; 10 s</div><div class="pl">with AskShelf</div><p>Ask in plain English and get the answer, the chart and the recommended action straight away.</p></div>
+  </div>
+</div></section>
+
+<div class="stats"><div class="wrap row">
+  <div class="stat"><b><span data-count="22">0</span></b><span>vetted analyses behind every answer</span></div>
+  <div class="stat"><b><span id="s-auc">0.96</span></b><span>late-delivery model accuracy (AUC)</span></div>
+  <div class="stat"><b>&lt; <span data-count="10">0</span>s</b><span>from question to answer</span></div>
+  <div class="stat"><b><span data-count="4">0</span></b><span>access roles, every query audited</span></div>
+</div></div>
+
+<section class="features" id="features"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">The platform</div><h2>Purchase orders, stock, deliveries and penalties in one conversation</h2><p>Everything a distribution team needs to stay ahead of the next late truck or empty bay.</p></div>
+  <div class="fgrid">
+    <a class="fcard rv" style="--d:0" href="/app#/schedule"><div class="fi"><i data-icon="clock"></i></div><h3>Delivery schedule</h3><p>Every open order on a timeline to its due date, coloured by predicted lateness, with what is due this week and what is already overdue.</p><div class="live-line"><span class="dot-live"></span><span id="live-schedule">Loading live data...</span></div><div class="open">Open this page <i data-icon="arrow"></i></div></a>
+    <a class="fcard rv" style="--d:1" href="/app#/stock"><div class="fi"><i data-icon="layers"></i></div><h3>Stock availability</h3><p>Days of cover per product line and shortfalls against open orders, so you raise the purchase order before the shelf is empty.</p><div class="live-line"><span class="dot-live"></span><span id="live-stock">Loading live data...</span></div><div class="open">Open this page <i data-icon="arrow"></i></div></a>
+    <a class="fcard rv" style="--d:2" href="/app#/penalties"><div class="fi"><i data-icon="warn"></i></div><h3>Penalty control</h3><p>See what late deliveries cost, which orders carry the exposure, and build a recovery plan that estimates what expediting and extra capacity would save.</p><div class="live-line"><span class="dot-live"></span><span id="live-penalty">Loading live data...</span></div><div class="open">Open this page <i data-icon="arrow"></i></div></a>
+    <a class="fcard rv" style="--d:0" href="/app#/alerts"><div class="fi"><i data-icon="bell"></i></div><h3>Proactive alerts</h3><p>Eight live rules watch delivery risk, overdue orders, stock shortfalls and demand dips, then tell you what to do next.</p><div class="live-line"><span class="dot-live"></span><span id="live-alerts">Loading live data...</span></div><div class="open">Open this page <i data-icon="arrow"></i></div></a>
+    <a class="fcard rv" style="--d:1" href="/app#/forecasts"><div class="fi"><i data-icon="trend"></i></div><h3>Honest forecasting</h3><p>Back-tested forecasts with 80% ranges, plus a what-if planner for price, demand, headcount and supplier cost changes.</p><div class="open">Open this page <i data-icon="arrow"></i></div></a>
+    <a class="fcard rv" style="--d:2" href="/app#/governance"><div class="fi"><i data-icon="shield"></i></div><h3>Governed by design</h3><p>Role-based access, personal-data masking and a tamper-evident audit trail on every question.</p><div class="open">Open this page <i data-icon="arrow"></i></div></a>
+  </div>
+</div></section>
+
+<section id="solutions"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">Solutions</div><h2>One assistant, every team that touches an order</h2></div>
+  <div class="tabs" id="uc-tabs"></div>
+  <div class="ucard rv" id="uc-card"></div>
+</div></section>
+
+<section class="how" id="how"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">How it works</div><h2>The AI interprets. Verified code calculates.</h2><p>Your question passes through privacy and access checks, then a vetted analysis runs on your data. You get an answer you can defend in a meeting.</p></div>
+  <div class="pipe rv" id="pipe"></div>
+  <div class="steps" style="margin-top:44px">
+    <div class="step rv"><div class="n">1</div><h3>Ask in plain English</h3><p>"Do we have enough stock for next week's orders?" No query language, no ticket, no waiting.</p></div>
+    <div class="step rv" style="--d:1"><div class="n">2</div><h3>AskShelf checks and analyses</h3><p>Your role and the privacy rules are checked first. Then the right analysis or model runs on your data.</p></div>
+    <div class="step rv" style="--d:2"><div class="n">3</div><h3>Act on a clear answer</h3><p>Get a plain-English summary, the chart, the key numbers and the next best action, with sources one click away.</p></div>
+  </div>
+</div></section>
+
+<section class="pricing" id="pricing"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">Pricing</div><h2>Pay for your team, not for every question</h2><p>Three things set your price: how many people use it, how many data sources you connect, and how many answers you need each month. No per-seat surprises, no hidden usage meters.</p></div>
+  <div class="bill rv"><span id="b-m" class="on">Monthly</span><button id="b-t" class="toggle" aria-label="Toggle annual billing"><i></i></button><span id="b-y">Annual <em>save 20%</em></span></div>
+  <div class="plans" id="plans"></div>
+  <p class="fine">Illustrative pricing for this proof of concept. Every plan starts with a 14-day free trial, no card needed. Extra answers are billed at $20 per 1,000 ($0.02 each).</p>
+
+  <div class="calc rv" id="calc">
+    <div class="calc-l">
+      <h3>Estimate your price and your savings</h3>
+      <p class="sub">Move the sliders. We pick the cheapest plan that fits and compare it with answering the same questions by hand.</p>
+      <div class="cf"><label>People who will ask questions <output id="o-u">8</output></label><input type="range" id="c-u" min="1" max="60" value="8"></div>
+      <div class="cf"><label>Data sources connected <output id="o-s">2</output></label><input type="range" id="c-s" min="1" max="12" value="2"></div>
+      <div class="cf"><label>Answers needed per month <output id="o-a">1,500</output></label><input type="range" id="c-a" min="200" max="30000" step="100" value="1500"></div>
+      <details class="adv"><summary>Adjust the savings assumptions</summary>
+        <div class="cf"><label>Share of answers that would otherwise need an analyst <output id="o-p">20%</output></label><input type="range" id="c-p" min="5" max="100" step="5" value="20"></div>
+        <div class="cf"><label>Analyst time per request today (hours) <output id="o-h">1.0</output></label><input type="range" id="c-h" min="0.25" max="3" step="0.25" value="1"></div>
+        <div class="cf"><label>Analyst cost per hour <output id="o-r">$60</output></label><input type="range" id="c-r" min="30" max="150" step="5" value="60"></div></details>
+    </div>
+    <div class="calc-r" id="calc-r"></div>
+  </div>
+</div></section>
+
+<section class="trust" id="trust"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow" style="color:#7fb0ff">Trust and security</div><h2>Powerful answers. Strict boundaries.</h2><p>Sensitive data is removed before analysis, every action is logged, and the AI never does your arithmetic.</p></div>
+  <div class="tgrid">
+    <div class="tcard rv"><i data-icon="users"></i><h3>Role-based access</h3><p>Purchasing, warehouse, sales and finance each see only the analyses they are cleared for. Out-of-role requests are refused before any data is read.</p></div>
+    <div class="tcard rv" style="--d:1"><i data-icon="eye"></i><h3>Privacy by design</h3><p>Customer and employee identifiers and individual pay are dropped when data is loaded. Output is scanned and redacted.</p></div>
+    <div class="tcard rv" style="--d:2"><i data-icon="file"></i><h3>Tamper-evident audit trail</h3><p>Every question is logged with its outcome and cost in a hash-chained record. Edit one line and the check fails.</p></div>
+    <div class="tcard rv"><i data-icon="target"></i><h3>Numbers you can trace</h3><p>The language model never writes code or sees raw rows. It picks a vetted analysis, so every figure is repeatable.</p></div>
+    <div class="tcard rv" style="--d:1"><i data-icon="check"></i><h3>A second pair of eyes</h3><p>A critic pass checks each draft for leaked details, wrong numbers and claims the data cannot support.</p></div>
+    <div class="tcard rv" style="--d:2"><i data-icon="lock"></i><h3>Encrypted in transit</h3><p>All traffic runs over TLS when deployed behind HTTPS, including calls to the language model.</p></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">FAQ</div><h2>Questions we get asked</h2></div>
+  <div class="faq rv">
+    <details><summary>Is it built for wholesalers and distributors? <i data-icon="chevron"></i></summary><p>Yes. The questions it answers are the ones distribution teams ask every day: which purchase orders will be late, whether stock covers open orders, what is due this week and what penalties it could trigger. The demo runs on a simulated furniture business with orders, stock and delivery records; the same engine connects to your own order and stock exports.</p></details>
+    <details><summary>How does pricing work? <i data-icon="chevron"></i></summary><p>A flat monthly price per plan covers a set number of people, data sources and answers. Dashboards, alerts and exports are unlimited. If you need more answers than your plan includes, extra answers cost $20 per 1,000. Use the calculator above to see the cheapest plan for your team.</p></details>
+    <details><summary>How is this different from a general chatbot? <i data-icon="chevron"></i></summary><p>A general chatbot cannot see your data and tends to guess at arithmetic. AskShelf routes each question to a vetted analysis that runs on your data, then explains the result. Numbers are repeatable and traceable.</p></details>
+    <details><summary>Can it see customer or employee details? <i data-icon="chevron"></i></summary><p>No. Customer IDs, enquiry text, employee IDs and individual pay are removed when data is loaded. Requests for them are politely refused.</p></details>
+    <details><summary>Can the forecasts be trusted? <i data-icon="chevron"></i></summary><p>Forecasts are back-tested and shown as ranges, not single numbers. Where a model has no real predictive power, AskShelf says so instead of faking confidence.</p></details>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="cta-band rv">
+  <h2>Stop finding out about late orders after the fact</h2><p>Open the live demo and ask your first question. It takes less than a minute.</p>
+  <a class="btn btn-primary btn-lg" href="/app">Launch the live demo <i data-icon="arrow"></i></a>
+</div></div></section>
+</main>
+
+<footer><div class="wrap row"><a href="/" class="logo" style="font-size:1.05rem"><span id="lg2"></span><span>Ask<i>Shelf</i></span></a>
+<div class="links"><a href="#features">Product</a><a href="#pricing">Pricing</a><a href="#trust">Security</a><a href="#faq">FAQ</a><a href="/app">Launch app</a></div>
+<div>&copy; <span id="yr"></span> AskShelf. Retail Sales Intelligence Assistant.</div></div></footer>
+
+<script src="/static/js/icons.js"></script>
+<script src="/static/js/landing.js"></script>
+</body></html>

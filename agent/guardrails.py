@@ -105,3 +105,22 @@ def scrub_table(df):
         return None
     keep = [c for c in df.columns if not any(h in str(c).lower() for h in RESTRICTED_COLUMN_HINTS)]
     return df[keep]
+
+
+# --- PII masking (used by the Security page lab and by the audit log) -------------------------------------------
+_PII_EXTRA = [
+    (r"\b(?:\d[ -]?){13,16}\b", "[card number]"),
+    (r"\b\d{3}[ -]\d{3}[ -]\d{3}\b", "[tax file no.]"),
+    (r"\b\d{1,4}\s+[A-Z][a-z]+\s+(?:Street|St|Road|Rd|Avenue|Ave|Lane|Ln|Drive|Dr)\b", "[address]"),
+]
+
+
+def mask_pii(text: str) -> tuple[str, dict[str, int]]:
+    """Mask personal data in free text. Returns (masked_text, {label: count})."""
+    out, counts = text or "", {}
+    for pat, repl in [*_OUT_PATTERNS, *_PII_EXTRA]:
+        flags = 0 if pat.startswith(r"\b[DM]") or repl == "[address]" else re.I
+        out, n = re.subn(pat, repl, out, flags=flags)
+        if n:
+            counts[repl.strip("[]")] = counts.get(repl.strip("[]"), 0) + n
+    return out, counts

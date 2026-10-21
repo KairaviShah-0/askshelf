@@ -1,7 +1,65 @@
-# Modern Furniture Co. - AI Analytics Agent (proof of concept)
+# AskShelf - Retail Sales Intelligence Assistant
 
-A chat app that lets a manager ask questions about the Advanced Furniture Manufacturing Simulator data in plain English
-and get a written answer, key numbers and charts. Built with Streamlit + Google Gemini.
+A web product that lets sales and operations managers ask questions about their business in plain English and get answers, charts, forecasts,
+early-warning alerts and recommended actions. A marketing site (`/`) and the product app (`/app`) are served by one Python server
+(Starlette + a vanilla-JS front end); the analytics engine (pandas / numpy models, vetted tools) and Google Gemini sit behind a JSON API.
+
+## Run it locally
+
+```
+python -m venv .venv
+source .venv/bin/activate            # Windows: .venv\Scripts\activate
+pip install -r requirements-dev.txt
+cp .streamlit/secrets.toml.example .env     # then paste your Gemini key (optional - without it the app runs in built-in mode)
+python server.py                      # http://localhost:8000   (set PORT to change)
+pytest -q
+```
+
+Key lookup order: environment variable, `.env`, `.streamlit/secrets.toml`. Optional: `GEMINI_MODELS`, `MAX_QUESTIONS_PER_SESSION` (default 30).
+
+## Deploy
+
+Any host that runs Python works (Render, Railway, Fly.io, a VM). Build: `pip install -r requirements.txt`. Start: `python server.py` (the `Procfile` is included).
+Set `GEMINI_API_KEY` as a secret environment variable and serve behind HTTPS. Audit and feedback logs are written to `audit/` and `feedback/`; mount a
+persistent disk if you need them to survive restarts.
+
+## Data Lab (bring your own data)
+
+* **Upload:** `.xlsx`, `.xls`, `.csv`, `.tsv`, 25 MB each. Names are cleaned, numbers and dates detected, and columns that look like personal data (by name or by value pattern: emails, phones, names, pay, cards) are **removed on upload**. No database server: data lives in an in-memory SQLite database per session (it is lost when the server restarts).
+* **Questions:** the AI plans the analysis and writes one SELECT (or asks for a forecast). Every query is validated as a single read-only statement, run with an authoriser, a row cap and a time limit, and shown to the user. One automatic self-repair attempt; rule-based fallback with no AI key.
+* **Forecasting:** Prophet (monthly by default, weekly/daily for short histories), back-tested, with an 80% range; grouped forecasts for the top five groups.
+* **Reports:** title page, table of contents, lists of figures and tables, executive summary, introduction, data and methodology, numbered analysis sections (figure, table, interpretation, key finding), forecast, conclusions and recommendations, limitations, references, and appendices (AI usage log, query log, data dictionary). PDF is typeset with ReportLab; Word and Excel versions are generated from the same model. AI-written narrative is checked against the query results; any paragraph that cites a figure the data does not contain is replaced by rule-written text and the replacement is declared in Appendix A.
+* **Access:** Owner and Finance Lead roles only (free-form analysis bypasses the built-in per-role restrictions). Actions are written to the audit log.
+* Try it with `sample_data/` (two yearly wholesale order files, with an email column that gets removed).
+
+## Who it is for
+
+Furniture wholesalers and distributors managing purchase orders, suppliers, stock availability, delivery schedules and penalties. The demo runs on a simulated
+furniture business (orders, stock log, delivery dates, late penalties); the same engine can be pointed at a real order and stock export.
+
+## Pricing model (illustrative, on the landing page)
+
+Customers pay for three things they can count: **people**, **data sources** and **answers per month**. Starter $149 (3 people, 1 source, 1,000 answers), Growth $499
+(10 / 3 / 5,000), Scale $1,299 (30 / 10 / 20,000), Enterprise custom; extra answers $20 per 1,000; annual billing saves 20%; 14-day free trial. An interactive
+calculator picks the cheapest fitting plan and compares it with answering the same questions by hand (assumptions are visible and adjustable). Unit economics:
+an answer costs about $0.004 in model fees (`agent/config.py`), so the overage rate leaves a wide margin.
+
+## Product areas
+
+| Page | What it does |
+|---|---|
+| Ask | Chat with the data: routed to 1 of 20 vetted analyses, answer + KPIs + charts + tables + steps, thumbs, report/teach a term, follow-ups |
+| Dashboard | Health score, KPIs vs previous period, profit bridge, quote funnel, late-risk radar, anomaly map, executive report download |
+| Alerts | Six live rules (delivery risk, penalty exposure, demand dip, unusual months, low stock, win-rate slide), filtered by role, daily digest download |
+| Deliveries | Every open order on a timeline to its due date coloured by late risk, due this week/next, overdue orders, penalty exposure |
+| Stock | Days of cover per material, stock on hand vs open-order demand (shortfalls), reorder cadence |
+| Forecasts | Late-risk radar, back-tested forecast studio, pricing lab, model report card |
+| Scenario planner | Live what-if sliders with stress tests, capacity and hiring planner |
+| Data Lab | Upload your own Excel/CSV files (several are fused if columns match), preview and profile them, ask questions (AI-written read-only SQL or rule-based fallback), Prophet forecasts (incl. per group), export results to Excel, and generate a formal report (PDF, Word, Excel) |
+| Governance | Role matrix, hash-chained audit trail, privacy rules |
+| Knowledge base | Definitions and data sources |
+
+Roles (switch top-right): Owner / General Manager, Sales Manager, Operations Supervisor, Finance Lead. Access is enforced on the API and inside the agent pipeline.
 
 ## How it works
 
@@ -39,39 +97,6 @@ Question -> 1 Guardrail check -> 2 LLM routing -> 3 Vetted analysis tool(s) -> 4
 | `anomaly_scan` | Anything unusual or worrying? |
 | `quote_funnel` | Where do we lose value between quote and delivery? |
 | `data_dictionary` | What does 'production days' mean? What data do you use? |
-
-## Pages
-
-Ask the Agent (chat, streamed answers, charts, tables, CSV downloads) | Executive Dashboard (health score, KPIs, downloadable HTML report) |
-Predictive Lab (delivery-risk radar, forecast studio, pricing lab, model report card) | What-If Simulator | Data & Trust.
-Deep links: `?page=exec`, `?page=pred`, `?page=what`.
-
-Predictive models live in `agent/predict.py` (numpy only): a cross-validated logistic late-delivery model (AUC about 0.96), an honest quote-win
-model (AUC about 0.5 - no signal, and the app says so), a rolling-back-test forecaster that picks its own method, and a unit-economics simulator.
-
-## Run it in VS Code
-
-1. Install Python 3.11+ and VS Code (with the Python extension). Open this folder in VS Code.
-2. Terminal -> New Terminal, then:
-   ```
-   python -m venv .venv
-   .venv\Scripts\activate          # Windows      (macOS/Linux: source .venv/bin/activate)
-   pip install -r requirements-dev.txt
-   ```
-3. Add your key: copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and paste your Gemini API key (get one free at aistudio.google.com -> Get API key).
-4. `streamlit run app.py` - opens http://localhost:8501. Without a key it runs in built-in mode.
-5. Tests: `pytest -q` (about 100 tests, no key needed).
-
-## Put it online (Streamlit Community Cloud)
-
-1. Create a GitHub repo (private is fine) and push this folder (`.streamlit/secrets.toml` is git-ignored, so your key is not uploaded).
-2. share.streamlit.io -> sign in with GitHub -> **Create app** -> pick the repo, branch `main`, main file `app.py`. Under *Advanced settings* choose Python 3.12 and paste your secrets:
-   ```
-   GEMINI_API_KEY = "your-key"
-   ```
-3. Deploy. Set the app to **public** (Share -> "Public") so assessors can open it without logging in. Open the link yourself shortly before submitting: free apps sleep when idle and wake in ~30 seconds.
-
-Optional secrets: `GEMINI_MODELS` (comma-separated, tried in order; default `gemini-3.5-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite` - check aistudio.google.com for the models your key can use), `MAX_QUESTIONS_PER_SESSION` (default 30).
 
 ## Data
 

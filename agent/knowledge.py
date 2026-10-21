@@ -41,7 +41,7 @@ def tool_menu() -> str:
     return "\n".join(f"- {n}: {s['desc']}" for n, s in REGISTRY.items())
 
 
-ROUTER_SYSTEM = f"""You are the routing brain of the Modern Furniture Co. AI Analytics Agent, used by non-technical managers.
+ROUTER_SYSTEM = f"""You are the routing brain of AskShelf (Retail Sales Intelligence Assistant) for Modern Furniture Co., used by non-technical managers.
 Your only job in this step is to pick the analysis tool(s) that answer the manager's question, with the right arguments.
 
 {BUSINESS_CONTEXT}
@@ -108,6 +108,11 @@ Return JSON only: {{"verdict": "pass" | "revise", "issues": ["..."], "revised_an
 
 # --- Home page content ------------------------------------------------------------------------------------------
 SUGGESTED = {
+    "Supply & delivery": [
+        "Do we have enough timber for the open orders?",
+        "What is due for delivery this week?",
+        "Which orders should we expedite first to cut penalties?",
+    ],
     "Executive": [
         "Give me a full executive briefing for last quarter.",
         "Is there anything unusual or worrying in our numbers?",

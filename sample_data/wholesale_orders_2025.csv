@@ -1,0 +1,1184 @@
+order_date,purchase_order,supplier,product_category,region,warehouse,quantity,unit_cost,sales_amount,delivery_days,delivered_late,penalty_amount,customer_email
+2025-01-02,PO-2025-00013,Summit Upholstery,Dining Tables,North,Sydney DC,8,503.99,6503.13,17,1,260.13,buyer380@example.com
+2025-01-02,PO-2025-00277,Pacific Hardware Co,Bookshelves,North,Sydney DC,20,168.0,5419.3,14,1,216.77,buyer339@example.com
+2025-01-03,PO-2025-00114,Alpine Components,Chairs,West,Perth DC,3,100.39,485.78,7,0,0.0,buyer369@example.com
+2025-01-03,PO-2025-01070,Alpine Components,Office Desks,South,Melbourne DC,24,343.34,13290.62,13,1,531.62,buyer295@example.com
+2025-01-05,PO-2025-01069,Harbour Furniture Imports,Bookshelves,East,Brisbane DC,15,179.25,4336.66,12,0,0.0,buyer106@example.com
+2025-01-05,PO-2025-01091,Nordic Timber Supply,Dining Tables,North,Sydney DC,18,512.44,14877.22,3,0,0.0,buyer140@example.com
+2025-01-05,PO-2025-01179,Summit Upholstery,Office Desks,North,Sydney DC,11,357.2,6337.51,9,0,0.0,buyer178@example.com
+2025-01-06,PO-2025-00115,Harbour Furniture Imports,Office Desks,East,Brisbane DC,18,320.65,9309.2,7,0,0.0,buyer276@example.com
+2025-01-06,PO-2025-00190,Pacific Hardware Co,Chairs,North,Sydney DC,23,101.18,3753.3,15,1,150.13,buyer289@example.com
+2025-01-06,PO-2025-00327,Pacific Hardware Co,Sideboards,North,Sydney DC,21,407.83,13813.43,8,0,0.0,buyer189@example.com
+2025-01-06,PO-2025-00888,Alpine Components,Bookshelves,South,Melbourne DC,1,166.26,268.16,6,0,0.0,buyer68@example.com
+2025-01-06,PO-2025-00960,Alpine Components,Chairs,South,Melbourne DC,2,100.17,323.12,11,0,0.0,buyer289@example.com
+2025-01-07,PO-2025-00939,Summit Upholstery,Bookshelves,South,Melbourne DC,11,164.04,2910.46,12,0,0.0,buyer68@example.com
+2025-01-08,PO-2025-00308,Nordic Timber Supply,Chairs,South,Melbourne DC,1,90.69,146.28,15,1,5.85,buyer74@example.com
+2025-01-08,PO-2025-00423,Summit Upholstery,Chairs,South,Melbourne DC,17,87.34,2394.77,13,1,95.79,buyer376@example.com
+2025-01-08,PO-2025-00494,Summit Upholstery,Dining Tables,West,Perth DC,14,484.06,10930.48,18,1,437.22,buyer387@example.com
+2025-01-09,PO-2025-00892,Alpine Components,Media Consoles,North,Sydney DC,18,291.69,8468.44,11,0,0.0,buyer150@example.com
+2025-01-10,PO-2025-00366,Pacific Hardware Co,Office Desks,East,Brisbane DC,4,313.04,2019.6,7,0,0.0,buyer391@example.com
+2025-01-10,PO-2025-00883,Alpine Components,Dining Tables,North,Sydney DC,24,459.63,17792.25,8,0,0.0,buyer371@example.com
+2025-01-10,PO-2025-01022,Summit Upholstery,Chairs,East,Brisbane DC,18,101.87,2957.54,15,1,118.3,buyer2@example.com
+2025-01-12,PO-2025-00291,Summit Upholstery,Media Consoles,North,Sydney DC,20,263.23,8491.39,12,0,0.0,buyer388@example.com
+2025-01-12,PO-2025-00496,Nordic Timber Supply,Chairs,North,Sydney DC,21,97.24,3293.69,12,0,0.0,buyer256@example.com
+2025-01-12,PO-2025-00532,Nordic Timber Supply,Sideboards,South,Melbourne DC,8,427.24,5512.74,9,0,0.0,buyer194@example.com
+2025-01-13,PO-2025-00487,Pacific Hardware Co,Office Desks,West,Perth DC,18,348.65,10122.21,13,1,404.89,buyer242@example.com
+2025-01-13,PO-2025-00552,Summit Upholstery,Chairs,South,Melbourne DC,6,90.65,877.24,14,1,35.09,buyer336@example.com
+2025-01-13,PO-2025-00741,Pacific Hardware Co,Media Consoles,West,Perth DC,20,254.28,8202.73,10,0,0.0,buyer240@example.com
+2025-01-13,PO-2025-00992,Alpine Components,Bookshelves,East,Brisbane DC,17,175.57,4814.05,7,0,0.0,buyer296@example.com
+2025-01-14,PO-2025-00145,Summit Upholstery,Dining Tables,West,Perth DC,1,516.7,833.38,14,1,33.34,buyer264@example.com
+2025-01-14,PO-2025-00684,Pacific Hardware Co,Dining Tables,West,Perth DC,7,514.22,5805.7,6,0,0.0,buyer123@example.com
+2025-01-14,PO-2025-00712,Nordic Timber Supply,Office Desks,North,Sydney DC,12,372.68,7213.16,8,0,0.0,buyer125@example.com
+2025-01-15,PO-2025-00301,Alpine Components,Sideboards,West,Perth DC,15,490.57,11868.63,14,1,474.75,buyer36@example.com
+2025-01-15,PO-2025-00323,Harbour Furniture Imports,Media Consoles,North,Sydney DC,10,297.52,4798.72,8,0,0.0,buyer70@example.com
+2025-01-16,PO-2025-00070,Nordic Timber Supply,Bookshelves,North,Sydney DC,11,169.69,3010.55,9,0,0.0,buyer90@example.com
+2025-01-16,PO-2025-00659,Harbour Furniture Imports,Office Desks,North,Sydney DC,1,356.83,575.53,12,0,0.0,buyer300@example.com
+2025-01-17,PO-2025-00040,Harbour Furniture Imports,Chairs,East,Brisbane DC,17,85.03,2331.54,11,0,0.0,buyer256@example.com
+2025-01-17,PO-2025-00918,Alpine Components,Chairs,North,Sydney DC,24,105.34,4077.54,9,0,0.0,buyer62@example.com
+2025-01-17,PO-2025-01150,Alpine Components,Chairs,North,Sydney DC,5,93.77,756.24,13,1,30.25,buyer209@example.com
+2025-01-18,PO-2025-00290,Harbour Furniture Imports,Media Consoles,West,Perth DC,9,291.5,4231.51,8,0,0.0,buyer157@example.com
+2025-01-18,PO-2025-00975,Summit Upholstery,Chairs,South,Melbourne DC,2,99.48,320.9,17,1,12.84,buyer127@example.com
+2025-01-19,PO-2025-00328,Harbour Furniture Imports,Dining Tables,East,Brisbane DC,24,535.93,20745.75,11,0,0.0,buyer318@example.com
+2025-01-20,PO-2025-00107,Pacific Hardware Co,Chairs,South,Melbourne DC,23,91.99,3412.37,10,0,0.0,buyer31@example.com
+2025-01-20,PO-2025-01034,Summit Upholstery,Office Desks,North,Sydney DC,21,318.5,10787.91,10,0,0.0,buyer304@example.com
+2025-01-21,PO-2025-00008,Harbour Furniture Imports,Bookshelves,North,Sydney DC,20,178.86,5769.81,17,1,230.79,buyer294@example.com
+2025-01-21,PO-2025-00456,Nordic Timber Supply,Dining Tables,South,Melbourne DC,9,492.19,7144.72,11,0,0.0,buyer329@example.com
+2025-01-21,PO-2025-00540,Nordic Timber Supply,Bookshelves,West,Perth DC,23,160.98,5971.85,9,0,0.0,buyer105@example.com
+2025-01-21,PO-2025-00672,Pacific Hardware Co,Chairs,North,Sydney DC,5,95.49,770.08,11,0,0.0,buyer265@example.com
+2025-01-22,PO-2025-00083,Harbour Furniture Imports,Chairs,West,Perth DC,21,93.91,3180.73,12,0,0.0,buyer163@example.com
+2025-01-22,PO-2025-00168,Alpine Components,Chairs,South,Melbourne DC,16,86.71,2237.7,5,0,0.0,buyer129@example.com
+2025-01-22,PO-2025-00973,Pacific Hardware Co,Office Desks,South,Melbourne DC,2,375.39,1210.93,8,0,0.0,buyer345@example.com
+2025-01-23,PO-2025-00141,Alpine Components,Media Consoles,North,Sydney DC,7,275.59,3111.51,11,0,0.0,buyer391@example.com
+2025-01-23,PO-2025-00275,Alpine Components,Media Consoles,South,Melbourne DC,19,275.54,8444.03,11,0,0.0,buyer6@example.com
+2025-01-23,PO-2025-00730,Summit Upholstery,Media Consoles,North,Sydney DC,6,287.34,2780.68,17,1,111.23,buyer249@example.com
+2025-01-23,PO-2025-00821,Harbour Furniture Imports,Chairs,North,Sydney DC,20,93.06,3002.03,9,0,0.0,buyer274@example.com
+2025-01-24,PO-2025-00440,Summit Upholstery,Bookshelves,North,Sydney DC,22,171.03,6068.78,17,1,242.75,buyer352@example.com
+2025-01-25,PO-2025-00846,Alpine Components,Office Desks,East,Brisbane DC,6,382.14,3698.08,10,0,0.0,buyer102@example.com
+2025-01-25,PO-2025-01065,Summit Upholstery,Sideboards,North,Sydney DC,3,422.94,2046.49,13,1,81.86,buyer209@example.com
+2025-01-26,PO-2025-00231,Harbour Furniture Imports,Dining Tables,South,Melbourne DC,11,512.87,9099.26,16,1,363.97,buyer155@example.com
+2025-01-26,PO-2025-00433,Summit Upholstery,Chairs,West,Perth DC,16,97.99,2528.89,16,1,101.16,buyer97@example.com
+2025-01-26,PO-2025-00870,Alpine Components,Sideboards,East,Brisbane DC,23,468.82,17391.66,8,0,0.0,buyer93@example.com
+2025-01-26,PO-2025-01095,Pacific Hardware Co,Office Desks,West,Perth DC,19,352.8,10811.59,8,0,0.0,buyer34@example.com
+2025-01-26,PO-2025-01157,Nordic Timber Supply,Chairs,North,Sydney DC,1,102.94,166.03,8,0,0.0,buyer346@example.com
+2025-01-27,PO-2025-00728,Nordic Timber Supply,Dining Tables,North,Sydney DC,3,478.09,2313.34,11,0,0.0,buyer364@example.com
+2025-01-27,PO-2025-00788,Summit Upholstery,Chairs,South,Melbourne DC,18,89.84,2608.19,13,1,104.33,buyer364@example.com
+2025-01-27,PO-2025-01077,Nordic Timber Supply,Bookshelves,North,Sydney DC,4,170.67,1101.11,13,1,44.04,buyer219@example.com
+2025-01-28,PO-2025-00691,Alpine Components,Chairs,South,Melbourne DC,13,98.24,2059.87,12,0,0.0,buyer70@example.com
+2025-01-28,PO-2025-00794,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,15,284.56,6884.57,17,1,275.38,buyer175@example.com
+2025-01-28,PO-2025-00838,Pacific Hardware Co,Dining Tables,North,Sydney DC,1,521.57,841.24,6,0,0.0,buyer51@example.com
+2025-01-29,PO-2025-00163,Alpine Components,Chairs,North,Sydney DC,21,106.5,3607.41,14,1,144.3,buyer362@example.com
+2025-01-29,PO-2025-01042,Harbour Furniture Imports,Media Consoles,West,Perth DC,23,249.22,9245.36,5,0,0.0,buyer304@example.com
+2025-01-30,PO-2025-00414,Alpine Components,Office Desks,North,Sydney DC,2,351.16,1132.77,8,0,0.0,buyer29@example.com
+2025-01-30,PO-2025-00619,Nordic Timber Supply,Dining Tables,North,Sydney DC,5,502.31,4050.85,10,0,0.0,buyer246@example.com
+2025-01-30,PO-2025-01094,Summit Upholstery,Media Consoles,North,Sydney DC,19,305.74,9369.6,12,0,0.0,buyer186@example.com
+2025-01-31,PO-2025-00361,Nordic Timber Supply,Office Desks,North,Sydney DC,3,332.01,1606.5,12,0,0.0,buyer337@example.com
+2025-01-31,PO-2025-00679,Pacific Hardware Co,Dining Tables,North,Sydney DC,21,516.03,17478.45,8,0,0.0,buyer331@example.com
+2025-02-02,PO-2025-00210,Nordic Timber Supply,Sideboards,East,Brisbane DC,7,419.38,4734.89,6,0,0.0,buyer161@example.com
+2025-02-02,PO-2025-00273,Alpine Components,Office Desks,East,Brisbane DC,20,356.44,11498.12,15,1,459.92,buyer310@example.com
+2025-02-02,PO-2025-00307,Nordic Timber Supply,Bookshelves,East,Brisbane DC,24,159.33,6167.56,13,1,246.7,buyer264@example.com
+2025-02-02,PO-2025-00467,Summit Upholstery,Media Consoles,North,Sydney DC,6,265.28,2567.23,15,1,102.69,buyer293@example.com
+2025-02-02,PO-2025-00736,Summit Upholstery,Office Desks,East,Brisbane DC,13,376.71,7898.67,13,1,315.95,buyer373@example.com
+2025-02-03,PO-2025-00073,Summit Upholstery,Bookshelves,North,Sydney DC,17,176.86,4849.46,18,1,193.98,buyer399@example.com
+2025-02-03,PO-2025-00118,Alpine Components,Chairs,North,Sydney DC,22,100.13,3553.16,12,0,0.0,buyer15@example.com
+2025-02-03,PO-2025-00634,Alpine Components,Chairs,North,Sydney DC,9,105.82,1536.06,5,0,0.0,buyer111@example.com
+2025-02-03,PO-2025-00947,Alpine Components,Chairs,North,Sydney DC,4,102.17,659.17,12,0,0.0,buyer5@example.com
+2025-02-03,PO-2025-00969,Pacific Hardware Co,Chairs,South,Melbourne DC,8,87.46,1128.47,15,1,45.14,buyer201@example.com
+2025-02-05,PO-2025-00051,Summit Upholstery,Bookshelves,South,Melbourne DC,15,185.15,4479.42,14,1,179.18,buyer39@example.com
+2025-02-05,PO-2025-00110,Alpine Components,Chairs,East,Brisbane DC,19,105.32,3227.53,7,0,0.0,buyer358@example.com
+2025-02-05,PO-2025-00230,Nordic Timber Supply,Media Consoles,South,Melbourne DC,19,253.04,7754.39,6,0,0.0,buyer254@example.com
+2025-02-05,PO-2025-00354,Pacific Hardware Co,Media Consoles,North,Sydney DC,7,246.71,2785.4,8,0,0.0,buyer349@example.com
+2025-02-05,PO-2025-00430,Alpine Components,Dining Tables,North,Sydney DC,8,534.37,6895.11,6,0,0.0,buyer258@example.com
+2025-02-06,PO-2025-00639,Harbour Furniture Imports,Chairs,East,Brisbane DC,22,86.83,3080.92,14,1,123.24,buyer228@example.com
+2025-02-06,PO-2025-01141,Pacific Hardware Co,Chairs,West,Perth DC,9,103.23,1498.51,11,0,0.0,buyer371@example.com
+2025-02-07,PO-2025-00492,Nordic Timber Supply,Dining Tables,East,Brisbane DC,21,465.79,15776.7,18,1,631.07,buyer76@example.com
+2025-02-07,PO-2025-00916,Nordic Timber Supply,Chairs,West,Perth DC,13,95.27,1997.55,12,0,0.0,buyer120@example.com
+2025-02-08,PO-2025-00198,Pacific Hardware Co,Chairs,North,Sydney DC,17,99.26,2721.59,8,0,0.0,buyer206@example.com
+2025-02-09,PO-2025-00515,Alpine Components,Office Desks,West,Perth DC,10,364.41,5877.53,11,0,0.0,buyer137@example.com
+2025-02-09,PO-2025-00706,Pacific Hardware Co,Chairs,North,Sydney DC,7,89.89,1014.85,10,0,0.0,buyer394@example.com
+2025-02-09,PO-2025-01137,Harbour Furniture Imports,Media Consoles,North,Sydney DC,13,285.99,5996.66,16,1,239.87,buyer267@example.com
+2025-02-10,PO-2025-00757,Nordic Timber Supply,Office Desks,North,Sydney DC,11,308.01,5464.76,12,0,0.0,buyer156@example.com
+2025-02-11,PO-2025-00039,Harbour Furniture Imports,Bookshelves,South,Melbourne DC,2,166.85,538.24,11,0,0.0,buyer275@example.com
+2025-02-11,PO-2025-00258,Pacific Hardware Co,Bookshelves,North,Sydney DC,16,184.32,4756.52,11,0,0.0,buyer189@example.com
+2025-02-11,PO-2025-00281,Alpine Components,Media Consoles,West,Perth DC,6,247.44,2394.61,8,0,0.0,buyer59@example.com
+2025-02-11,PO-2025-00305,Nordic Timber Supply,Chairs,North,Sydney DC,6,85.19,824.46,14,1,32.98,buyer266@example.com
+2025-02-11,PO-2025-00333,Alpine Components,Chairs,East,Brisbane DC,17,99.39,2725.33,7,0,0.0,buyer83@example.com
+2025-02-11,PO-2025-00584,Summit Upholstery,Chairs,East,Brisbane DC,22,96.9,3438.54,16,1,137.54,buyer283@example.com
+2025-02-12,PO-2025-00516,Harbour Furniture Imports,Office Desks,South,Melbourne DC,16,349.83,9027.81,12,0,0.0,buyer160@example.com
+2025-02-12,PO-2025-00989,Pacific Hardware Co,Chairs,North,Sydney DC,16,100.44,2592.05,10,0,0.0,buyer199@example.com
+2025-02-12,PO-2025-01173,Harbour Furniture Imports,Chairs,North,Sydney DC,9,99.31,1441.59,6,0,0.0,buyer205@example.com
+2025-02-13,PO-2025-00687,Alpine Components,Chairs,North,Sydney DC,13,93.83,1967.5,7,0,0.0,buyer357@example.com
+2025-02-14,PO-2025-00157,Harbour Furniture Imports,Chairs,North,Sydney DC,2,90.04,290.46,15,1,11.62,buyer30@example.com
+2025-02-14,PO-2025-00554,Summit Upholstery,Bookshelves,South,Melbourne DC,13,182.8,3832.87,13,1,153.31,buyer203@example.com
+2025-02-14,PO-2025-01021,Nordic Timber Supply,Chairs,North,Sydney DC,3,91.88,444.57,13,1,17.78,buyer55@example.com
+2025-02-15,PO-2025-00266,Harbour Furniture Imports,Office Desks,North,Sydney DC,21,365.03,12363.86,12,0,0.0,buyer152@example.com
+2025-02-15,PO-2025-00453,Alpine Components,Sideboards,South,Melbourne DC,23,486.38,18043.11,16,1,721.72,buyer116@example.com
+2025-02-15,PO-2025-00513,Alpine Components,Media Consoles,North,Sydney DC,5,282.51,2278.32,9,0,0.0,buyer336@example.com
+2025-02-15,PO-2025-00550,Summit Upholstery,Chairs,South,Melbourne DC,14,97.51,2201.82,16,1,88.07,buyer397@example.com
+2025-02-15,PO-2025-01061,Alpine Components,Bookshelves,East,Brisbane DC,21,155.12,5254.15,10,0,0.0,buyer155@example.com
+2025-02-16,PO-2025-00335,Harbour Furniture Imports,Chairs,North,Sydney DC,17,91.94,2520.84,8,0,0.0,buyer317@example.com
+2025-02-16,PO-2025-00505,Pacific Hardware Co,Dining Tables,North,Sydney DC,1,536.53,865.36,8,0,0.0,buyer385@example.com
+2025-02-17,PO-2025-00015,Harbour Furniture Imports,Bookshelves,South,Melbourne DC,19,175.98,5393.07,13,1,215.72,buyer48@example.com
+2025-02-17,PO-2025-00342,Summit Upholstery,Dining Tables,North,Sydney DC,6,534.94,5176.84,11,0,0.0,buyer356@example.com
+2025-02-17,PO-2025-00408,Harbour Furniture Imports,Sideboards,East,Brisbane DC,22,393.6,13966.31,14,1,558.65,buyer368@example.com
+2025-02-17,PO-2025-00412,Nordic Timber Supply,Bookshelves,South,Melbourne DC,20,171.43,5530.0,11,0,0.0,buyer25@example.com
+2025-02-17,PO-2025-00459,Alpine Components,Sideboards,North,Sydney DC,19,411.34,12605.46,11,0,0.0,buyer333@example.com
+2025-02-17,PO-2025-00787,Harbour Furniture Imports,Office Desks,South,Melbourne DC,3,372.48,1802.33,16,1,72.09,buyer89@example.com
+2025-02-17,PO-2025-00986,Harbour Furniture Imports,Chairs,South,Melbourne DC,7,84.91,958.71,20,1,38.35,buyer65@example.com
+2025-02-18,PO-2025-00121,Nordic Timber Supply,Media Consoles,East,Brisbane DC,8,293.16,3782.66,7,0,0.0,buyer53@example.com
+2025-02-18,PO-2025-00381,Nordic Timber Supply,Chairs,South,Melbourne DC,7,104.82,1183.5,10,0,0.0,buyer11@example.com
+2025-02-18,PO-2025-00410,Summit Upholstery,Office Desks,North,Sydney DC,3,346.55,1676.85,7,0,0.0,buyer217@example.com
+2025-02-18,PO-2025-00951,Pacific Hardware Co,Media Consoles,West,Perth DC,1,247.71,399.53,11,0,0.0,buyer177@example.com
+2025-02-19,PO-2025-00185,Summit Upholstery,Bookshelves,South,Melbourne DC,14,169.58,3829.31,15,1,153.17,buyer242@example.com
+2025-02-19,PO-2025-00245,Harbour Furniture Imports,Bookshelves,North,Sydney DC,23,167.85,6226.68,4,0,0.0,buyer357@example.com
+2025-02-19,PO-2025-00582,Pacific Hardware Co,Media Consoles,South,Melbourne DC,14,240.94,5440.61,15,1,217.62,buyer30@example.com
+2025-02-19,PO-2025-00876,Alpine Components,Chairs,North,Sydney DC,1,99.26,160.1,10,0,0.0,buyer193@example.com
+2025-02-19,PO-2025-01121,Pacific Hardware Co,Media Consoles,East,Brisbane DC,11,254.39,4513.32,13,1,180.53,buyer212@example.com
+2025-02-20,PO-2025-00208,Nordic Timber Supply,Chairs,East,Brisbane DC,9,94.9,1377.6,6,0,0.0,buyer199@example.com
+2025-02-20,PO-2025-00363,Pacific Hardware Co,Dining Tables,North,Sydney DC,2,533.81,1721.98,9,0,0.0,buyer148@example.com
+2025-02-20,PO-2025-00502,Summit Upholstery,Media Consoles,East,Brisbane DC,2,282.67,911.85,8,0,0.0,buyer42@example.com
+2025-02-20,PO-2025-00878,Pacific Hardware Co,Chairs,North,Sydney DC,11,97.33,1726.86,9,0,0.0,buyer395@example.com
+2025-02-21,PO-2025-01166,Nordic Timber Supply,Chairs,North,Sydney DC,10,91.84,1481.24,8,0,0.0,buyer38@example.com
+2025-02-22,PO-2025-00972,Alpine Components,Sideboards,North,Sydney DC,10,431.75,6963.77,4,0,0.0,buyer287@example.com
+2025-02-22,PO-2025-01019,Harbour Furniture Imports,Sideboards,South,Melbourne DC,13,430.28,9021.93,7,0,0.0,buyer274@example.com
+2025-02-23,PO-2025-00130,Pacific Hardware Co,Media Consoles,South,Melbourne DC,16,265.78,6858.81,10,0,0.0,buyer202@example.com
+2025-02-23,PO-2025-00482,Pacific Hardware Co,Media Consoles,North,Sydney DC,14,257.86,5822.55,10,0,0.0,buyer277@example.com
+2025-02-23,PO-2025-00528,Harbour Furniture Imports,Chairs,East,Brisbane DC,10,102.62,1655.23,12,0,0.0,buyer68@example.com
+2025-02-23,PO-2025-00900,Summit Upholstery,Office Desks,East,Brisbane DC,24,382.61,14810.56,10,0,0.0,buyer387@example.com
+2025-02-23,PO-2025-01136,Pacific Hardware Co,Chairs,West,Perth DC,16,88.82,2292.06,11,0,0.0,buyer361@example.com
+2025-02-24,PO-2025-00088,Alpine Components,Bookshelves,South,Melbourne DC,2,171.54,553.36,13,1,22.13,buyer399@example.com
+2025-02-24,PO-2025-00506,Summit Upholstery,Media Consoles,South,Melbourne DC,20,286.69,9248.09,10,0,0.0,buyer24@example.com
+2025-02-25,PO-2025-00102,Alpine Components,Bookshelves,North,Sydney DC,24,162.16,6277.03,12,0,0.0,buyer380@example.com
+2025-02-25,PO-2025-00995,Harbour Furniture Imports,Dining Tables,West,Perth DC,6,526.56,5095.73,13,1,203.83,buyer336@example.com
+2025-02-25,PO-2025-01092,Harbour Furniture Imports,Bookshelves,East,Brisbane DC,5,151.26,1219.83,16,1,48.79,buyer394@example.com
+2025-02-26,PO-2025-00062,Summit Upholstery,Office Desks,North,Sydney DC,5,321.72,2594.54,9,0,0.0,buyer217@example.com
+2025-02-26,PO-2025-00531,Nordic Timber Supply,Chairs,East,Brisbane DC,17,97.82,2682.1,6,0,0.0,buyer348@example.com
+2025-02-26,PO-2025-00630,Summit Upholstery,Bookshelves,South,Melbourne DC,4,162.74,1049.94,14,1,42.0,buyer296@example.com
+2025-02-26,PO-2025-00709,Alpine Components,Office Desks,North,Sydney DC,23,358.39,13294.95,12,0,0.0,buyer254@example.com
+2025-02-27,PO-2025-00732,Pacific Hardware Co,Dining Tables,North,Sydney DC,10,523.66,8446.15,10,0,0.0,buyer343@example.com
+2025-02-28,PO-2025-00036,Summit Upholstery,Chairs,North,Sydney DC,24,100.76,3900.2,10,0,0.0,buyer186@example.com
+2025-02-28,PO-2025-00364,Nordic Timber Supply,Bookshelves,North,Sydney DC,17,168.16,4610.8,9,0,0.0,buyer42@example.com
+2025-02-28,PO-2025-00800,Harbour Furniture Imports,Chairs,West,Perth DC,3,91.56,443.04,13,1,17.72,buyer259@example.com
+2025-02-28,PO-2025-00854,Summit Upholstery,Office Desks,North,Sydney DC,10,351.38,5667.43,13,1,226.7,buyer280@example.com
+2025-03-01,PO-2025-00234,Pacific Hardware Co,Chairs,North,Sydney DC,21,96.99,3285.22,7,0,0.0,buyer360@example.com
+2025-03-01,PO-2025-00373,Harbour Furniture Imports,Dining Tables,North,Sydney DC,21,508.55,17225.24,15,1,689.01,buyer369@example.com
+2025-03-01,PO-2025-00890,Alpine Components,Bookshelves,West,Perth DC,3,182.47,882.9,12,0,0.0,buyer383@example.com
+2025-03-01,PO-2025-00891,Nordic Timber Supply,Bookshelves,North,Sydney DC,10,171.84,2771.56,17,1,110.86,buyer360@example.com
+2025-03-01,PO-2025-01182,Alpine Components,Office Desks,North,Sydney DC,9,375.04,5444.08,9,0,0.0,buyer329@example.com
+2025-03-02,PO-2025-00304,Summit Upholstery,Chairs,North,Sydney DC,9,103.71,1505.48,13,1,60.22,buyer245@example.com
+2025-03-02,PO-2025-00405,Nordic Timber Supply,Media Consoles,West,Perth DC,4,280.69,1810.88,7,0,0.0,buyer181@example.com
+2025-03-02,PO-2025-00562,Alpine Components,Dining Tables,North,Sydney DC,5,460.31,3712.17,3,0,0.0,buyer149@example.com
+2025-03-02,PO-2025-00622,Summit Upholstery,Office Desks,North,Sydney DC,2,319.58,1030.92,12,0,0.0,buyer370@example.com
+2025-03-02,PO-2025-00836,Pacific Hardware Co,Office Desks,North,Sydney DC,9,380.02,5516.44,10,0,0.0,buyer344@example.com
+2025-03-02,PO-2025-00886,Alpine Components,Sideboards,West,Perth DC,9,430.59,6250.48,7,0,0.0,buyer78@example.com
+2025-03-02,PO-2025-01117,Alpine Components,Media Consoles,East,Brisbane DC,23,261.83,9712.97,15,1,388.52,buyer310@example.com
+2025-03-03,PO-2025-00252,Pacific Hardware Co,Sideboards,North,Sydney DC,24,484.47,18753.59,14,1,750.14,buyer82@example.com
+2025-03-03,PO-2025-00555,Alpine Components,Sideboards,East,Brisbane DC,16,398.98,10296.32,12,0,0.0,buyer363@example.com
+2025-03-03,PO-2025-00618,Summit Upholstery,Sideboards,East,Brisbane DC,8,411.54,5310.17,12,0,0.0,buyer28@example.com
+2025-03-03,PO-2025-00723,Pacific Hardware Co,Office Desks,South,Melbourne DC,7,359.24,4055.9,9,0,0.0,buyer272@example.com
+2025-03-04,PO-2025-01015,Nordic Timber Supply,Chairs,East,Brisbane DC,7,98.86,1116.14,13,1,44.65,buyer109@example.com
+2025-03-05,PO-2025-01047,Nordic Timber Supply,Chairs,South,Melbourne DC,23,99.55,3693.13,8,0,0.0,buyer167@example.com
+2025-03-05,PO-2025-01134,Pacific Hardware Co,Office Desks,East,Brisbane DC,15,354.1,8566.95,11,0,0.0,buyer13@example.com
+2025-03-05,PO-2025-01145,Alpine Components,Sideboards,East,Brisbane DC,14,439.03,9913.56,10,0,0.0,buyer341@example.com
+2025-03-06,PO-2025-00517,Nordic Timber Supply,Chairs,South,Melbourne DC,12,86.51,1674.47,10,0,0.0,buyer45@example.com
+2025-03-06,PO-2025-00556,Pacific Hardware Co,Chairs,East,Brisbane DC,8,104.56,1349.11,10,0,0.0,buyer347@example.com
+2025-03-06,PO-2025-01093,Harbour Furniture Imports,Office Desks,South,Melbourne DC,9,375.28,5447.55,10,0,0.0,buyer61@example.com
+2025-03-07,PO-2025-00199,Pacific Hardware Co,Chairs,North,Sydney DC,21,100.15,3392.17,9,0,0.0,buyer112@example.com
+2025-03-07,PO-2025-00580,Harbour Furniture Imports,Bookshelves,East,Brisbane DC,19,179.84,5511.23,13,1,220.45,buyer135@example.com
+2025-03-08,PO-2025-00425,Harbour Furniture Imports,Bookshelves,North,Sydney DC,10,154.91,2498.5,12,0,0.0,buyer310@example.com
+2025-03-08,PO-2025-00758,Pacific Hardware Co,Media Consoles,West,Perth DC,9,291.16,4226.48,16,1,169.06,buyer204@example.com
+2025-03-08,PO-2025-01116,Summit Upholstery,Bookshelves,East,Brisbane DC,13,183.67,3851.05,14,1,154.04,buyer29@example.com
+2025-03-08,PO-2025-01148,Pacific Hardware Co,Sideboards,East,Brisbane DC,13,398.31,8351.63,11,0,0.0,buyer331@example.com
+2025-03-09,PO-2025-00066,Alpine Components,Media Consoles,South,Melbourne DC,24,263.17,10187.27,9,0,0.0,buyer340@example.com
+2025-03-09,PO-2025-00274,Nordic Timber Supply,Chairs,North,Sydney DC,13,88.92,1864.35,4,0,0.0,buyer73@example.com
+2025-03-09,PO-2025-00455,Pacific Hardware Co,Bookshelves,North,Sydney DC,14,151.54,3421.93,10,0,0.0,buyer56@example.com
+2025-03-09,PO-2025-00474,Harbour Furniture Imports,Sideboards,West,Perth DC,5,395.03,3185.71,11,0,0.0,buyer289@example.com
+2025-03-09,PO-2025-00561,Summit Upholstery,Dining Tables,North,Sydney DC,21,465.13,15754.55,12,0,0.0,buyer142@example.com
+2025-03-09,PO-2025-00884,Nordic Timber Supply,Sideboards,North,Sydney DC,23,437.24,16220.14,12,0,0.0,buyer240@example.com
+2025-03-09,PO-2025-00897,Pacific Hardware Co,Chairs,South,Melbourne DC,20,99.06,3195.57,13,1,127.82,buyer183@example.com
+2025-03-09,PO-2025-00953,Alpine Components,Dining Tables,North,Sydney DC,13,511.81,10731.51,7,0,0.0,buyer276@example.com
+2025-03-09,PO-2025-00966,Alpine Components,Chairs,North,Sydney DC,20,96.74,3120.8,13,1,124.83,buyer43@example.com
+2025-03-09,PO-2025-01046,Alpine Components,Dining Tables,West,Perth DC,3,454.59,2199.63,15,1,87.99,buyer186@example.com
+2025-03-10,PO-2025-00298,Pacific Hardware Co,Bookshelves,South,Melbourne DC,21,150.96,5113.26,10,0,0.0,buyer36@example.com
+2025-03-11,PO-2025-00444,Summit Upholstery,Office Desks,East,Brisbane DC,20,303.51,9790.54,16,1,391.62,buyer320@example.com
+2025-03-11,PO-2025-00523,Nordic Timber Supply,Media Consoles,North,Sydney DC,21,251.69,8525.05,11,0,0.0,buyer109@example.com
+2025-03-12,PO-2025-00052,Nordic Timber Supply,Media Consoles,South,Melbourne DC,19,246.84,7564.39,11,0,0.0,buyer269@example.com
+2025-03-12,PO-2025-00132,Alpine Components,Dining Tables,West,Perth DC,15,496.21,12005.01,7,0,0.0,buyer350@example.com
+2025-03-12,PO-2025-00194,Pacific Hardware Co,Media Consoles,North,Sydney DC,6,249.27,2412.28,14,1,96.49,buyer193@example.com
+2025-03-12,PO-2025-00382,Nordic Timber Supply,Office Desks,South,Melbourne DC,15,380.03,9194.27,13,1,367.77,buyer290@example.com
+2025-03-13,PO-2025-00696,Harbour Furniture Imports,Office Desks,North,Sydney DC,8,316.23,4080.34,10,0,0.0,buyer358@example.com
+2025-03-13,PO-2025-00853,Summit Upholstery,Chairs,North,Sydney DC,1,95.18,153.52,9,0,0.0,buyer220@example.com
+2025-03-13,PO-2025-00997,Harbour Furniture Imports,Sideboards,West,Perth DC,12,446.43,8640.61,13,1,345.62,buyer283@example.com
+2025-03-14,PO-2025-00195,Nordic Timber Supply,Bookshelves,West,Perth DC,17,153.76,4215.89,14,1,168.64,buyer233@example.com
+2025-03-14,PO-2025-00347,Nordic Timber Supply,Dining Tables,North,Sydney DC,13,512.49,10745.75,12,0,0.0,buyer153@example.com
+2025-03-14,PO-2025-00406,Nordic Timber Supply,Office Desks,East,Brisbane DC,23,369.68,13714.05,13,1,548.56,buyer309@example.com
+2025-03-14,PO-2025-00473,Summit Upholstery,Chairs,North,Sydney DC,9,91.78,1332.22,19,1,53.29,buyer346@example.com
+2025-03-14,PO-2025-00699,Nordic Timber Supply,Chairs,East,Brisbane DC,17,85.63,2347.94,6,0,0.0,buyer316@example.com
+2025-03-14,PO-2025-00795,Alpine Components,Bookshelves,East,Brisbane DC,12,167.5,3241.97,12,0,0.0,buyer209@example.com
+2025-03-14,PO-2025-00933,Pacific Hardware Co,Dining Tables,South,Melbourne DC,15,510.66,12354.58,14,1,494.18,buyer352@example.com
+2025-03-14,PO-2025-01111,Harbour Furniture Imports,Chairs,West,Perth DC,20,90.66,2924.38,16,1,116.98,buyer148@example.com
+2025-03-15,PO-2025-00056,Alpine Components,Bookshelves,East,Brisbane DC,22,165.16,5860.68,14,1,234.43,buyer20@example.com
+2025-03-15,PO-2025-00214,Alpine Components,Dining Tables,North,Sydney DC,19,455.05,13944.96,8,0,0.0,buyer188@example.com
+2025-03-15,PO-2025-00810,Harbour Furniture Imports,Dining Tables,North,Sydney DC,10,539.37,8699.45,10,0,0.0,buyer167@example.com
+2025-03-15,PO-2025-01013,Nordic Timber Supply,Chairs,North,Sydney DC,14,98.78,2230.55,9,0,0.0,buyer160@example.com
+2025-03-16,PO-2025-00251,Alpine Components,Media Consoles,North,Sydney DC,5,291.12,2347.73,16,1,93.91,buyer394@example.com
+2025-03-16,PO-2025-00837,Nordic Timber Supply,Media Consoles,West,Perth DC,3,244.22,1181.69,9,0,0.0,buyer121@example.com
+2025-03-16,PO-2025-01028,Pacific Hardware Co,Office Desks,West,Perth DC,4,368.38,2376.65,11,0,0.0,buyer389@example.com
+2025-03-17,PO-2025-00480,Nordic Timber Supply,Bookshelves,East,Brisbane DC,13,148.28,3109.15,3,0,0.0,buyer177@example.com
+2025-03-17,PO-2025-00592,Alpine Components,Sideboards,South,Melbourne DC,17,455.67,12494.1,11,0,0.0,buyer190@example.com
+2025-03-18,PO-2025-00396,Pacific Hardware Co,Office Desks,South,Melbourne DC,11,337.55,5988.77,9,0,0.0,buyer272@example.com
+2025-03-18,PO-2025-00658,Harbour Furniture Imports,Media Consoles,North,Sydney DC,18,283.23,8222.83,13,1,328.91,buyer143@example.com
+2025-03-19,PO-2025-00908,Alpine Components,Office Desks,East,Brisbane DC,10,366.79,5915.95,7,0,0.0,buyer275@example.com
+2025-03-19,PO-2025-00977,Nordic Timber Supply,Dining Tables,South,Melbourne DC,5,510.92,4120.3,8,0,0.0,buyer263@example.com
+2025-03-20,PO-2025-00035,Summit Upholstery,Office Desks,North,Sydney DC,14,357.82,8079.82,10,0,0.0,buyer4@example.com
+2025-03-20,PO-2025-00113,Pacific Hardware Co,Chairs,East,Brisbane DC,22,96.81,3435.09,16,1,137.4,buyer379@example.com
+2025-03-20,PO-2025-00318,Pacific Hardware Co,Media Consoles,North,Sydney DC,11,246.55,4374.26,6,0,0.0,buyer106@example.com
+2025-03-20,PO-2025-00369,Alpine Components,Dining Tables,East,Brisbane DC,19,529.69,16232.4,8,0,0.0,buyer98@example.com
+2025-03-20,PO-2025-00393,Alpine Components,Dining Tables,West,Perth DC,18,461.95,13411.31,13,1,536.45,buyer315@example.com
+2025-03-20,PO-2025-00915,Harbour Furniture Imports,Office Desks,West,Perth DC,9,312.2,4531.97,9,0,0.0,buyer84@example.com
+2025-03-20,PO-2025-01052,Pacific Hardware Co,Bookshelves,North,Sydney DC,3,162.67,787.09,9,0,0.0,buyer271@example.com
+2025-03-21,PO-2025-00212,Harbour Furniture Imports,Media Consoles,West,Perth DC,21,287.65,9743.15,14,1,389.73,buyer113@example.com
+2025-03-21,PO-2025-00527,Alpine Components,Office Desks,South,Melbourne DC,17,318.89,8743.67,7,0,0.0,buyer17@example.com
+2025-03-21,PO-2025-00647,Summit Upholstery,Sideboards,North,Sydney DC,7,490.36,5536.28,11,0,0.0,buyer139@example.com
+2025-03-21,PO-2025-00866,Pacific Hardware Co,Chairs,North,Sydney DC,23,98.74,3663.02,9,0,0.0,buyer335@example.com
+2025-03-21,PO-2025-00882,Harbour Furniture Imports,Sideboards,South,Melbourne DC,11,483.59,8579.91,10,0,0.0,buyer281@example.com
+2025-03-22,PO-2025-01043,Harbour Furniture Imports,Office Desks,North,Sydney DC,19,350.87,10752.52,10,0,0.0,buyer317@example.com
+2025-03-23,PO-2025-00695,Alpine Components,Dining Tables,West,Perth DC,3,552.8,2674.82,9,0,0.0,buyer65@example.com
+2025-03-23,PO-2025-00789,Pacific Hardware Co,Bookshelves,West,Perth DC,3,167.52,810.58,8,0,0.0,buyer75@example.com
+2025-03-24,PO-2025-00007,Summit Upholstery,Sideboards,North,Sydney DC,24,412.13,15953.29,14,1,638.13,buyer333@example.com
+2025-03-24,PO-2025-00087,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,15,275.98,6677.0,17,1,267.08,buyer263@example.com
+2025-03-24,PO-2025-00548,Pacific Hardware Co,Office Desks,West,Perth DC,23,309.86,11494.65,6,0,0.0,buyer70@example.com
+2025-03-24,PO-2025-00790,Nordic Timber Supply,Office Desks,North,Sydney DC,15,382.42,9251.98,5,0,0.0,buyer249@example.com
+2025-03-25,PO-2025-00978,Pacific Hardware Co,Sideboards,North,Sydney DC,20,472.35,15237.03,10,0,0.0,buyer266@example.com
+2025-03-25,PO-2025-01027,Alpine Components,Office Desks,East,Brisbane DC,21,374.05,12669.35,8,0,0.0,buyer357@example.com
+2025-03-26,PO-2025-00193,Pacific Hardware Co,Sideboards,West,Perth DC,4,450.05,2903.54,13,1,116.14,buyer296@example.com
+2025-03-26,PO-2025-00441,Harbour Furniture Imports,Bookshelves,North,Sydney DC,16,163.37,4216.03,14,1,168.64,buyer252@example.com
+2025-03-26,PO-2025-00589,Alpine Components,Office Desks,North,Sydney DC,23,308.84,11456.96,11,0,0.0,buyer68@example.com
+2025-03-26,PO-2025-00843,Nordic Timber Supply,Dining Tables,North,Sydney DC,4,542.14,3497.7,8,0,0.0,buyer141@example.com
+2025-03-26,PO-2025-00873,Pacific Hardware Co,Sideboards,East,Brisbane DC,24,443.57,17170.42,6,0,0.0,buyer360@example.com
+2025-03-27,PO-2025-00270,Nordic Timber Supply,Dining Tables,East,Brisbane DC,13,514.78,10793.76,9,0,0.0,buyer105@example.com
+2025-03-27,PO-2025-01073,Alpine Components,Dining Tables,West,Perth DC,19,514.0,15751.57,8,0,0.0,buyer1@example.com
+2025-03-27,PO-2025-01097,Alpine Components,Chairs,North,Sydney DC,6,87.92,850.85,8,0,0.0,buyer135@example.com
+2025-03-28,PO-2025-00320,Summit Upholstery,Dining Tables,North,Sydney DC,12,494.24,9565.98,15,1,382.64,buyer22@example.com
+2025-03-28,PO-2025-00603,Pacific Hardware Co,Dining Tables,South,Melbourne DC,7,534.71,6037.06,10,0,0.0,buyer88@example.com
+2025-03-28,PO-2025-00651,Nordic Timber Supply,Chairs,North,Sydney DC,5,87.12,702.61,14,1,28.1,buyer175@example.com
+2025-03-29,PO-2025-00106,Pacific Hardware Co,Dining Tables,South,Melbourne DC,21,524.33,17759.55,7,0,0.0,buyer354@example.com
+2025-03-30,PO-2025-00588,Pacific Hardware Co,Office Desks,West,Perth DC,22,325.39,11546.01,13,1,461.84,buyer143@example.com
+2025-03-31,PO-2025-00074,Harbour Furniture Imports,Chairs,West,Perth DC,18,98.84,2869.58,10,0,0.0,buyer248@example.com
+2025-03-31,PO-2025-00134,Nordic Timber Supply,Chairs,South,Melbourne DC,21,104.43,3537.14,8,0,0.0,buyer45@example.com
+2025-03-31,PO-2025-00772,Nordic Timber Supply,Chairs,North,Sydney DC,3,106.27,514.23,13,1,20.57,buyer22@example.com
+2025-03-31,PO-2025-00820,Alpine Components,Bookshelves,West,Perth DC,6,181.88,1760.13,11,0,0.0,buyer23@example.com
+2025-03-31,PO-2025-00824,Harbour Furniture Imports,Office Desks,South,Melbourne DC,8,308.05,3974.82,8,0,0.0,buyer58@example.com
+2025-03-31,PO-2025-00971,Nordic Timber Supply,Bookshelves,West,Perth DC,22,154.09,5467.79,9,0,0.0,buyer302@example.com
+2025-04-01,PO-2025-00049,Nordic Timber Supply,Dining Tables,North,Sydney DC,8,522.19,6737.98,10,0,0.0,buyer153@example.com
+2025-04-01,PO-2025-00232,Pacific Hardware Co,Bookshelves,West,Perth DC,19,155.27,4758.15,11,0,0.0,buyer339@example.com
+2025-04-01,PO-2025-00296,Nordic Timber Supply,Chairs,North,Sydney DC,4,96.86,624.91,9,0,0.0,buyer210@example.com
+2025-04-01,PO-2025-00395,Pacific Hardware Co,Office Desks,North,Sydney DC,14,313.33,7075.3,10,0,0.0,buyer372@example.com
+2025-04-01,PO-2025-00537,Harbour Furniture Imports,Chairs,North,Sydney DC,8,102.84,1327.0,12,0,0.0,buyer8@example.com
+2025-04-01,PO-2025-00763,Nordic Timber Supply,Sideboards,North,Sydney DC,8,389.52,5026.01,15,1,201.04,buyer354@example.com
+2025-04-02,PO-2025-00239,Pacific Hardware Co,Office Desks,South,Melbourne DC,19,323.32,9908.05,6,0,0.0,buyer66@example.com
+2025-04-02,PO-2025-00753,Nordic Timber Supply,Chairs,West,Perth DC,2,87.63,282.68,8,0,0.0,buyer86@example.com
+2025-04-02,PO-2025-01143,Harbour Furniture Imports,Office Desks,West,Perth DC,2,333.78,1076.71,13,1,43.07,buyer366@example.com
+2025-04-02,PO-2025-01178,Summit Upholstery,Chairs,East,Brisbane DC,1,94.53,152.47,7,0,0.0,buyer132@example.com
+2025-04-03,PO-2025-00294,Alpine Components,Bookshelves,North,Sydney DC,24,156.98,6076.5,12,0,0.0,buyer200@example.com
+2025-04-03,PO-2025-00498,Summit Upholstery,Bookshelves,North,Sydney DC,4,154.92,999.45,14,1,39.98,buyer111@example.com
+2025-04-03,PO-2025-00544,Nordic Timber Supply,Bookshelves,South,Melbourne DC,15,176.05,4259.29,11,0,0.0,buyer142@example.com
+2025-04-03,PO-2025-00581,Harbour Furniture Imports,Dining Tables,West,Perth DC,15,492.26,11909.51,17,1,476.38,buyer118@example.com
+2025-04-04,PO-2025-00022,Nordic Timber Supply,Media Consoles,South,Melbourne DC,20,282.13,9100.81,13,1,364.03,buyer380@example.com
+2025-04-04,PO-2025-00512,Harbour Furniture Imports,Media Consoles,North,Sydney DC,23,291.56,10815.77,18,1,432.63,buyer20@example.com
+2025-04-04,PO-2025-00844,Nordic Timber Supply,Media Consoles,North,Sydney DC,21,269.15,9116.22,10,0,0.0,buyer299@example.com
+2025-04-04,PO-2025-00867,Nordic Timber Supply,Office Desks,North,Sydney DC,12,325.29,6295.94,9,0,0.0,buyer329@example.com
+2025-04-05,PO-2025-00293,Nordic Timber Supply,Dining Tables,West,Perth DC,17,515.25,14127.89,13,1,565.12,buyer241@example.com
+2025-04-05,PO-2025-00529,Harbour Furniture Imports,Office Desks,South,Melbourne DC,20,335.48,10821.83,9,0,0.0,buyer124@example.com
+2025-04-05,PO-2025-00830,Harbour Furniture Imports,Office Desks,North,Sydney DC,9,314.08,4559.3,14,1,182.37,buyer299@example.com
+2025-04-06,PO-2025-00566,Alpine Components,Office Desks,South,Melbourne DC,19,342.76,10503.88,13,1,420.16,buyer388@example.com
+2025-04-06,PO-2025-00942,Alpine Components,Chairs,East,Brisbane DC,21,96.55,3270.17,11,0,0.0,buyer328@example.com
+2025-04-06,PO-2025-01176,Pacific Hardware Co,Chairs,East,Brisbane DC,9,96.65,1402.97,11,0,0.0,buyer134@example.com
+2025-04-07,PO-2025-00351,Alpine Components,Office Desks,South,Melbourne DC,21,302.48,10245.43,11,0,0.0,buyer270@example.com
+2025-04-07,PO-2025-00938,Summit Upholstery,Office Desks,East,Brisbane DC,19,302.18,9260.44,10,0,0.0,buyer275@example.com
+2025-04-07,PO-2025-01079,Pacific Hardware Co,Office Desks,North,Sydney DC,21,322.34,10917.83,10,0,0.0,buyer254@example.com
+2025-04-08,PO-2025-00064,Nordic Timber Supply,Chairs,North,Sydney DC,6,101.66,983.84,4,0,0.0,buyer183@example.com
+2025-04-08,PO-2025-00446,Pacific Hardware Co,Bookshelves,North,Sydney DC,23,152.15,5644.23,12,0,0.0,buyer374@example.com
+2025-04-08,PO-2025-00565,Nordic Timber Supply,Sideboards,West,Perth DC,13,410.58,8608.98,16,1,344.36,buyer144@example.com
+2025-04-08,PO-2025-00780,Nordic Timber Supply,Office Desks,East,Brisbane DC,22,309.2,10971.62,13,1,438.86,buyer370@example.com
+2025-04-08,PO-2025-00979,Alpine Components,Sideboards,East,Brisbane DC,9,472.77,6862.75,19,1,274.51,buyer10@example.com
+2025-04-09,PO-2025-00417,Summit Upholstery,Chairs,North,Sydney DC,3,83.92,406.08,13,1,16.24,buyer345@example.com
+2025-04-09,PO-2025-00893,Summit Upholstery,Office Desks,East,Brisbane DC,5,332.12,2678.42,12,0,0.0,buyer87@example.com
+2025-04-09,PO-2025-00954,Alpine Components,Dining Tables,East,Brisbane DC,12,448.44,8679.42,8,0,0.0,buyer302@example.com
+2025-04-09,PO-2025-00982,Alpine Components,Office Desks,North,Sydney DC,13,346.82,7272.01,11,0,0.0,buyer130@example.com
+2025-04-09,PO-2025-01045,Harbour Furniture Imports,Sideboards,North,Sydney DC,10,397.13,6405.38,11,0,0.0,buyer114@example.com
+2025-04-10,PO-2025-00209,Harbour Furniture Imports,Office Desks,North,Sydney DC,2,384.28,1239.6,10,0,0.0,buyer175@example.com
+2025-04-10,PO-2025-01055,Summit Upholstery,Chairs,West,Perth DC,21,105.92,3587.69,13,1,143.51,buyer276@example.com
+2025-04-11,PO-2025-00920,Nordic Timber Supply,Chairs,South,Melbourne DC,13,105.64,2215.06,12,0,0.0,buyer51@example.com
+2025-04-11,PO-2025-00998,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,17,265.54,7280.88,17,1,291.24,buyer134@example.com
+2025-04-12,PO-2025-00020,Pacific Hardware Co,Chairs,South,Melbourne DC,2,106.46,343.42,8,0,0.0,buyer204@example.com
+2025-04-12,PO-2025-00633,Pacific Hardware Co,Media Consoles,South,Melbourne DC,19,284.96,8732.75,13,1,349.31,buyer309@example.com
+2025-04-12,PO-2025-00797,Harbour Furniture Imports,Chairs,South,Melbourne DC,16,92.43,2385.23,12,0,0.0,buyer149@example.com
+2025-04-12,PO-2025-00961,Alpine Components,Office Desks,East,Brisbane DC,6,350.01,3387.24,12,0,0.0,buyer79@example.com
+2025-04-12,PO-2025-01031,Harbour Furniture Imports,Office Desks,North,Sydney DC,1,355.88,574.0,14,1,22.96,buyer378@example.com
+2025-04-13,PO-2025-00129,Nordic Timber Supply,Chairs,North,Sydney DC,8,99.28,1280.99,19,1,51.24,buyer375@example.com
+2025-04-13,PO-2025-00170,Alpine Components,Office Desks,North,Sydney DC,3,305.54,1478.4,12,0,0.0,buyer270@example.com
+2025-04-13,PO-2025-00445,Harbour Furniture Imports,Media Consoles,North,Sydney DC,13,250.7,5256.6,8,0,0.0,buyer216@example.com
+2025-04-13,PO-2025-00640,Harbour Furniture Imports,Dining Tables,East,Brisbane DC,15,439.91,10642.93,10,0,0.0,buyer369@example.com
+2025-04-13,PO-2025-00776,Alpine Components,Office Desks,North,Sydney DC,3,343.65,1662.81,6,0,0.0,buyer172@example.com
+2025-04-13,PO-2025-00859,Harbour Furniture Imports,Office Desks,East,Brisbane DC,9,335.25,4866.52,18,1,194.66,buyer204@example.com
+2025-04-14,PO-2025-00569,Nordic Timber Supply,Chairs,East,Brisbane DC,23,92.02,3413.59,6,0,0.0,buyer277@example.com
+2025-04-14,PO-2025-00697,Summit Upholstery,Sideboards,South,Melbourne DC,2,460.85,1486.63,18,1,59.47,buyer109@example.com
+2025-04-15,PO-2025-00010,Summit Upholstery,Chairs,North,Sydney DC,18,87.83,2549.79,17,1,101.99,buyer185@example.com
+2025-04-15,PO-2025-00746,Harbour Furniture Imports,Sideboards,East,Brisbane DC,6,388.77,3762.32,10,0,0.0,buyer134@example.com
+2025-04-16,PO-2025-00841,Alpine Components,Chairs,North,Sydney DC,4,103.62,668.55,11,0,0.0,buyer144@example.com
+2025-04-16,PO-2025-01038,Summit Upholstery,Office Desks,South,Melbourne DC,13,336.02,7045.59,6,0,0.0,buyer113@example.com
+2025-04-16,PO-2025-01080,Alpine Components,Media Consoles,North,Sydney DC,5,246.53,1988.12,9,0,0.0,buyer355@example.com
+2025-04-17,PO-2025-00721,Pacific Hardware Co,Chairs,East,Brisbane DC,2,100.44,324.01,8,0,0.0,buyer233@example.com
+2025-04-17,PO-2025-00760,Pacific Hardware Co,Sideboards,South,Melbourne DC,6,408.65,3954.65,9,0,0.0,buyer228@example.com
+2025-04-17,PO-2025-00762,Summit Upholstery,Bookshelves,North,Sydney DC,21,166.39,5635.69,15,1,225.43,buyer288@example.com
+2025-04-17,PO-2025-00831,Pacific Hardware Co,Office Desks,East,Brisbane DC,20,346.53,11178.25,11,0,0.0,buyer329@example.com
+2025-04-17,PO-2025-01009,Alpine Components,Office Desks,South,Melbourne DC,24,370.19,14329.82,14,1,573.19,buyer53@example.com
+2025-04-18,PO-2025-00611,Harbour Furniture Imports,Chairs,East,Brisbane DC,4,84.36,544.25,14,1,21.77,buyer32@example.com
+2025-04-18,PO-2025-00631,Summit Upholstery,Office Desks,West,Perth DC,23,368.64,13675.53,9,0,0.0,buyer322@example.com
+2025-04-19,PO-2025-00289,Summit Upholstery,Dining Tables,North,Sydney DC,1,516.86,833.64,15,1,33.35,buyer362@example.com
+2025-04-19,PO-2025-00392,Summit Upholstery,Bookshelves,North,Sydney DC,17,171.15,4692.75,17,1,187.71,buyer246@example.com
+2025-04-20,PO-2025-00009,Summit Upholstery,Dining Tables,North,Sydney DC,16,505.98,13057.49,9,0,0.0,buyer283@example.com
+2025-04-20,PO-2025-00116,Pacific Hardware Co,Bookshelves,North,Sydney DC,9,146.41,2125.35,10,0,0.0,buyer374@example.com
+2025-04-20,PO-2025-00254,Pacific Hardware Co,Office Desks,South,Melbourne DC,17,364.19,9985.73,12,0,0.0,buyer199@example.com
+2025-04-20,PO-2025-00334,Alpine Components,Office Desks,North,Sydney DC,14,362.66,8189.03,14,1,327.56,buyer318@example.com
+2025-04-20,PO-2025-00404,Nordic Timber Supply,Office Desks,North,Sydney DC,4,312.23,2014.38,10,0,0.0,buyer299@example.com
+2025-04-21,PO-2025-00018,Summit Upholstery,Media Consoles,South,Melbourne DC,16,244.41,6307.36,13,1,252.29,buyer265@example.com
+2025-04-21,PO-2025-00337,Harbour Furniture Imports,Chairs,North,Sydney DC,6,95.55,924.68,8,0,0.0,buyer45@example.com
+2025-04-21,PO-2025-00616,Nordic Timber Supply,Bookshelves,North,Sydney DC,1,172.61,278.41,8,0,0.0,buyer346@example.com
+2025-04-21,PO-2025-00809,Harbour Furniture Imports,Sideboards,North,Sydney DC,7,451.35,5095.9,13,1,203.84,buyer383@example.com
+2025-04-21,PO-2025-00955,Nordic Timber Supply,Dining Tables,South,Melbourne DC,6,459.93,4450.97,9,0,0.0,buyer74@example.com
+2025-04-22,PO-2025-00265,Harbour Furniture Imports,Dining Tables,East,Brisbane DC,3,437.38,2116.37,14,1,84.65,buyer327@example.com
+2025-04-22,PO-2025-00302,Nordic Timber Supply,Chairs,South,Melbourne DC,21,103.34,3500.06,5,0,0.0,buyer202@example.com
+2025-04-22,PO-2025-00341,Alpine Components,Bookshelves,East,Brisbane DC,20,159.55,5146.68,9,0,0.0,buyer263@example.com
+2025-04-22,PO-2025-00388,Alpine Components,Office Desks,North,Sydney DC,20,361.45,11659.81,6,0,0.0,buyer203@example.com
+2025-04-22,PO-2025-00419,Alpine Components,Bookshelves,West,Perth DC,23,177.8,6595.73,9,0,0.0,buyer135@example.com
+2025-04-22,PO-2025-00842,Alpine Components,Office Desks,East,Brisbane DC,3,312.97,1514.39,15,1,60.58,buyer376@example.com
+2025-04-22,PO-2025-01040,Harbour Furniture Imports,Bookshelves,West,Perth DC,17,150.0,4112.9,16,1,164.52,buyer151@example.com
+2025-04-23,PO-2025-00180,Alpine Components,Bookshelves,North,Sydney DC,13,159.58,3346.08,8,0,0.0,buyer118@example.com
+2025-04-23,PO-2025-00427,Alpine Components,Chairs,South,Melbourne DC,7,91.71,1035.44,2,0,0.0,buyer369@example.com
+2025-04-24,PO-2025-00202,Nordic Timber Supply,Sideboards,West,Perth DC,7,400.62,4523.08,9,0,0.0,buyer384@example.com
+2025-04-24,PO-2025-00243,Alpine Components,Office Desks,South,Melbourne DC,16,367.78,9491.15,12,0,0.0,buyer149@example.com
+2025-04-24,PO-2025-00310,Harbour Furniture Imports,Media Consoles,North,Sydney DC,12,242.49,4693.33,12,0,0.0,buyer157@example.com
+2025-04-24,PO-2025-00471,Pacific Hardware Co,Chairs,North,Sydney DC,11,87.74,1556.71,10,0,0.0,buyer65@example.com
+2025-04-24,PO-2025-00535,Harbour Furniture Imports,Media Consoles,West,Perth DC,2,249.03,803.33,10,0,0.0,buyer233@example.com
+2025-04-24,PO-2025-00783,Pacific Hardware Co,Dining Tables,South,Melbourne DC,20,501.93,16191.25,11,0,0.0,buyer350@example.com
+2025-04-24,PO-2025-01177,Harbour Furniture Imports,Chairs,West,Perth DC,21,88.11,2984.26,19,1,119.37,buyer215@example.com
+2025-04-25,PO-2025-00338,Pacific Hardware Co,Sideboards,North,Sydney DC,6,440.37,4261.68,8,0,0.0,buyer215@example.com
+2025-04-25,PO-2025-00533,Harbour Furniture Imports,Bookshelves,South,Melbourne DC,3,165.97,803.1,11,0,0.0,buyer250@example.com
+2025-04-25,PO-2025-00791,Pacific Hardware Co,Chairs,West,Perth DC,19,89.92,2755.66,16,1,110.23,buyer103@example.com
+2025-04-25,PO-2025-00987,Harbour Furniture Imports,Office Desks,South,Melbourne DC,8,379.39,4895.35,17,1,195.81,buyer84@example.com
+2025-04-25,PO-2025-01002,Nordic Timber Supply,Chairs,West,Perth DC,2,96.68,311.87,13,1,12.47,buyer167@example.com
+2025-04-26,PO-2025-00599,Nordic Timber Supply,Chairs,North,Sydney DC,7,89.25,1007.7,13,1,40.31,buyer115@example.com
+2025-04-26,PO-2025-00781,Summit Upholstery,Media Consoles,South,Melbourne DC,13,257.82,5405.82,11,0,0.0,buyer159@example.com
+2025-04-26,PO-2025-00812,Alpine Components,Office Desks,South,Melbourne DC,16,318.31,8214.47,14,1,328.58,buyer190@example.com
+2025-04-26,PO-2025-00921,Summit Upholstery,Dining Tables,West,Perth DC,3,521.78,2524.74,11,0,0.0,buyer52@example.com
+2025-04-26,PO-2025-01126,Nordic Timber Supply,Office Desks,South,Melbourne DC,1,302.69,488.22,13,1,19.53,buyer188@example.com
+2025-04-27,PO-2025-00332,Nordic Timber Supply,Chairs,West,Perth DC,7,88.74,1001.86,12,0,0.0,buyer61@example.com
+2025-04-27,PO-2025-01087,Alpine Components,Office Desks,South,Melbourne DC,5,313.41,2527.47,11,0,0.0,buyer191@example.com
+2025-04-28,PO-2025-00086,Nordic Timber Supply,Office Desks,East,Brisbane DC,9,366.46,5319.52,18,1,212.78,buyer117@example.com
+2025-04-28,PO-2025-00151,Alpine Components,Dining Tables,North,Sydney DC,21,483.53,16377.48,16,1,655.1,buyer8@example.com
+2025-04-28,PO-2025-00478,Pacific Hardware Co,Office Desks,South,Melbourne DC,9,324.44,4709.67,10,0,0.0,buyer120@example.com
+2025-04-28,PO-2025-00769,Nordic Timber Supply,Media Consoles,North,Sydney DC,13,245.71,5152.06,8,0,0.0,buyer246@example.com
+2025-04-29,PO-2025-00694,Harbour Furniture Imports,Sideboards,North,Sydney DC,14,449.98,10160.73,7,0,0.0,buyer61@example.com
+2025-04-29,PO-2025-01023,Summit Upholstery,Dining Tables,South,Melbourne DC,3,460.35,2227.49,12,0,0.0,buyer65@example.com
+2025-04-29,PO-2025-01104,Harbour Furniture Imports,Dining Tables,East,Brisbane DC,22,496.56,17620.01,16,1,704.8,buyer208@example.com
+2025-04-30,PO-2025-00360,Pacific Hardware Co,Chairs,West,Perth DC,2,99.7,321.62,8,0,0.0,buyer220@example.com
+2025-04-30,PO-2025-00617,Summit Upholstery,Dining Tables,East,Brisbane DC,3,437.51,2116.96,22,1,84.68,buyer42@example.com
+2025-05-01,PO-2025-00397,Summit Upholstery,Sideboards,North,Sydney DC,16,490.85,12667.14,9,0,0.0,buyer270@example.com
+2025-05-01,PO-2025-00626,Summit Upholstery,Bookshelves,North,Sydney DC,5,155.04,1250.36,12,0,0.0,buyer366@example.com
+2025-05-01,PO-2025-00911,Pacific Hardware Co,Dining Tables,North,Sydney DC,12,441.92,8553.31,9,0,0.0,buyer399@example.com
+2025-05-01,PO-2025-00922,Harbour Furniture Imports,Dining Tables,East,Brisbane DC,11,502.44,8914.31,10,0,0.0,buyer213@example.com
+2025-05-02,PO-2025-00248,Pacific Hardware Co,Media Consoles,East,Brisbane DC,10,282.02,4548.73,13,1,181.95,buyer244@example.com
+2025-05-02,PO-2025-00437,Pacific Hardware Co,Sideboards,North,Sydney DC,22,483.49,17156.07,12,0,0.0,buyer372@example.com
+2025-05-02,PO-2025-01152,Nordic Timber Supply,Chairs,South,Melbourne DC,22,95.86,3401.49,11,0,0.0,buyer385@example.com
+2025-05-03,PO-2025-00654,Summit Upholstery,Office Desks,South,Melbourne DC,14,335.42,7574.07,12,0,0.0,buyer154@example.com
+2025-05-03,PO-2025-00779,Pacific Hardware Co,Office Desks,North,Sydney DC,5,325.3,2623.42,7,0,0.0,buyer256@example.com
+2025-05-03,PO-2025-00935,Pacific Hardware Co,Dining Tables,North,Sydney DC,6,487.29,4715.7,7,0,0.0,buyer37@example.com
+2025-05-03,PO-2025-00948,Summit Upholstery,Chairs,West,Perth DC,20,95.34,3075.48,5,0,0.0,buyer224@example.com
+2025-05-04,PO-2025-00330,Pacific Hardware Co,Office Desks,West,Perth DC,17,321.85,8824.82,11,0,0.0,buyer202@example.com
+2025-05-04,PO-2025-00507,Harbour Furniture Imports,Bookshelves,South,Melbourne DC,8,145.28,1874.58,8,0,0.0,buyer294@example.com
+2025-05-04,PO-2025-00583,Pacific Hardware Co,Chairs,West,Perth DC,1,104.94,169.25,11,0,0.0,buyer381@example.com
+2025-05-04,PO-2025-00600,Nordic Timber Supply,Bookshelves,North,Sydney DC,18,152.36,4423.37,9,0,0.0,buyer336@example.com
+2025-05-04,PO-2025-00615,Pacific Hardware Co,Sideboards,North,Sydney DC,9,445.59,6468.18,13,1,258.73,buyer13@example.com
+2025-05-04,PO-2025-00731,Pacific Hardware Co,Office Desks,North,Sydney DC,22,343.38,12184.56,11,0,0.0,buyer3@example.com
+2025-05-05,PO-2025-00019,Alpine Components,Media Consoles,West,Perth DC,18,255.4,7414.84,8,0,0.0,buyer209@example.com
+2025-05-05,PO-2025-00032,Summit Upholstery,Sideboards,South,Melbourne DC,14,432.45,9764.89,18,1,390.6,buyer339@example.com
+2025-05-05,PO-2025-00207,Nordic Timber Supply,Chairs,North,Sydney DC,4,105.77,682.36,17,1,27.29,buyer351@example.com
+2025-05-05,PO-2025-00484,Pacific Hardware Co,Office Desks,North,Sydney DC,7,311.01,3511.39,11,0,0.0,buyer370@example.com
+2025-05-05,PO-2025-00488,Harbour Furniture Imports,Chairs,North,Sydney DC,19,101.68,3115.95,8,0,0.0,buyer121@example.com
+2025-05-06,PO-2025-00167,Alpine Components,Dining Tables,South,Melbourne DC,10,546.73,8818.3,8,0,0.0,buyer203@example.com
+2025-05-06,PO-2025-00400,Alpine Components,Dining Tables,North,Sydney DC,13,532.33,11161.73,13,1,446.47,buyer228@example.com
+2025-05-06,PO-2025-00759,Alpine Components,Chairs,East,Brisbane DC,6,96.69,935.75,12,0,0.0,buyer81@example.com
+2025-05-06,PO-2025-00865,Harbour Furniture Imports,Dining Tables,South,Melbourne DC,15,492.45,11914.12,11,0,0.0,buyer125@example.com
+2025-05-07,PO-2025-00201,Harbour Furniture Imports,Chairs,West,Perth DC,1,91.46,147.51,13,1,5.9,buyer204@example.com
+2025-05-07,PO-2025-00365,Summit Upholstery,Chairs,North,Sydney DC,9,91.69,1330.97,10,0,0.0,buyer15@example.com
+2025-05-07,PO-2025-00840,Alpine Components,Media Consoles,West,Perth DC,18,291.85,8473.01,11,0,0.0,buyer368@example.com
+2025-05-08,PO-2025-00991,Nordic Timber Supply,Media Consoles,East,Brisbane DC,13,280.78,5887.31,13,1,235.49,buyer297@example.com
+2025-05-08,PO-2025-01064,Summit Upholstery,Chairs,West,Perth DC,4,90.39,583.19,19,1,23.33,buyer377@example.com
+2025-05-09,PO-2025-00768,Nordic Timber Supply,Media Consoles,South,Melbourne DC,21,279.39,9463.29,10,0,0.0,buyer165@example.com
+2025-05-10,PO-2025-00173,Harbour Furniture Imports,Office Desks,East,Brisbane DC,10,365.85,5900.79,9,0,0.0,buyer282@example.com
+2025-05-10,PO-2025-01168,Summit Upholstery,Bookshelves,East,Brisbane DC,13,181.12,3797.7,10,0,0.0,buyer68@example.com
+2025-05-11,PO-2025-00105,Nordic Timber Supply,Dining Tables,North,Sydney DC,22,521.15,18492.34,7,0,0.0,buyer85@example.com
+2025-05-11,PO-2025-00914,Nordic Timber Supply,Dining Tables,East,Brisbane DC,17,453.15,12425.05,6,0,0.0,buyer244@example.com
+2025-05-11,PO-2025-00968,Pacific Hardware Co,Dining Tables,East,Brisbane DC,12,458.85,8881.0,8,0,0.0,buyer112@example.com
+2025-05-11,PO-2025-01053,Harbour Furniture Imports,Office Desks,West,Perth DC,7,364.48,4115.06,12,0,0.0,buyer132@example.com
+2025-05-12,PO-2025-00080,Harbour Furniture Imports,Dining Tables,North,Sydney DC,18,446.25,12955.6,10,0,0.0,buyer59@example.com
+2025-05-13,PO-2025-00197,Summit Upholstery,Media Consoles,North,Sydney DC,19,275.6,8445.94,13,1,337.84,buyer237@example.com
+2025-05-13,PO-2025-00359,Alpine Components,Office Desks,East,Brisbane DC,6,305.8,2959.37,9,0,0.0,buyer38@example.com
+2025-05-13,PO-2025-00499,Alpine Components,Bookshelves,West,Perth DC,19,151.33,4637.4,8,0,0.0,buyer258@example.com
+2025-05-13,PO-2025-00825,Summit Upholstery,Media Consoles,East,Brisbane DC,5,294.07,2371.53,17,1,94.86,buyer43@example.com
+2025-05-14,PO-2025-00714,Harbour Furniture Imports,Sideboards,North,Sydney DC,8,489.41,6315.02,15,1,252.6,buyer113@example.com
+2025-05-15,PO-2025-00057,Harbour Furniture Imports,Dining Tables,North,Sydney DC,4,437.71,2823.96,15,1,112.96,buyer333@example.com
+2025-05-15,PO-2025-01005,Alpine Components,Bookshelves,North,Sydney DC,20,168.38,5431.55,9,0,0.0,buyer227@example.com
+2025-05-15,PO-2025-01074,Summit Upholstery,Office Desks,East,Brisbane DC,15,371.88,8997.08,16,1,359.88,buyer31@example.com
+2025-05-16,PO-2025-00155,Summit Upholstery,Dining Tables,East,Brisbane DC,15,550.92,13328.77,12,0,0.0,buyer191@example.com
+2025-05-16,PO-2025-00389,Harbour Furniture Imports,Chairs,North,Sydney DC,4,99.08,639.2,14,1,25.57,buyer239@example.com
+2025-05-16,PO-2025-00438,Summit Upholstery,Bookshelves,North,Sydney DC,14,166.27,3754.44,14,1,150.18,buyer307@example.com
+2025-05-16,PO-2025-00771,Pacific Hardware Co,Office Desks,West,Perth DC,15,302.13,7309.68,9,0,0.0,buyer191@example.com
+2025-05-16,PO-2025-01130,Alpine Components,Chairs,East,Brisbane DC,5,106.68,860.35,13,1,34.41,buyer116@example.com
+2025-05-17,PO-2025-00226,Nordic Timber Supply,Sideboards,South,Melbourne DC,16,465.52,12013.34,13,1,480.53,buyer163@example.com
+2025-05-17,PO-2025-00510,Nordic Timber Supply,Dining Tables,East,Brisbane DC,19,538.93,16515.71,10,0,0.0,buyer144@example.com
+2025-05-17,PO-2025-00806,Alpine Components,Dining Tables,East,Brisbane DC,15,477.92,11562.69,8,0,0.0,buyer55@example.com
+2025-05-18,PO-2025-00136,Harbour Furniture Imports,Office Desks,North,Sydney DC,6,331.13,3204.46,9,0,0.0,buyer137@example.com
+2025-05-18,PO-2025-00142,Summit Upholstery,Office Desks,West,Perth DC,19,361.67,11083.37,13,1,443.33,buyer312@example.com
+2025-05-18,PO-2025-00264,Summit Upholstery,Chairs,South,Melbourne DC,22,89.36,3170.9,13,1,126.84,buyer47@example.com
+2025-05-18,PO-2025-00322,Harbour Furniture Imports,Chairs,South,Melbourne DC,13,83.83,1757.73,9,0,0.0,buyer232@example.com
+2025-05-18,PO-2025-00387,Pacific Hardware Co,Chairs,South,Melbourne DC,9,97.98,1422.31,13,1,56.89,buyer164@example.com
+2025-05-18,PO-2025-00426,Nordic Timber Supply,Chairs,East,Brisbane DC,10,106.08,1711.0,6,0,0.0,buyer331@example.com
+2025-05-18,PO-2025-00734,Summit Upholstery,Bookshelves,East,Brisbane DC,15,177.97,4305.7,14,1,172.23,buyer96@example.com
+2025-05-18,PO-2025-00778,Summit Upholstery,Office Desks,East,Brisbane DC,8,318.72,4112.58,14,1,164.5,buyer228@example.com
+2025-05-18,PO-2025-00827,Harbour Furniture Imports,Bookshelves,East,Brisbane DC,4,185.26,1195.24,11,0,0.0,buyer378@example.com
+2025-05-18,PO-2025-00855,Harbour Furniture Imports,Media Consoles,North,Sydney DC,19,295.9,9067.9,10,0,0.0,buyer348@example.com
+2025-05-18,PO-2025-00927,Nordic Timber Supply,Dining Tables,East,Brisbane DC,4,443.26,2859.73,10,0,0.0,buyer162@example.com
+2025-05-19,PO-2025-00048,Summit Upholstery,Chairs,West,Perth DC,1,91.05,146.85,11,0,0.0,buyer330@example.com
+2025-05-19,PO-2025-00092,Nordic Timber Supply,Media Consoles,North,Sydney DC,2,282.0,909.66,11,0,0.0,buyer25@example.com
+2025-05-19,PO-2025-00372,Pacific Hardware Co,Dining Tables,South,Melbourne DC,14,541.53,12228.0,6,0,0.0,buyer284@example.com
+2025-05-19,PO-2025-00379,Harbour Furniture Imports,Bookshelves,South,Melbourne DC,23,173.91,6451.33,16,1,258.05,buyer30@example.com
+2025-05-19,PO-2025-00483,Harbour Furniture Imports,Chairs,North,Sydney DC,17,103.13,2827.82,15,1,113.11,buyer202@example.com
+2025-05-19,PO-2025-00725,Nordic Timber Supply,Sideboards,North,Sydney DC,21,451.17,15281.52,16,1,611.26,buyer382@example.com
+2025-05-19,PO-2025-00755,Pacific Hardware Co,Dining Tables,East,Brisbane DC,23,546.17,20261.04,10,0,0.0,buyer30@example.com
+2025-05-19,PO-2025-00964,Pacific Hardware Co,Media Consoles,East,Brisbane DC,24,287.26,11119.78,14,1,444.79,buyer282@example.com
+2025-05-19,PO-2025-01016,Summit Upholstery,Chairs,North,Sydney DC,23,88.78,3293.33,16,1,131.73,buyer343@example.com
+2025-05-20,PO-2025-00089,Nordic Timber Supply,Sideboards,North,Sydney DC,14,435.11,9825.17,12,0,0.0,buyer298@example.com
+2025-05-20,PO-2025-00495,Summit Upholstery,Chairs,North,Sydney DC,10,98.57,1589.83,12,0,0.0,buyer359@example.com
+2025-05-20,PO-2025-00579,Harbour Furniture Imports,Sideboards,North,Sydney DC,5,448.36,3615.8,10,0,0.0,buyer278@example.com
+2025-05-20,PO-2025-00636,Harbour Furniture Imports,Chairs,East,Brisbane DC,18,87.92,2552.47,11,0,0.0,buyer398@example.com
+2025-05-20,PO-2025-00733,Summit Upholstery,Chairs,East,Brisbane DC,17,87.04,2386.46,14,1,95.46,buyer27@example.com
+2025-05-20,PO-2025-00826,Harbour Furniture Imports,Office Desks,South,Melbourne DC,20,314.77,10153.77,14,1,406.15,buyer358@example.com
+2025-05-20,PO-2025-00871,Pacific Hardware Co,Bookshelves,East,Brisbane DC,7,164.93,1862.1,9,0,0.0,buyer14@example.com
+2025-05-20,PO-2025-00936,Nordic Timber Supply,Dining Tables,North,Sydney DC,6,480.93,4654.17,16,1,186.17,buyer122@example.com
+2025-05-20,PO-2025-01037,Summit Upholstery,Dining Tables,South,Melbourne DC,2,554.98,1790.24,17,1,71.61,buyer149@example.com
+2025-05-20,PO-2025-01078,Pacific Hardware Co,Media Consoles,West,Perth DC,13,264.92,5554.73,9,0,0.0,buyer134@example.com
+2025-05-21,PO-2025-00350,Harbour Furniture Imports,Media Consoles,North,Sydney DC,10,271.04,4371.64,16,1,174.87,buyer305@example.com
+2025-05-21,PO-2025-00851,Nordic Timber Supply,Bookshelves,South,Melbourne DC,21,184.74,6257.3,8,0,0.0,buyer79@example.com
+2025-05-21,PO-2025-01142,Harbour Furniture Imports,Chairs,West,Perth DC,22,95.67,3394.65,15,1,135.79,buyer39@example.com
+2025-05-22,PO-2025-00085,Summit Upholstery,Sideboards,North,Sydney DC,13,466.74,9786.48,12,0,0.0,buyer258@example.com
+2025-05-22,PO-2025-00493,Alpine Components,Office Desks,North,Sydney DC,7,384.4,4339.97,11,0,0.0,buyer327@example.com
+2025-05-22,PO-2025-00500,Alpine Components,Chairs,North,Sydney DC,24,104.6,4049.22,8,0,0.0,buyer71@example.com
+2025-05-22,PO-2025-00931,Pacific Hardware Co,Media Consoles,West,Perth DC,24,290.17,11232.37,12,0,0.0,buyer197@example.com
+2025-05-22,PO-2025-01020,Alpine Components,Office Desks,West,Perth DC,1,315.36,508.65,14,1,20.35,buyer88@example.com
+2025-05-23,PO-2025-00534,Harbour Furniture Imports,Media Consoles,West,Perth DC,24,283.22,10963.48,12,0,0.0,buyer397@example.com
+2025-05-23,PO-2025-00743,Harbour Furniture Imports,Office Desks,South,Melbourne DC,11,372.54,6609.51,14,1,264.38,buyer125@example.com
+2025-05-24,PO-2025-00095,Harbour Furniture Imports,Chairs,North,Sydney DC,7,85.25,962.48,10,0,0.0,buyer167@example.com
+2025-05-24,PO-2025-00546,Summit Upholstery,Media Consoles,West,Perth DC,23,287.16,10652.79,14,1,426.11,buyer5@example.com
+2025-05-24,PO-2025-00623,Pacific Hardware Co,Dining Tables,North,Sydney DC,20,472.7,15248.23,13,1,609.93,buyer360@example.com
+2025-05-24,PO-2025-01060,Nordic Timber Supply,Chairs,East,Brisbane DC,21,96.15,3256.58,12,0,0.0,buyer40@example.com
+2025-05-24,PO-2025-01090,Pacific Hardware Co,Chairs,South,Melbourne DC,18,90.62,2630.78,10,0,0.0,buyer181@example.com
+2025-05-25,PO-2025-00200,Alpine Components,Dining Tables,West,Perth DC,7,460.44,5198.5,11,0,0.0,buyer1@example.com
+2025-05-25,PO-2025-00470,Nordic Timber Supply,Media Consoles,North,Sydney DC,20,287.19,9264.18,12,0,0.0,buyer229@example.com
+2025-05-25,PO-2025-00576,Summit Upholstery,Office Desks,South,Melbourne DC,14,324.09,7318.12,10,0,0.0,buyer21@example.com
+2025-05-25,PO-2025-00722,Pacific Hardware Co,Bookshelves,North,Sydney DC,5,159.14,1283.37,10,0,0.0,buyer199@example.com
+2025-05-25,PO-2025-00845,Summit Upholstery,Chairs,South,Melbourne DC,24,90.87,3517.58,14,1,140.7,buyer24@example.com
+2025-05-25,PO-2025-00864,Nordic Timber Supply,Dining Tables,West,Perth DC,23,539.13,19999.91,10,0,0.0,buyer327@example.com
+2025-05-25,PO-2025-00940,Alpine Components,Media Consoles,South,Melbourne DC,12,257.04,4974.88,13,1,199.0,buyer141@example.com
+2025-05-26,PO-2025-00250,Nordic Timber Supply,Sideboards,West,Perth DC,4,454.76,2933.94,15,1,117.36,buyer69@example.com
+2025-05-27,PO-2025-00091,Pacific Hardware Co,Bookshelves,East,Brisbane DC,2,165.37,533.46,10,0,0.0,buyer67@example.com
+2025-05-27,PO-2025-00108,Alpine Components,Bookshelves,South,Melbourne DC,15,169.18,4093.0,18,1,163.72,buyer354@example.com
+2025-05-27,PO-2025-00682,Alpine Components,Chairs,South,Melbourne DC,3,104.87,507.45,8,0,0.0,buyer324@example.com
+2025-05-27,PO-2025-00885,Pacific Hardware Co,Media Consoles,East,Brisbane DC,3,295.75,1431.04,15,1,57.24,buyer135@example.com
+2025-05-28,PO-2025-00461,Nordic Timber Supply,Office Desks,South,Melbourne DC,1,324.08,522.71,9,0,0.0,buyer385@example.com
+2025-05-28,PO-2025-00967,Nordic Timber Supply,Chairs,North,Sydney DC,11,99.07,1757.63,9,0,0.0,buyer104@example.com
+2025-05-28,PO-2025-01088,Alpine Components,Dining Tables,North,Sydney DC,9,437.47,6350.31,12,0,0.0,buyer377@example.com
+2025-05-28,PO-2025-01127,Pacific Hardware Co,Chairs,South,Melbourne DC,16,103.77,2678.06,16,1,107.12,buyer223@example.com
+2025-05-29,PO-2025-00111,Nordic Timber Supply,Dining Tables,East,Brisbane DC,15,548.68,13274.51,11,0,0.0,buyer23@example.com
+2025-05-29,PO-2025-00719,Nordic Timber Supply,Bookshelves,West,Perth DC,7,167.54,1891.57,12,0,0.0,buyer221@example.com
+2025-05-29,PO-2025-00901,Alpine Components,Media Consoles,North,Sydney DC,9,257.33,3735.48,14,1,149.42,buyer35@example.com
+2025-05-30,PO-2025-00143,Pacific Hardware Co,Office Desks,East,Brisbane DC,23,361.28,13402.22,15,1,536.09,buyer14@example.com
+2025-05-30,PO-2025-00671,Alpine Components,Chairs,East,Brisbane DC,16,92.13,2377.67,14,1,95.11,buyer59@example.com
+2025-05-30,PO-2025-01132,Pacific Hardware Co,Chairs,North,Sydney DC,21,84.75,2870.46,6,0,0.0,buyer315@example.com
+2025-05-31,PO-2025-00179,Alpine Components,Sideboards,East,Brisbane DC,5,403.18,3251.43,11,0,0.0,buyer243@example.com
+2025-05-31,PO-2025-00227,Harbour Furniture Imports,Office Desks,North,Sydney DC,12,310.39,6007.55,15,1,240.3,buyer379@example.com
+2025-05-31,PO-2025-00271,Summit Upholstery,Media Consoles,North,Sydney DC,15,287.82,6963.46,15,1,278.54,buyer151@example.com
+2025-05-31,PO-2025-00276,Alpine Components,Media Consoles,North,Sydney DC,20,281.84,9091.56,13,1,363.66,buyer114@example.com
+2025-05-31,PO-2025-01128,Pacific Hardware Co,Chairs,East,Brisbane DC,7,84.9,958.51,9,0,0.0,buyer166@example.com
+2025-06-01,PO-2025-00158,Pacific Hardware Co,Chairs,South,Melbourne DC,6,94.17,911.32,10,0,0.0,buyer336@example.com
+2025-06-01,PO-2025-00649,Alpine Components,Office Desks,South,Melbourne DC,3,380.99,1843.52,13,1,73.74,buyer176@example.com
+2025-06-02,PO-2025-00187,Harbour Furniture Imports,Sideboards,East,Brisbane DC,14,448.46,10126.56,12,0,0.0,buyer168@example.com
+2025-06-02,PO-2025-00657,Summit Upholstery,Chairs,South,Melbourne DC,23,91.39,3390.2,14,1,135.61,buyer176@example.com
+2025-06-02,PO-2025-00718,Nordic Timber Supply,Chairs,North,Sydney DC,4,92.71,598.12,11,0,0.0,buyer263@example.com
+2025-06-02,PO-2025-00902,Nordic Timber Supply,Dining Tables,South,Melbourne DC,11,506.3,8982.8,16,1,359.31,buyer158@example.com
+2025-06-02,PO-2025-00950,Alpine Components,Chairs,North,Sydney DC,12,102.66,1987.05,8,0,0.0,buyer326@example.com
+2025-06-02,PO-2025-01035,Harbour Furniture Imports,Dining Tables,West,Perth DC,8,519.14,6698.56,14,1,267.94,buyer142@example.com
+2025-06-03,PO-2025-00485,Summit Upholstery,Office Desks,South,Melbourne DC,7,380.46,4295.55,13,1,171.82,buyer53@example.com
+2025-06-03,PO-2025-00756,Harbour Furniture Imports,Chairs,West,Perth DC,13,105.36,2209.08,14,1,88.36,buyer55@example.com
+2025-06-03,PO-2025-00796,Pacific Hardware Co,Office Desks,West,Perth DC,5,363.31,2929.96,10,0,0.0,buyer73@example.com
+2025-06-03,PO-2025-00944,Nordic Timber Supply,Office Desks,North,Sydney DC,17,374.71,10274.26,11,0,0.0,buyer269@example.com
+2025-06-04,PO-2025-00726,Nordic Timber Supply,Bookshelves,West,Perth DC,10,148.09,2388.55,13,1,95.54,buyer7@example.com
+2025-06-04,PO-2025-00848,Alpine Components,Dining Tables,West,Perth DC,7,460.6,5200.31,13,1,208.01,buyer142@example.com
+2025-06-04,PO-2025-00962,Nordic Timber Supply,Chairs,East,Brisbane DC,24,94.46,3656.55,7,0,0.0,buyer39@example.com
+2025-06-04,PO-2025-00985,Harbour Furniture Imports,Media Consoles,East,Brisbane DC,16,289.79,7478.4,13,1,299.14,buyer360@example.com
+2025-06-05,PO-2025-00223,Summit Upholstery,Office Desks,West,Perth DC,9,338.42,4912.56,10,0,0.0,buyer4@example.com
+2025-06-05,PO-2025-00551,Alpine Components,Chairs,East,Brisbane DC,8,106.28,1371.36,13,1,54.85,buyer312@example.com
+2025-06-05,PO-2025-00708,Pacific Hardware Co,Chairs,West,Perth DC,11,101.87,1807.29,8,0,0.0,buyer374@example.com
+2025-06-06,PO-2025-00162,Harbour Furniture Imports,Chairs,South,Melbourne DC,15,99.98,2418.76,15,1,96.75,buyer256@example.com
+2025-06-06,PO-2025-00233,Summit Upholstery,Chairs,North,Sydney DC,11,96.97,1720.48,10,0,0.0,buyer389@example.com
+2025-06-06,PO-2025-01082,Pacific Hardware Co,Bookshelves,North,Sydney DC,23,152.98,5675.02,9,0,0.0,buyer200@example.com
+2025-06-07,PO-2025-00764,Pacific Hardware Co,Dining Tables,South,Melbourne DC,6,480.68,4651.78,12,0,0.0,buyer373@example.com
+2025-06-08,PO-2025-00164,Summit Upholstery,Chairs,South,Melbourne DC,9,98.93,1436.08,9,0,0.0,buyer49@example.com
+2025-06-08,PO-2025-00292,Alpine Components,Sideboards,South,Melbourne DC,24,435.5,16858.06,11,0,0.0,buyer83@example.com
+2025-06-08,PO-2025-00340,Alpine Components,Office Desks,West,Perth DC,8,335.08,4323.6,9,0,0.0,buyer263@example.com
+2025-06-08,PO-2025-00424,Nordic Timber Supply,Office Desks,South,Melbourne DC,17,373.12,10230.67,10,0,0.0,buyer294@example.com
+2025-06-08,PO-2025-00490,Pacific Hardware Co,Office Desks,North,Sydney DC,21,343.8,11644.68,7,0,0.0,buyer25@example.com
+2025-06-08,PO-2025-00514,Harbour Furniture Imports,Office Desks,North,Sydney DC,4,303.49,1958.02,6,0,0.0,buyer360@example.com
+2025-06-08,PO-2025-00648,Harbour Furniture Imports,Bookshelves,North,Sydney DC,5,159.43,1285.76,14,1,51.43,buyer337@example.com
+2025-06-09,PO-2025-00317,Summit Upholstery,Sideboards,West,Perth DC,14,470.3,10619.74,12,0,0.0,buyer260@example.com
+2025-06-09,PO-2025-00868,Harbour Furniture Imports,Bookshelves,West,Perth DC,7,172.49,1947.44,7,0,0.0,buyer294@example.com
+2025-06-09,PO-2025-01164,Pacific Hardware Co,Dining Tables,East,Brisbane DC,18,528.05,15330.46,8,0,0.0,buyer353@example.com
+2025-06-10,PO-2025-00097,Harbour Furniture Imports,Sideboards,North,Sydney DC,11,394.74,7003.49,13,1,280.14,buyer351@example.com
+2025-06-10,PO-2025-00104,Summit Upholstery,Office Desks,East,Brisbane DC,12,356.62,6902.3,16,1,276.09,buyer276@example.com
+2025-06-10,PO-2025-00638,Pacific Hardware Co,Dining Tables,South,Melbourne DC,16,503.36,12989.82,11,0,0.0,buyer309@example.com
+2025-06-10,PO-2025-01110,Pacific Hardware Co,Media Consoles,South,Melbourne DC,22,244.41,8672.48,14,1,346.9,buyer40@example.com
+2025-06-10,PO-2025-01174,Nordic Timber Supply,Bookshelves,West,Perth DC,2,147.21,474.88,15,1,19.0,buyer101@example.com
+2025-06-11,PO-2025-00045,Alpine Components,Office Desks,West,Perth DC,15,311.19,7528.88,8,0,0.0,buyer317@example.com
+2025-06-11,PO-2025-00595,Nordic Timber Supply,Media Consoles,West,Perth DC,24,242.04,9369.21,9,0,0.0,buyer368@example.com
+2025-06-11,PO-2025-00872,Summit Upholstery,Office Desks,North,Sydney DC,1,378.27,610.11,15,1,24.4,buyer215@example.com
+2025-06-12,PO-2025-00024,Pacific Hardware Co,Media Consoles,East,Brisbane DC,4,278.02,1793.69,6,0,0.0,buyer248@example.com
+2025-06-12,PO-2025-00041,Summit Upholstery,Sideboards,North,Sydney DC,23,401.13,14880.75,14,1,595.23,buyer158@example.com
+2025-06-12,PO-2025-00099,Nordic Timber Supply,Media Consoles,South,Melbourne DC,2,296.55,956.6,10,0,0.0,buyer247@example.com
+2025-06-12,PO-2025-00213,Harbour Furniture Imports,Chairs,West,Perth DC,5,104.91,846.02,9,0,0.0,buyer117@example.com
+2025-06-12,PO-2025-00481,Harbour Furniture Imports,Chairs,South,Melbourne DC,3,88.61,428.74,16,1,17.15,buyer393@example.com
+2025-06-12,PO-2025-00520,Alpine Components,Media Consoles,West,Perth DC,16,270.78,6987.76,11,0,0.0,buyer104@example.com
+2025-06-12,PO-2025-00819,Summit Upholstery,Chairs,South,Melbourne DC,10,96.6,1558.06,17,1,62.32,buyer270@example.com
+2025-06-13,PO-2025-00152,Summit Upholstery,Sideboards,North,Sydney DC,5,421.36,3398.04,17,1,135.92,buyer173@example.com
+2025-06-13,PO-2025-00536,Summit Upholstery,Dining Tables,South,Melbourne DC,12,545.97,10567.19,10,0,0.0,buyer25@example.com
+2025-06-13,PO-2025-00738,Pacific Hardware Co,Office Desks,North,Sydney DC,9,335.23,4866.24,12,0,0.0,buyer14@example.com
+2025-06-13,PO-2025-00770,Summit Upholstery,Dining Tables,East,Brisbane DC,24,545.47,21114.91,6,0,0.0,buyer201@example.com
+2025-06-13,PO-2025-00957,Nordic Timber Supply,Chairs,East,Brisbane DC,20,103.64,3343.23,2,0,0.0,buyer393@example.com
+2025-06-13,PO-2025-01036,Summit Upholstery,Media Consoles,North,Sydney DC,22,280.16,9941.21,17,1,397.65,buyer146@example.com
+2025-06-13,PO-2025-01067,Nordic Timber Supply,Bookshelves,North,Sydney DC,8,175.41,2263.31,7,0,0.0,buyer135@example.com
+2025-06-14,PO-2025-00457,Nordic Timber Supply,Media Consoles,South,Melbourne DC,4,256.74,1656.39,11,0,0.0,buyer130@example.com
+2025-06-14,PO-2025-00898,Harbour Furniture Imports,Sideboards,South,Melbourne DC,5,481.76,3885.15,13,1,155.41,buyer342@example.com
+2025-06-15,PO-2025-00355,Summit Upholstery,Chairs,East,Brisbane DC,11,96.54,1712.8,11,0,0.0,buyer67@example.com
+2025-06-15,PO-2025-00429,Harbour Furniture Imports,Dining Tables,South,Melbourne DC,17,549.93,15078.66,16,1,603.15,buyer102@example.com
+2025-06-15,PO-2025-00524,Harbour Furniture Imports,Office Desks,East,Brisbane DC,17,376.01,10310.05,12,0,0.0,buyer321@example.com
+2025-06-15,PO-2025-00655,Nordic Timber Supply,Chairs,East,Brisbane DC,24,95.86,3710.75,16,1,148.43,buyer98@example.com
+2025-06-15,PO-2025-00686,Alpine Components,Bookshelves,East,Brisbane DC,4,172.94,1115.74,13,1,44.63,buyer353@example.com
+2025-06-15,PO-2025-00701,Alpine Components,Bookshelves,South,Melbourne DC,17,164.07,4498.81,12,0,0.0,buyer58@example.com
+2025-06-15,PO-2025-01006,Alpine Components,Media Consoles,South,Melbourne DC,20,266.08,8583.09,7,0,0.0,buyer396@example.com
+2025-06-15,PO-2025-01051,Alpine Components,Sideboards,South,Melbourne DC,21,400.96,13580.81,8,0,0.0,buyer398@example.com
+2025-06-15,PO-2025-01085,Pacific Hardware Co,Sideboards,North,Sydney DC,2,427.58,1379.3,10,0,0.0,buyer184@example.com
+2025-06-16,PO-2025-00262,Pacific Hardware Co,Chairs,North,Sydney DC,18,104.26,3027.05,12,0,0.0,buyer395@example.com
+2025-06-16,PO-2025-00309,Pacific Hardware Co,Dining Tables,East,Brisbane DC,7,543.42,6135.41,9,0,0.0,buyer290@example.com
+2025-06-16,PO-2025-00375,Alpine Components,Office Desks,North,Sydney DC,22,360.66,12797.78,10,0,0.0,buyer354@example.com
+2025-06-16,PO-2025-00398,Summit Upholstery,Office Desks,North,Sydney DC,6,333.44,3226.83,9,0,0.0,buyer106@example.com
+2025-06-16,PO-2025-00538,Alpine Components,Office Desks,West,Perth DC,5,318.74,2570.49,9,0,0.0,buyer61@example.com
+2025-06-17,PO-2025-00804,Summit Upholstery,Office Desks,North,Sydney DC,11,354.55,6290.46,10,0,0.0,buyer55@example.com
+2025-06-17,PO-2025-00889,Pacific Hardware Co,Office Desks,North,Sydney DC,8,340.01,4387.22,13,1,175.49,buyer27@example.com
+2025-06-17,PO-2025-01112,Summit Upholstery,Chairs,East,Brisbane DC,7,87.68,989.91,10,0,0.0,buyer310@example.com
+2025-06-18,PO-2025-00643,Pacific Hardware Co,Office Desks,North,Sydney DC,16,379.28,9787.83,13,1,391.51,buyer226@example.com
+2025-06-19,PO-2025-00605,Alpine Components,Bookshelves,East,Brisbane DC,3,154.65,748.32,9,0,0.0,buyer153@example.com
+2025-06-20,PO-2025-00017,Harbour Furniture Imports,Chairs,North,Sydney DC,11,97.4,1727.99,11,0,0.0,buyer370@example.com
+2025-06-20,PO-2025-00034,Alpine Components,Media Consoles,North,Sydney DC,2,274.01,883.92,12,0,0.0,buyer377@example.com
+2025-06-20,PO-2025-00043,Harbour Furniture Imports,Chairs,North,Sydney DC,2,99.37,320.56,17,1,12.82,buyer33@example.com
+2025-06-20,PO-2025-00148,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,22,262.38,9310.1,14,1,372.4,buyer48@example.com
+2025-06-20,PO-2025-00269,Nordic Timber Supply,Media Consoles,South,Melbourne DC,15,278.6,6740.39,5,0,0.0,buyer294@example.com
+2025-06-20,PO-2025-00325,Harbour Furniture Imports,Sideboards,South,Melbourne DC,11,487.29,8645.39,7,0,0.0,buyer19@example.com
+2025-06-20,PO-2025-00362,Nordic Timber Supply,Chairs,North,Sydney DC,14,99.97,2257.38,4,0,0.0,buyer232@example.com
+2025-06-20,PO-2025-00710,Harbour Furniture Imports,Dining Tables,South,Melbourne DC,7,523.14,5906.42,12,0,0.0,buyer282@example.com
+2025-06-20,PO-2025-00727,Harbour Furniture Imports,Chairs,West,Perth DC,21,96.79,3278.44,7,0,0.0,buyer33@example.com
+2025-06-20,PO-2025-00798,Summit Upholstery,Sideboards,East,Brisbane DC,8,485.22,6260.93,12,0,0.0,buyer152@example.com
+2025-06-20,PO-2025-01050,Alpine Components,Chairs,South,Melbourne DC,1,104.34,168.29,6,0,0.0,buyer94@example.com
+2025-06-21,PO-2025-00253,Harbour Furniture Imports,Dining Tables,North,Sydney DC,22,483.05,17140.37,16,1,685.61,buyer347@example.com
+2025-06-21,PO-2025-00669,Summit Upholstery,Sideboards,South,Melbourne DC,13,386.22,8098.21,15,1,323.93,buyer147@example.com
+2025-06-21,PO-2025-00903,Nordic Timber Supply,Dining Tables,East,Brisbane DC,8,499.73,6448.13,9,0,0.0,buyer342@example.com
+2025-06-21,PO-2025-01033,Harbour Furniture Imports,Chairs,North,Sydney DC,18,91.34,2651.8,18,1,106.07,buyer113@example.com
+2025-06-21,PO-2025-01083,Summit Upholstery,Media Consoles,North,Sydney DC,19,260.59,7985.87,14,1,319.43,buyer153@example.com
+2025-06-21,PO-2025-01154,Pacific Hardware Co,Sideboards,South,Melbourne DC,7,435.27,4914.39,9,0,0.0,buyer172@example.com
+2025-06-22,PO-2025-00072,Nordic Timber Supply,Dining Tables,South,Melbourne DC,20,483.48,15596.19,8,0,0.0,buyer4@example.com
+2025-06-22,PO-2025-00530,Harbour Furniture Imports,Chairs,South,Melbourne DC,21,98.05,3321.18,13,1,132.85,buyer55@example.com
+2025-06-22,PO-2025-00801,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,14,282.52,6379.57,7,0,0.0,buyer82@example.com
+2025-06-23,PO-2025-00486,Harbour Furniture Imports,Chairs,North,Sydney DC,11,86.49,1534.45,14,1,61.38,buyer350@example.com
+2025-06-23,PO-2025-00670,Summit Upholstery,Chairs,North,Sydney DC,7,100.42,1133.73,18,1,45.35,buyer90@example.com
+2025-06-23,PO-2025-00832,Pacific Hardware Co,Chairs,South,Melbourne DC,13,92.35,1936.43,16,1,77.46,buyer146@example.com
+2025-06-23,PO-2025-00887,Nordic Timber Supply,Bookshelves,North,Sydney DC,23,146.29,5426.71,8,0,0.0,buyer79@example.com
+2025-06-23,PO-2025-01063,Summit Upholstery,Dining Tables,North,Sydney DC,6,477.59,4621.81,15,1,184.87,buyer9@example.com
+2025-06-24,PO-2025-00025,Nordic Timber Supply,Media Consoles,North,Sydney DC,15,280.51,6786.62,17,1,271.46,buyer157@example.com
+2025-06-24,PO-2025-00150,Summit Upholstery,Bookshelves,North,Sydney DC,16,160.72,4147.74,17,1,165.91,buyer159@example.com
+2025-06-24,PO-2025-00260,Nordic Timber Supply,Chairs,North,Sydney DC,13,101.31,2124.35,5,0,0.0,buyer363@example.com
+2025-06-24,PO-2025-01163,Harbour Furniture Imports,Chairs,West,Perth DC,4,105.64,681.53,10,0,0.0,buyer28@example.com
+2025-06-25,PO-2025-00573,Nordic Timber Supply,Media Consoles,South,Melbourne DC,5,303.41,2446.82,10,0,0.0,buyer77@example.com
+2025-06-26,PO-2025-00124,Pacific Hardware Co,Dining Tables,South,Melbourne DC,15,487.37,11791.13,12,0,0.0,buyer49@example.com
+2025-06-26,PO-2025-00559,Summit Upholstery,Office Desks,East,Brisbane DC,22,384.6,13647.21,11,0,0.0,buyer58@example.com
+2025-06-26,PO-2025-01180,Harbour Furniture Imports,Dining Tables,North,Sydney DC,5,445.42,3592.08,16,1,143.68,buyer52@example.com
+2025-06-27,PO-2025-00421,Nordic Timber Supply,Dining Tables,North,Sydney DC,19,513.63,15740.3,8,0,0.0,buyer343@example.com
+2025-06-27,PO-2025-01159,Nordic Timber Supply,Chairs,North,Sydney DC,14,105.3,2377.76,10,0,0.0,buyer12@example.com
+2025-06-28,PO-2025-00058,Summit Upholstery,Bookshelves,West,Perth DC,16,150.1,3873.55,16,1,154.94,buyer282@example.com
+2025-06-28,PO-2025-00856,Summit Upholstery,Media Consoles,North,Sydney DC,12,240.55,4655.71,17,1,186.23,buyer51@example.com
+2025-06-28,PO-2025-00869,Nordic Timber Supply,Media Consoles,East,Brisbane DC,19,264.46,8104.42,15,1,324.18,buyer64@example.com
+2025-06-28,PO-2025-01017,Alpine Components,Office Desks,East,Brisbane DC,19,353.85,10843.89,13,1,433.76,buyer147@example.com
+2025-06-28,PO-2025-01030,Summit Upholstery,Office Desks,East,Brisbane DC,7,347.47,3923.1,16,1,156.92,buyer10@example.com
+2025-06-28,PO-2025-01071,Nordic Timber Supply,Media Consoles,South,Melbourne DC,15,259.3,6273.36,14,1,250.93,buyer117@example.com
+2025-06-29,PO-2025-00367,Alpine Components,Sideboards,North,Sydney DC,24,454.69,17600.97,12,0,0.0,buyer307@example.com
+2025-06-29,PO-2025-00818,Alpine Components,Media Consoles,West,Perth DC,6,302.59,2928.25,9,0,0.0,buyer227@example.com
+2025-06-29,PO-2025-01115,Alpine Components,Dining Tables,East,Brisbane DC,12,479.84,9287.24,14,1,371.49,buyer235@example.com
+2025-06-30,PO-2025-00748,Nordic Timber Supply,Office Desks,North,Sydney DC,16,378.55,9768.91,9,0,0.0,buyer240@example.com
+2025-06-30,PO-2025-00784,Summit Upholstery,Office Desks,West,Perth DC,4,348.82,2250.45,10,0,0.0,buyer269@example.com
+2025-06-30,PO-2025-00793,Harbour Furniture Imports,Chairs,West,Perth DC,5,98.76,796.45,8,0,0.0,buyer96@example.com
+2025-07-01,PO-2025-00047,Alpine Components,Office Desks,South,Melbourne DC,11,340.86,6047.53,16,1,241.9,buyer301@example.com
+2025-07-01,PO-2025-00117,Nordic Timber Supply,Dining Tables,North,Sydney DC,5,435.49,3512.05,11,0,0.0,buyer169@example.com
+2025-07-01,PO-2025-00346,Harbour Furniture Imports,Office Desks,North,Sydney DC,2,378.79,1221.9,8,0,0.0,buyer222@example.com
+2025-07-01,PO-2025-00875,Alpine Components,Chairs,East,Brisbane DC,10,93.94,1515.17,14,1,60.61,buyer69@example.com
+2025-07-01,PO-2025-01155,Summit Upholstery,Media Consoles,North,Sydney DC,11,256.41,4549.26,8,0,0.0,buyer144@example.com
+2025-07-02,PO-2025-00014,Harbour Furniture Imports,Chairs,West,Perth DC,9,94.65,1373.96,8,0,0.0,buyer70@example.com
+2025-07-03,PO-2025-00409,Alpine Components,Chairs,West,Perth DC,2,88.5,285.48,16,1,11.42,buyer154@example.com
+2025-07-03,PO-2025-00553,Harbour Furniture Imports,Bookshelves,East,Brisbane DC,8,163.62,2111.18,13,1,84.45,buyer185@example.com
+2025-07-03,PO-2025-00729,Pacific Hardware Co,Media Consoles,East,Brisbane DC,17,287.57,7885.0,9,0,0.0,buyer94@example.com
+2025-07-03,PO-2025-00996,Summit Upholstery,Sideboards,East,Brisbane DC,18,447.08,12979.88,18,1,519.2,buyer116@example.com
+2025-07-04,PO-2025-00026,Alpine Components,Bookshelves,North,Sydney DC,1,175.79,283.54,14,1,11.34,buyer382@example.com
+2025-07-04,PO-2025-00594,Harbour Furniture Imports,Sideboards,East,Brisbane DC,8,420.6,5427.03,14,1,217.08,buyer139@example.com
+2025-07-04,PO-2025-01058,Alpine Components,Chairs,South,Melbourne DC,15,85.57,2070.25,2,0,0.0,buyer132@example.com
+2025-07-05,PO-2025-00029,Alpine Components,Sideboards,North,Sydney DC,11,418.46,7424.31,9,0,0.0,buyer389@example.com
+2025-07-05,PO-2025-00077,Alpine Components,Bookshelves,East,Brisbane DC,1,164.25,264.91,10,0,0.0,buyer147@example.com
+2025-07-05,PO-2025-00896,Harbour Furniture Imports,Office Desks,North,Sydney DC,2,308.94,996.58,7,0,0.0,buyer209@example.com
+2025-07-05,PO-2025-01041,Nordic Timber Supply,Chairs,South,Melbourne DC,15,84.05,2033.39,15,1,81.34,buyer108@example.com
+2025-07-06,PO-2025-00067,Nordic Timber Supply,Media Consoles,East,Brisbane DC,16,302.96,7818.34,6,0,0.0,buyer156@example.com
+2025-07-06,PO-2025-00767,Harbour Furniture Imports,Chairs,East,Brisbane DC,19,88.33,2706.79,13,1,108.27,buyer5@example.com
+2025-07-06,PO-2025-00815,Harbour Furniture Imports,Office Desks,North,Sydney DC,24,326.03,12620.54,10,0,0.0,buyer215@example.com
+2025-07-07,PO-2025-00042,Alpine Components,Dining Tables,East,Brisbane DC,21,526.23,17823.77,12,0,0.0,buyer359@example.com
+2025-07-07,PO-2025-00046,Harbour Furniture Imports,Chairs,West,Perth DC,1,103.31,166.62,12,0,0.0,buyer31@example.com
+2025-07-07,PO-2025-00191,Nordic Timber Supply,Bookshelves,South,Melbourne DC,7,165.55,1869.17,10,0,0.0,buyer164@example.com
+2025-07-07,PO-2025-00549,Nordic Timber Supply,Chairs,South,Melbourne DC,10,96.95,1563.75,12,0,0.0,buyer127@example.com
+2025-07-07,PO-2025-00602,Pacific Hardware Co,Chairs,East,Brisbane DC,16,97.6,2518.6,12,0,0.0,buyer242@example.com
+2025-07-07,PO-2025-00632,Summit Upholstery,Dining Tables,West,Perth DC,1,503.58,812.22,10,0,0.0,buyer54@example.com
+2025-07-07,PO-2025-00698,Harbour Furniture Imports,Bookshelves,North,Sydney DC,24,153.2,5930.42,15,1,237.22,buyer269@example.com
+2025-07-07,PO-2025-00937,Alpine Components,Chairs,East,Brisbane DC,17,100.59,2758.01,8,0,0.0,buyer255@example.com
+2025-07-08,PO-2025-00216,Summit Upholstery,Media Consoles,North,Sydney DC,12,279.09,5401.77,16,1,216.07,buyer61@example.com
+2025-07-08,PO-2025-00571,Harbour Furniture Imports,Chairs,West,Perth DC,20,104.94,3385.19,12,0,0.0,buyer104@example.com
+2025-07-08,PO-2025-00813,Alpine Components,Dining Tables,North,Sydney DC,7,439.64,4963.67,11,0,0.0,buyer378@example.com
+2025-07-08,PO-2025-00988,Alpine Components,Media Consoles,East,Brisbane DC,21,252.32,8546.43,11,0,0.0,buyer125@example.com
+2025-07-08,PO-2025-00990,Pacific Hardware Co,Media Consoles,East,Brisbane DC,24,269.78,10442.94,11,0,0.0,buyer200@example.com
+2025-07-09,PO-2025-00175,Alpine Components,Dining Tables,East,Brisbane DC,1,523.7,844.68,10,0,0.0,buyer115@example.com
+2025-07-09,PO-2025-00235,Nordic Timber Supply,Media Consoles,North,Sydney DC,23,289.85,10752.42,9,0,0.0,buyer314@example.com
+2025-07-09,PO-2025-00442,Harbour Furniture Imports,Bookshelves,West,Perth DC,4,181.91,1173.59,15,1,46.94,buyer192@example.com
+2025-07-10,PO-2025-00217,Pacific Hardware Co,Bookshelves,South,Melbourne DC,4,181.52,1171.11,9,0,0.0,buyer53@example.com
+2025-07-10,PO-2025-01072,Harbour Furniture Imports,Office Desks,East,Brisbane DC,1,378.68,610.78,16,1,24.43,buyer201@example.com
+2025-07-11,PO-2025-00287,Summit Upholstery,Office Desks,East,Brisbane DC,23,320.21,11878.58,6,0,0.0,buyer205@example.com
+2025-07-11,PO-2025-00386,Pacific Hardware Co,Dining Tables,South,Melbourne DC,13,553.54,11606.58,8,0,0.0,buyer349@example.com
+2025-07-11,PO-2025-00675,Harbour Furniture Imports,Sideboards,North,Sydney DC,5,437.04,3524.49,15,1,140.98,buyer146@example.com
+2025-07-11,PO-2025-00833,Alpine Components,Sideboards,South,Melbourne DC,6,478.63,4631.91,16,1,185.28,buyer75@example.com
+2025-07-11,PO-2025-01059,Harbour Furniture Imports,Office Desks,South,Melbourne DC,15,355.15,8592.22,11,0,0.0,buyer320@example.com
+2025-07-11,PO-2025-01101,Nordic Timber Supply,Chairs,North,Sydney DC,12,100.83,1951.56,14,1,78.06,buyer233@example.com
+2025-07-11,PO-2025-01161,Summit Upholstery,Media Consoles,North,Sydney DC,23,302.1,11206.93,11,0,0.0,buyer230@example.com
+2025-07-12,PO-2025-00567,Pacific Hardware Co,Media Consoles,East,Brisbane DC,12,259.04,5013.66,12,0,0.0,buyer328@example.com
+2025-07-12,PO-2025-00949,Pacific Hardware Co,Office Desks,North,Sydney DC,14,324.01,7316.31,9,0,0.0,buyer231@example.com
+2025-07-13,PO-2025-00176,Alpine Components,Dining Tables,North,Sydney DC,20,502.53,16210.55,6,0,0.0,buyer122@example.com
+2025-07-14,PO-2025-00063,Summit Upholstery,Dining Tables,South,Melbourne DC,21,472.38,16000.01,13,1,640.0,buyer250@example.com
+2025-07-14,PO-2025-00120,Alpine Components,Bookshelves,North,Sydney DC,22,160.65,5700.52,6,0,0.0,buyer317@example.com
+2025-07-14,PO-2025-00434,Nordic Timber Supply,Chairs,North,Sydney DC,4,97.37,628.18,12,0,0.0,buyer108@example.com
+2025-07-14,PO-2025-00661,Harbour Furniture Imports,Office Desks,South,Melbourne DC,14,352.65,7963.1,16,1,318.52,buyer157@example.com
+2025-07-14,PO-2025-00811,Summit Upholstery,Chairs,East,Brisbane DC,3,97.48,471.69,11,0,0.0,buyer312@example.com
+2025-07-14,PO-2025-01151,Summit Upholstery,Dining Tables,West,Perth DC,1,529.96,854.77,10,0,0.0,buyer29@example.com
+2025-07-15,PO-2025-00448,Harbour Furniture Imports,Media Consoles,North,Sydney DC,18,263.89,7661.31,9,0,0.0,buyer303@example.com
+2025-07-15,PO-2025-00518,Harbour Furniture Imports,Sideboards,West,Perth DC,1,478.79,772.25,7,0,0.0,buyer272@example.com
+2025-07-15,PO-2025-00574,Alpine Components,Chairs,South,Melbourne DC,16,94.98,2451.21,13,1,98.05,buyer186@example.com
+2025-07-15,PO-2025-01118,Nordic Timber Supply,Chairs,South,Melbourne DC,6,94.95,918.87,13,1,36.75,buyer208@example.com
+2025-07-16,PO-2025-00314,Summit Upholstery,Office Desks,North,Sydney DC,7,325.23,3671.93,13,1,146.88,buyer127@example.com
+2025-07-16,PO-2025-00391,Summit Upholstery,Dining Tables,South,Melbourne DC,13,538.38,11288.69,14,1,451.55,buyer313@example.com
+2025-07-16,PO-2025-00674,Pacific Hardware Co,Sideboards,North,Sydney DC,14,463.65,10469.5,14,1,418.78,buyer171@example.com
+2025-07-17,PO-2025-00075,Harbour Furniture Imports,Media Consoles,North,Sydney DC,5,299.26,2413.41,13,1,96.54,buyer189@example.com
+2025-07-17,PO-2025-00236,Nordic Timber Supply,Chairs,North,Sydney DC,9,105.44,1530.51,10,0,0.0,buyer389@example.com
+2025-07-17,PO-2025-00491,Summit Upholstery,Dining Tables,South,Melbourne DC,11,488.14,8660.59,14,1,346.42,buyer29@example.com
+2025-07-17,PO-2025-00792,Harbour Furniture Imports,Office Desks,West,Perth DC,1,360.02,580.67,16,1,23.23,buyer18@example.com
+2025-07-17,PO-2025-01131,Harbour Furniture Imports,Chairs,South,Melbourne DC,16,87.61,2260.79,14,1,90.43,buyer206@example.com
+2025-07-18,PO-2025-00585,Summit Upholstery,Dining Tables,West,Perth DC,12,509.59,9863.09,18,1,394.52,buyer6@example.com
+2025-07-18,PO-2025-01123,Summit Upholstery,Sideboards,North,Sydney DC,15,417.19,10093.28,10,0,0.0,buyer48@example.com
+2025-07-19,PO-2025-00100,Summit Upholstery,Chairs,South,Melbourne DC,6,99.96,967.32,17,1,38.69,buyer392@example.com
+2025-07-19,PO-2025-00149,Nordic Timber Supply,Chairs,North,Sydney DC,17,89.66,2458.35,8,0,0.0,buyer355@example.com
+2025-07-19,PO-2025-00596,Pacific Hardware Co,Chairs,North,Sydney DC,12,93.22,1804.34,15,1,72.17,buyer370@example.com
+2025-07-19,PO-2025-00808,Alpine Components,Chairs,West,Perth DC,5,90.36,728.72,12,0,0.0,buyer227@example.com
+2025-07-19,PO-2025-01181,Harbour Furniture Imports,Chairs,West,Perth DC,21,89.6,3034.85,13,1,121.39,buyer14@example.com
+2025-07-20,PO-2025-00994,Summit Upholstery,Dining Tables,North,Sydney DC,24,535.01,20710.25,19,1,828.41,buyer140@example.com
+2025-07-20,PO-2025-01109,Harbour Furniture Imports,Media Consoles,North,Sydney DC,11,304.69,5405.81,10,0,0.0,buyer156@example.com
+2025-07-21,PO-2025-00135,Pacific Hardware Co,Chairs,North,Sydney DC,10,85.28,1375.47,9,0,0.0,buyer375@example.com
+2025-07-21,PO-2025-00660,Harbour Furniture Imports,Media Consoles,East,Brisbane DC,20,274.87,8866.69,19,1,354.67,buyer185@example.com
+2025-07-21,PO-2025-00689,Alpine Components,Sideboards,South,Melbourne DC,22,414.64,14713.14,9,0,0.0,buyer367@example.com
+2025-07-21,PO-2025-01057,Alpine Components,Office Desks,East,Brisbane DC,17,313.71,8601.7,6,0,0.0,buyer131@example.com
+2025-07-22,PO-2025-00028,Alpine Components,Chairs,East,Brisbane DC,24,94.3,3650.42,8,0,0.0,buyer84@example.com
+2025-07-22,PO-2025-00707,Summit Upholstery,Bookshelves,North,Sydney DC,9,156.78,2275.81,14,1,91.03,buyer1@example.com
+2025-07-22,PO-2025-00952,Alpine Components,Media Consoles,West,Perth DC,17,279.54,7664.91,11,0,0.0,buyer62@example.com
+2025-07-22,PO-2025-00958,Pacific Hardware Co,Chairs,East,Brisbane DC,19,92.79,2843.44,14,1,113.74,buyer167@example.com
+2025-07-23,PO-2025-00452,Pacific Hardware Co,Media Consoles,North,Sydney DC,4,281.4,1815.46,5,0,0.0,buyer223@example.com
+2025-07-23,PO-2025-00683,Pacific Hardware Co,Sideboards,North,Sydney DC,14,426.13,9622.36,11,0,0.0,buyer302@example.com
+2025-07-23,PO-2025-00720,Harbour Furniture Imports,Chairs,North,Sydney DC,24,84.48,3270.24,16,1,130.81,buyer61@example.com
+2025-07-23,PO-2025-00749,Harbour Furniture Imports,Chairs,East,Brisbane DC,20,95.39,3077.12,12,0,0.0,buyer158@example.com
+2025-07-24,PO-2025-00103,Summit Upholstery,Dining Tables,South,Melbourne DC,16,458.83,11840.8,9,0,0.0,buyer324@example.com
+2025-07-24,PO-2025-01025,Summit Upholstery,Bookshelves,West,Perth DC,5,180.5,1455.68,11,0,0.0,buyer260@example.com
+2025-07-24,PO-2025-01135,Alpine Components,Media Consoles,North,Sydney DC,18,265.42,7705.83,14,1,308.23,buyer83@example.com
+2025-07-25,PO-2025-00131,Alpine Components,Media Consoles,North,Sydney DC,17,247.96,6798.83,16,1,271.95,buyer124@example.com
+2025-07-25,PO-2025-00370,Alpine Components,Chairs,East,Brisbane DC,6,86.9,840.98,9,0,0.0,buyer376@example.com
+2025-07-25,PO-2025-00681,Harbour Furniture Imports,Office Desks,South,Melbourne DC,14,307.81,6950.58,9,0,0.0,buyer359@example.com
+2025-07-26,PO-2025-00300,Nordic Timber Supply,Sideboards,South,Melbourne DC,13,398.14,8348.01,9,0,0.0,buyer183@example.com
+2025-07-26,PO-2025-01075,Alpine Components,Dining Tables,East,Brisbane DC,6,463.4,4484.56,14,1,179.38,buyer292@example.com
+2025-07-27,PO-2025-00128,Pacific Hardware Co,Chairs,North,Sydney DC,23,103.74,3848.28,14,1,153.93,buyer12@example.com
+2025-07-27,PO-2025-00140,Pacific Hardware Co,Dining Tables,South,Melbourne DC,17,457.76,12551.53,13,1,502.06,buyer79@example.com
+2025-07-27,PO-2025-00147,Alpine Components,Chairs,North,Sydney DC,10,88.77,1431.79,11,0,0.0,buyer204@example.com
+2025-07-27,PO-2025-00557,Harbour Furniture Imports,Bookshelves,South,Melbourne DC,3,159.81,773.28,13,1,30.93,buyer138@example.com
+2025-07-27,PO-2025-00765,Harbour Furniture Imports,Office Desks,East,Brisbane DC,9,358.43,5203.08,10,0,0.0,buyer137@example.com
+2025-07-27,PO-2025-01096,Harbour Furniture Imports,Chairs,South,Melbourne DC,6,84.82,820.87,15,1,32.83,buyer208@example.com
+2025-07-28,PO-2025-00311,Harbour Furniture Imports,Dining Tables,East,Brisbane DC,5,539.46,4350.49,11,0,0.0,buyer3@example.com
+2025-07-28,PO-2025-00932,Pacific Hardware Co,Bookshelves,North,Sydney DC,10,149.27,2407.59,8,0,0.0,buyer34@example.com
+2025-07-28,PO-2025-00993,Pacific Hardware Co,Chairs,South,Melbourne DC,20,90.58,2922.08,5,0,0.0,buyer11@example.com
+2025-07-28,PO-2025-01056,Pacific Hardware Co,Office Desks,North,Sydney DC,10,350.91,5659.92,14,1,226.4,buyer268@example.com
+2025-07-28,PO-2025-01099,Harbour Furniture Imports,Sideboards,North,Sydney DC,8,485.01,6258.16,16,1,250.33,buyer229@example.com
+2025-07-28,PO-2025-01106,Harbour Furniture Imports,Dining Tables,North,Sydney DC,9,461.43,6698.18,15,1,267.93,buyer167@example.com
+2025-07-29,PO-2025-00205,Alpine Components,Office Desks,East,Brisbane DC,11,324.16,5751.2,12,0,0.0,buyer364@example.com
+2025-07-29,PO-2025-00321,Nordic Timber Supply,Chairs,South,Melbourne DC,21,100.37,3399.5,16,1,135.98,buyer111@example.com
+2025-07-29,PO-2025-00349,Pacific Hardware Co,Bookshelves,East,Brisbane DC,6,161.97,1567.47,9,0,0.0,buyer182@example.com
+2025-07-29,PO-2025-00519,Pacific Hardware Co,Chairs,South,Melbourne DC,12,97.44,1886.02,14,1,75.44,buyer396@example.com
+2025-07-30,PO-2025-00093,Alpine Components,Office Desks,North,Sydney DC,2,381.24,1229.82,11,0,0.0,buyer261@example.com
+2025-07-30,PO-2025-00181,Harbour Furniture Imports,Chairs,South,Melbourne DC,22,93.36,3312.65,12,0,0.0,buyer358@example.com
+2025-07-30,PO-2025-00220,Alpine Components,Dining Tables,South,Melbourne DC,17,549.02,15053.74,12,0,0.0,buyer280@example.com
+2025-07-30,PO-2025-00637,Nordic Timber Supply,Media Consoles,South,Melbourne DC,22,267.23,9482.34,7,0,0.0,buyer205@example.com
+2025-07-31,PO-2025-00004,Pacific Hardware Co,Dining Tables,North,Sydney DC,15,531.28,12853.65,14,1,514.15,buyer249@example.com
+2025-07-31,PO-2025-00221,Harbour Furniture Imports,Bookshelves,North,Sydney DC,22,152.35,5405.99,13,1,216.24,buyer166@example.com
+2025-07-31,PO-2025-00329,Summit Upholstery,Sideboards,North,Sydney DC,18,440.07,12776.21,14,1,511.05,buyer82@example.com
+2025-07-31,PO-2025-00402,Nordic Timber Supply,Bookshelves,North,Sydney DC,4,149.9,967.12,10,0,0.0,buyer61@example.com
+2025-07-31,PO-2025-00747,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,4,304.58,1965.05,14,1,78.6,buyer77@example.com
+2025-07-31,PO-2025-00823,Nordic Timber Supply,Dining Tables,North,Sydney DC,21,517.31,17521.69,13,1,700.87,buyer17@example.com
+2025-07-31,PO-2025-01100,Pacific Hardware Co,Media Consoles,North,Sydney DC,8,305.38,3940.44,16,1,157.62,buyer119@example.com
+2025-07-31,PO-2025-01120,Alpine Components,Sideboards,South,Melbourne DC,21,408.61,13840.1,7,0,0.0,buyer156@example.com
+2025-08-01,PO-2025-00027,Nordic Timber Supply,Bookshelves,North,Sydney DC,12,184.13,3563.76,11,0,0.0,buyer211@example.com
+2025-08-01,PO-2025-00139,Alpine Components,Chairs,North,Sydney DC,3,86.3,417.59,10,0,0.0,buyer154@example.com
+2025-08-01,PO-2025-00773,Nordic Timber Supply,Bookshelves,South,Melbourne DC,14,167.86,3790.43,11,0,0.0,buyer276@example.com
+2025-08-01,PO-2025-01003,Summit Upholstery,Office Desks,East,Brisbane DC,5,378.41,3051.68,12,0,0.0,buyer311@example.com
+2025-08-01,PO-2025-01113,Pacific Hardware Co,Office Desks,South,Melbourne DC,15,319.99,7741.78,14,1,309.67,buyer46@example.com
+2025-08-02,PO-2025-00348,Summit Upholstery,Bookshelves,South,Melbourne DC,14,149.31,3371.58,8,0,0.0,buyer3@example.com
+2025-08-02,PO-2025-00641,Alpine Components,Chairs,West,Perth DC,23,100.58,3731.18,10,0,0.0,buyer165@example.com
+2025-08-02,PO-2025-00754,Pacific Hardware Co,Chairs,North,Sydney DC,1,99.27,160.12,10,0,0.0,buyer60@example.com
+2025-08-03,PO-2025-01169,Harbour Furniture Imports,Bookshelves,South,Melbourne DC,11,172.18,3054.79,12,0,0.0,buyer56@example.com
+2025-08-04,PO-2025-00096,Alpine Components,Chairs,West,Perth DC,8,98.58,1272.02,13,1,50.88,buyer198@example.com
+2025-08-04,PO-2025-00169,Nordic Timber Supply,Chairs,North,Sydney DC,17,84.89,2327.57,5,0,0.0,buyer394@example.com
+2025-08-04,PO-2025-00303,Summit Upholstery,Chairs,East,Brisbane DC,14,94.09,2124.63,17,1,84.99,buyer266@example.com
+2025-08-04,PO-2025-00378,Summit Upholstery,Bookshelves,North,Sydney DC,4,167.44,1080.27,10,0,0.0,buyer207@example.com
+2025-08-04,PO-2025-00476,Nordic Timber Supply,Chairs,South,Melbourne DC,17,104.64,2869.06,8,0,0.0,buyer244@example.com
+2025-08-05,PO-2025-00257,Alpine Components,Dining Tables,West,Perth DC,1,540.85,872.34,14,1,34.89,buyer156@example.com
+2025-08-05,PO-2025-00629,Harbour Furniture Imports,Chairs,North,Sydney DC,17,89.15,2444.44,9,0,0.0,buyer253@example.com
+2025-08-05,PO-2025-00693,Harbour Furniture Imports,Bookshelves,North,Sydney DC,6,184.38,1784.33,10,0,0.0,buyer359@example.com
+2025-08-05,PO-2025-00861,Nordic Timber Supply,Office Desks,South,Melbourne DC,16,381.48,9844.73,12,0,0.0,buyer98@example.com
+2025-08-06,PO-2025-00261,Nordic Timber Supply,Sideboards,South,Melbourne DC,15,475.75,11510.17,12,0,0.0,buyer272@example.com
+2025-08-06,PO-2025-00377,Pacific Hardware Co,Bookshelves,North,Sydney DC,8,170.55,2200.7,8,0,0.0,buyer353@example.com
+2025-08-06,PO-2025-00399,Alpine Components,Bookshelves,North,Sydney DC,11,161.02,2856.74,11,0,0.0,buyer351@example.com
+2025-08-06,PO-2025-00625,Harbour Furniture Imports,Media Consoles,North,Sydney DC,14,287.77,6498.0,13,1,259.92,buyer361@example.com
+2025-08-06,PO-2025-00817,Summit Upholstery,Media Consoles,North,Sydney DC,12,302.96,5863.65,13,1,234.55,buyer127@example.com
+2025-08-06,PO-2025-01066,Pacific Hardware Co,Dining Tables,North,Sydney DC,22,477.72,16951.45,8,0,0.0,buyer123@example.com
+2025-08-07,PO-2025-00082,Nordic Timber Supply,Chairs,North,Sydney DC,24,87.51,3387.49,15,1,135.5,buyer306@example.com
+2025-08-07,PO-2025-00601,Alpine Components,Office Desks,North,Sydney DC,18,358.88,10419.19,15,1,416.77,buyer17@example.com
+2025-08-07,PO-2025-00943,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,19,267.96,8211.82,16,1,328.47,buyer137@example.com
+2025-08-08,PO-2025-00913,Harbour Furniture Imports,Chairs,East,Brisbane DC,8,98.82,1275.09,7,0,0.0,buyer320@example.com
+2025-08-08,PO-2025-01039,Alpine Components,Media Consoles,East,Brisbane DC,3,267.54,1294.54,14,1,51.78,buyer144@example.com
+2025-08-09,PO-2025-00098,Summit Upholstery,Chairs,South,Melbourne DC,21,98.16,3324.92,6,0,0.0,buyer95@example.com
+2025-08-09,PO-2025-00469,Harbour Furniture Imports,Chairs,North,Sydney DC,22,91.92,3261.62,9,0,0.0,buyer32@example.com
+2025-08-09,PO-2025-01044,Nordic Timber Supply,Dining Tables,East,Brisbane DC,16,551.77,14239.12,10,0,0.0,buyer225@example.com
+2025-08-09,PO-2025-01146,Summit Upholstery,Bookshelves,North,Sydney DC,19,149.06,4567.97,16,1,182.72,buyer238@example.com
+2025-08-10,PO-2025-00125,Summit Upholstery,Bookshelves,South,Melbourne DC,7,160.78,1815.25,12,0,0.0,buyer368@example.com
+2025-08-10,PO-2025-00934,Pacific Hardware Co,Bookshelves,North,Sydney DC,1,173.9,280.49,13,1,11.22,buyer199@example.com
+2025-08-10,PO-2025-01001,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,24,256.0,9909.86,17,1,396.39,buyer65@example.com
+2025-08-10,PO-2025-01140,Nordic Timber Supply,Office Desks,North,Sydney DC,8,352.85,4552.92,15,1,182.12,buyer144@example.com
+2025-08-11,PO-2025-00319,Summit Upholstery,Office Desks,South,Melbourne DC,24,326.87,12652.85,18,1,506.11,buyer38@example.com
+2025-08-11,PO-2025-00352,Harbour Furniture Imports,Office Desks,South,Melbourne DC,1,381.79,615.79,10,0,0.0,buyer259@example.com
+2025-08-11,PO-2025-00906,Pacific Hardware Co,Office Desks,West,Perth DC,16,337.42,8707.49,9,0,0.0,buyer311@example.com
+2025-08-12,PO-2025-00038,Harbour Furniture Imports,Office Desks,North,Sydney DC,1,320.82,517.45,13,1,20.7,buyer333@example.com
+2025-08-12,PO-2025-00078,Alpine Components,Chairs,South,Melbourne DC,5,89.16,719.01,10,0,0.0,buyer396@example.com
+2025-08-12,PO-2025-00928,Nordic Timber Supply,Bookshelves,North,Sydney DC,18,147.01,4268.11,14,1,170.72,buyer169@example.com
+2025-08-12,PO-2025-01105,Harbour Furniture Imports,Chairs,North,Sydney DC,13,94.82,1988.15,16,1,79.53,buyer264@example.com
+2025-08-14,PO-2025-00059,Pacific Hardware Co,Media Consoles,North,Sydney DC,19,247.19,7575.23,10,0,0.0,buyer327@example.com
+2025-08-14,PO-2025-00249,Pacific Hardware Co,Chairs,North,Sydney DC,14,103.16,2329.44,9,0,0.0,buyer370@example.com
+2025-08-14,PO-2025-00899,Nordic Timber Supply,Media Consoles,West,Perth DC,3,283.28,1370.69,9,0,0.0,buyer373@example.com
+2025-08-15,PO-2025-00422,Alpine Components,Bookshelves,West,Perth DC,12,174.11,3369.94,11,0,0.0,buyer137@example.com
+2025-08-15,PO-2025-00862,Nordic Timber Supply,Bookshelves,North,Sydney DC,7,161.48,1823.13,8,0,0.0,buyer121@example.com
+2025-08-16,PO-2025-00031,Alpine Components,Bookshelves,South,Melbourne DC,20,158.55,5114.56,8,0,0.0,buyer195@example.com
+2025-08-17,PO-2025-00001,Pacific Hardware Co,Chairs,South,Melbourne DC,7,95.69,1080.36,13,1,43.21,buyer200@example.com
+2025-08-18,PO-2025-00044,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,8,249.17,3215.16,11,0,0.0,buyer104@example.com
+2025-08-18,PO-2025-00246,Harbour Furniture Imports,Office Desks,North,Sydney DC,11,376.44,6678.78,10,0,0.0,buyer88@example.com
+2025-08-18,PO-2025-00572,Alpine Components,Office Desks,South,Melbourne DC,9,321.31,4664.12,8,0,0.0,buyer33@example.com
+2025-08-18,PO-2025-00685,Summit Upholstery,Chairs,North,Sydney DC,21,89.89,3044.52,13,1,121.78,buyer306@example.com
+2025-08-18,PO-2025-01004,Summit Upholstery,Bookshelves,North,Sydney DC,4,182.4,1176.75,16,1,47.07,buyer66@example.com
+2025-08-19,PO-2025-00688,Nordic Timber Supply,Media Consoles,East,Brisbane DC,4,292.92,1889.83,13,1,75.59,buyer352@example.com
+2025-08-19,PO-2025-00835,Nordic Timber Supply,Chairs,West,Perth DC,6,100.44,972.02,10,0,0.0,buyer389@example.com
+2025-08-20,PO-2025-00272,Harbour Furniture Imports,Chairs,South,Melbourne DC,23,96.06,3563.55,15,1,142.54,buyer25@example.com
+2025-08-21,PO-2025-00450,Nordic Timber Supply,Media Consoles,South,Melbourne DC,3,305.0,1475.79,8,0,0.0,buyer89@example.com
+2025-08-21,PO-2025-00463,Harbour Furniture Imports,Media Consoles,West,Perth DC,2,287.69,928.03,14,1,37.12,buyer7@example.com
+2025-08-21,PO-2025-00761,Pacific Hardware Co,Sideboards,North,Sydney DC,15,480.72,11630.41,9,0,0.0,buyer10@example.com
+2025-08-21,PO-2025-00828,Nordic Timber Supply,Chairs,East,Brisbane DC,9,84.85,1231.68,14,1,49.27,buyer125@example.com
+2025-08-21,PO-2025-01012,Summit Upholstery,Dining Tables,North,Sydney DC,4,552.85,3566.8,15,1,142.67,buyer247@example.com
+2025-08-22,PO-2025-00069,Alpine Components,Dining Tables,South,Melbourne DC,8,500.31,6455.58,9,0,0.0,buyer164@example.com
+2025-08-22,PO-2025-00413,Nordic Timber Supply,Chairs,North,Sydney DC,10,99.9,1611.34,11,0,0.0,buyer51@example.com
+2025-08-22,PO-2025-00847,Nordic Timber Supply,Bookshelves,North,Sydney DC,14,160.56,3625.64,10,0,0.0,buyer338@example.com
+2025-08-22,PO-2025-00874,Pacific Hardware Co,Dining Tables,North,Sydney DC,18,538.91,15645.81,13,1,625.83,buyer371@example.com
+2025-08-23,PO-2025-00081,Pacific Hardware Co,Chairs,North,Sydney DC,5,88.32,712.29,11,0,0.0,buyer252@example.com
+2025-08-23,PO-2025-00138,Summit Upholstery,Chairs,North,Sydney DC,15,93.13,2253.1,13,1,90.12,buyer50@example.com
+2025-08-23,PO-2025-00315,Nordic Timber Supply,Dining Tables,West,Perth DC,17,498.94,13680.71,9,0,0.0,buyer135@example.com
+2025-08-23,PO-2025-00472,Alpine Components,Media Consoles,South,Melbourne DC,15,285.71,6912.26,12,0,0.0,buyer172@example.com
+2025-08-23,PO-2025-00717,Nordic Timber Supply,Office Desks,North,Sydney DC,8,324.63,4188.81,12,0,0.0,buyer235@example.com
+2025-08-24,PO-2025-00184,Harbour Furniture Imports,Media Consoles,North,Sydney DC,8,277.71,3583.41,9,0,0.0,buyer132@example.com
+2025-08-24,PO-2025-00458,Pacific Hardware Co,Dining Tables,West,Perth DC,19,519.86,15931.34,15,1,637.25,buyer85@example.com
+2025-08-25,PO-2025-01102,Nordic Timber Supply,Bookshelves,North,Sydney DC,4,180.96,1167.48,12,0,0.0,buyer211@example.com
+2025-08-27,PO-2025-00716,Summit Upholstery,Media Consoles,East,Brisbane DC,8,277.17,3576.33,11,0,0.0,buyer198@example.com
+2025-08-28,PO-2025-00376,Nordic Timber Supply,Chairs,East,Brisbane DC,6,85.01,822.66,9,0,0.0,buyer337@example.com
+2025-08-28,PO-2025-00666,Summit Upholstery,Office Desks,South,Melbourne DC,16,310.78,8020.04,13,1,320.8,buyer24@example.com
+2025-08-28,PO-2025-00860,Alpine Components,Sideboards,South,Melbourne DC,3,431.84,2089.56,15,1,83.58,buyer110@example.com
+2025-08-29,PO-2025-00084,Summit Upholstery,Chairs,North,Sydney DC,24,93.26,3609.92,13,1,144.4,buyer387@example.com
+2025-08-29,PO-2025-00160,Pacific Hardware Co,Office Desks,East,Brisbane DC,21,351.51,11906.07,15,1,476.24,buyer286@example.com
+2025-08-29,PO-2025-00263,Summit Upholstery,Sideboards,West,Perth DC,19,450.25,13798.01,9,0,0.0,buyer339@example.com
+2025-08-29,PO-2025-00545,Pacific Hardware Co,Bookshelves,East,Brisbane DC,6,152.96,1480.27,12,0,0.0,buyer156@example.com
+2025-08-29,PO-2025-00807,Pacific Hardware Co,Sideboards,South,Melbourne DC,10,430.53,6944.08,11,0,0.0,buyer193@example.com
+2025-08-30,PO-2025-00119,Alpine Components,Chairs,North,Sydney DC,16,83.98,2167.35,14,1,86.69,buyer268@example.com
+2025-08-30,PO-2025-00339,Summit Upholstery,Chairs,West,Perth DC,18,92.88,2696.38,17,1,107.86,buyer308@example.com
+2025-08-30,PO-2025-00368,Nordic Timber Supply,Chairs,North,Sydney DC,10,99.39,1603.02,5,0,0.0,buyer140@example.com
+2025-08-30,PO-2025-00383,Alpine Components,Sideboards,South,Melbourne DC,14,490.33,11071.99,9,0,0.0,buyer160@example.com
+2025-08-30,PO-2025-00390,Pacific Hardware Co,Office Desks,South,Melbourne DC,19,318.62,9764.05,8,0,0.0,buyer251@example.com
+2025-08-30,PO-2025-00431,Nordic Timber Supply,Sideboards,West,Perth DC,1,436.97,704.79,8,0,0.0,buyer78@example.com
+2025-08-31,PO-2025-00061,Alpine Components,Office Desks,North,Sydney DC,13,360.61,7561.17,14,1,302.45,buyer105@example.com
+2025-08-31,PO-2025-00751,Harbour Furniture Imports,Chairs,East,Brisbane DC,21,87.93,2978.23,7,0,0.0,buyer148@example.com
+2025-08-31,PO-2025-00912,Alpine Components,Dining Tables,North,Sydney DC,24,534.41,20686.99,9,0,0.0,buyer147@example.com
+2025-09-01,PO-2025-00910,Summit Upholstery,Chairs,North,Sydney DC,14,86.03,1942.7,13,1,77.71,buyer201@example.com
+2025-09-01,PO-2025-00929,Alpine Components,Office Desks,South,Melbourne DC,10,380.3,6133.79,8,0,0.0,buyer35@example.com
+2025-09-02,PO-2025-00563,Nordic Timber Supply,Dining Tables,East,Brisbane DC,5,519.34,4188.22,10,0,0.0,buyer348@example.com
+2025-09-02,PO-2025-00656,Alpine Components,Bookshelves,South,Melbourne DC,15,177.24,4288.05,5,0,0.0,buyer199@example.com
+2025-09-03,PO-2025-00905,Summit Upholstery,Dining Tables,East,Brisbane DC,17,529.7,14524.05,18,1,580.96,buyer391@example.com
+2025-09-04,PO-2025-00101,Summit Upholstery,Chairs,East,Brisbane DC,15,86.48,2092.19,11,0,0.0,buyer324@example.com
+2025-09-04,PO-2025-00242,Pacific Hardware Co,Dining Tables,North,Sydney DC,23,527.15,19555.65,5,0,0.0,buyer232@example.com
+2025-09-04,PO-2025-00436,Alpine Components,Office Desks,North,Sydney DC,16,333.34,8602.2,11,0,0.0,buyer116@example.com
+2025-09-05,PO-2025-00306,Alpine Components,Office Desks,North,Sydney DC,19,348.41,10676.97,11,0,0.0,buyer198@example.com
+2025-09-05,PO-2025-00590,Alpine Components,Chairs,East,Brisbane DC,21,98.81,3346.72,9,0,0.0,buyer394@example.com
+2025-09-05,PO-2025-00715,Nordic Timber Supply,Bookshelves,North,Sydney DC,9,166.04,2410.2,11,0,0.0,buyer215@example.com
+2025-09-05,PO-2025-00803,Summit Upholstery,Chairs,North,Sydney DC,4,105.07,677.9,16,1,27.12,buyer376@example.com
+2025-09-05,PO-2025-00930,Summit Upholstery,Sideboards,South,Melbourne DC,9,475.98,6909.42,16,1,276.38,buyer137@example.com
+2025-09-06,PO-2025-00384,Pacific Hardware Co,Media Consoles,North,Sydney DC,2,290.99,938.69,12,0,0.0,buyer123@example.com
+2025-09-06,PO-2025-00924,Pacific Hardware Co,Chairs,North,Sydney DC,21,99.79,3379.98,12,0,0.0,buyer397@example.com
+2025-09-06,PO-2025-00963,Nordic Timber Supply,Dining Tables,South,Melbourne DC,2,512.39,1652.87,10,0,0.0,buyer256@example.com
+2025-09-07,PO-2025-00002,Alpine Components,Media Consoles,East,Brisbane DC,6,251.51,2434.0,7,0,0.0,buyer17@example.com
+2025-09-07,PO-2025-00166,Harbour Furniture Imports,Dining Tables,North,Sydney DC,20,496.35,16011.43,10,0,0.0,buyer103@example.com
+2025-09-07,PO-2025-00171,Harbour Furniture Imports,Chairs,West,Perth DC,8,85.33,1100.98,11,0,0.0,buyer29@example.com
+2025-09-07,PO-2025-00822,Summit Upholstery,Chairs,West,Perth DC,10,105.57,1702.72,12,0,0.0,buyer396@example.com
+2025-09-08,PO-2025-00358,Pacific Hardware Co,Bookshelves,East,Brisbane DC,14,156.13,3525.55,14,1,141.02,buyer332@example.com
+2025-09-08,PO-2025-00786,Nordic Timber Supply,Office Desks,East,Brisbane DC,3,380.47,1841.0,6,0,0.0,buyer179@example.com
+2025-09-08,PO-2025-01107,Nordic Timber Supply,Media Consoles,North,Sydney DC,12,277.54,5371.66,13,1,214.87,buyer34@example.com
+2025-09-08,PO-2025-01133,Harbour Furniture Imports,Sideboards,North,Sydney DC,1,436.98,704.81,14,1,28.19,buyer97@example.com
+2025-09-10,PO-2025-00054,Nordic Timber Supply,Office Desks,South,Melbourne DC,13,339.83,7125.55,9,0,0.0,buyer239@example.com
+2025-09-10,PO-2025-00650,Nordic Timber Supply,Office Desks,North,Sydney DC,23,359.8,13347.36,11,0,0.0,buyer376@example.com
+2025-09-11,PO-2025-00284,Alpine Components,Chairs,South,Melbourne DC,1,101.65,163.95,15,1,6.56,buyer293@example.com
+2025-09-12,PO-2025-01018,Nordic Timber Supply,Chairs,North,Sydney DC,15,101.55,2456.87,5,0,0.0,buyer16@example.com
+2025-09-12,PO-2025-01165,Alpine Components,Bookshelves,East,Brisbane DC,18,183.07,5315.05,11,0,0.0,buyer118@example.com
+2025-09-13,PO-2025-00278,Harbour Furniture Imports,Bookshelves,South,Melbourne DC,13,155.44,3259.32,17,1,130.37,buyer204@example.com
+2025-09-13,PO-2025-00613,Harbour Furniture Imports,Office Desks,East,Brisbane DC,13,327.5,6866.99,14,1,274.68,buyer225@example.com
+2025-09-13,PO-2025-01153,Pacific Hardware Co,Dining Tables,East,Brisbane DC,20,534.45,17240.48,15,1,689.62,buyer310@example.com
+2025-09-14,PO-2025-00644,Alpine Components,Sideboards,North,Sydney DC,5,425.25,3429.47,11,0,0.0,buyer84@example.com
+2025-09-14,PO-2025-00984,Summit Upholstery,Dining Tables,South,Melbourne DC,21,449.35,15219.78,8,0,0.0,buyer76@example.com
+2025-09-14,PO-2025-01149,Harbour Furniture Imports,Sideboards,North,Sydney DC,13,464.44,9738.27,15,1,389.53,buyer361@example.com
+2025-09-15,PO-2025-00295,Harbour Furniture Imports,Dining Tables,West,Perth DC,8,482.27,6222.85,13,1,248.91,buyer44@example.com
+2025-09-15,PO-2025-00742,Pacific Hardware Co,Media Consoles,South,Melbourne DC,18,276.1,8015.7,9,0,0.0,buyer356@example.com
+2025-09-15,PO-2025-01007,Nordic Timber Supply,Office Desks,South,Melbourne DC,14,363.85,8216.07,12,0,0.0,buyer60@example.com
+2025-09-15,PO-2025-01048,Alpine Components,Sideboards,North,Sydney DC,4,417.33,2692.46,15,1,107.7,buyer183@example.com
+2025-09-16,PO-2025-00068,Nordic Timber Supply,Chairs,North,Sydney DC,23,96.36,3574.47,12,0,0.0,buyer238@example.com
+2025-09-16,PO-2025-00610,Summit Upholstery,Dining Tables,South,Melbourne DC,16,497.19,12830.74,10,0,0.0,buyer221@example.com
+2025-09-16,PO-2025-00705,Summit Upholstery,Media Consoles,North,Sydney DC,18,285.4,8285.93,11,0,0.0,buyer372@example.com
+2025-09-16,PO-2025-00852,Pacific Hardware Co,Bookshelves,South,Melbourne DC,22,163.42,5798.79,11,0,0.0,buyer260@example.com
+2025-09-17,PO-2025-00394,Alpine Components,Office Desks,West,Perth DC,1,332.96,537.03,9,0,0.0,buyer234@example.com
+2025-09-17,PO-2025-00428,Harbour Furniture Imports,Chairs,South,Melbourne DC,21,97.92,3316.63,14,1,132.67,buyer319@example.com
+2025-09-18,PO-2025-00144,Nordic Timber Supply,Office Desks,East,Brisbane DC,3,357.57,1730.16,11,0,0.0,buyer99@example.com
+2025-09-18,PO-2025-00228,Summit Upholstery,Chairs,West,Perth DC,17,94.88,2601.63,10,0,0.0,buyer212@example.com
+2025-09-18,PO-2025-00508,Nordic Timber Supply,Chairs,East,Brisbane DC,10,103.17,1663.95,10,0,0.0,buyer341@example.com
+2025-09-18,PO-2025-01026,Harbour Furniture Imports,Bookshelves,North,Sydney DC,21,184.24,6240.46,11,0,0.0,buyer390@example.com
+2025-09-19,PO-2025-00244,Harbour Furniture Imports,Sideboards,South,Melbourne DC,22,474.16,16825.06,8,0,0.0,buyer322@example.com
+2025-09-19,PO-2025-00983,Pacific Hardware Co,Dining Tables,South,Melbourne DC,6,456.03,4413.16,7,0,0.0,buyer269@example.com
+2025-09-19,PO-2025-01010,Alpine Components,Dining Tables,West,Perth DC,17,535.98,14696.19,7,0,0.0,buyer263@example.com
+2025-09-20,PO-2025-00021,Alpine Components,Bookshelves,South,Melbourne DC,15,161.3,3902.42,13,1,156.1,buyer283@example.com
+2025-09-20,PO-2025-00154,Harbour Furniture Imports,Office Desks,North,Sydney DC,23,373.73,13864.11,7,0,0.0,buyer37@example.com
+2025-09-20,PO-2025-00653,Alpine Components,Office Desks,West,Perth DC,18,301.58,8755.44,10,0,0.0,buyer346@example.com
+2025-09-20,PO-2025-00673,Nordic Timber Supply,Media Consoles,West,Perth DC,19,274.44,8410.33,4,0,0.0,buyer176@example.com
+2025-09-21,PO-2025-00460,Summit Upholstery,Dining Tables,North,Sydney DC,4,456.63,2946.01,8,0,0.0,buyer44@example.com
+2025-09-21,PO-2025-00479,Pacific Hardware Co,Sideboards,West,Perth DC,6,477.37,4619.75,6,0,0.0,buyer216@example.com
+2025-09-21,PO-2025-01144,Nordic Timber Supply,Sideboards,North,Sydney DC,15,450.87,10908.18,12,0,0.0,buyer125@example.com
+2025-09-22,PO-2025-00192,Harbour Furniture Imports,Chairs,South,Melbourne DC,18,95.62,2776.17,6,0,0.0,buyer49@example.com
+2025-09-22,PO-2025-00439,Nordic Timber Supply,Sideboards,North,Sydney DC,10,404.38,6522.31,8,0,0.0,buyer83@example.com
+2025-09-22,PO-2025-00941,Pacific Hardware Co,Chairs,North,Sydney DC,16,94.02,2426.26,12,0,0.0,buyer204@example.com
+2025-09-22,PO-2025-00945,Pacific Hardware Co,Office Desks,East,Brisbane DC,2,375.14,1210.13,15,1,48.41,buyer111@example.com
+2025-09-23,PO-2025-00076,Nordic Timber Supply,Office Desks,East,Brisbane DC,7,327.31,3695.4,6,0,0.0,buyer201@example.com
+2025-09-23,PO-2025-00161,Nordic Timber Supply,Dining Tables,North,Sydney DC,8,519.49,6703.04,8,0,0.0,buyer339@example.com
+2025-09-23,PO-2025-00432,Alpine Components,Sideboards,East,Brisbane DC,5,405.82,3272.72,12,0,0.0,buyer289@example.com
+2025-09-23,PO-2025-00664,Harbour Furniture Imports,Bookshelves,West,Perth DC,20,163.65,5278.91,13,1,211.16,buyer75@example.com
+2025-09-24,PO-2025-00280,Summit Upholstery,Chairs,East,Brisbane DC,20,98.92,3190.87,12,0,0.0,buyer374@example.com
+2025-09-24,PO-2025-00539,Pacific Hardware Co,Bookshelves,South,Melbourne DC,12,154.16,2983.69,11,0,0.0,buyer171@example.com
+2025-09-24,PO-2025-00677,Summit Upholstery,Office Desks,West,Perth DC,13,319.67,6702.79,12,0,0.0,buyer136@example.com
+2025-09-24,PO-2025-01029,Pacific Hardware Co,Office Desks,North,Sydney DC,11,362.39,6429.52,9,0,0.0,buyer269@example.com
+2025-09-25,PO-2025-00816,Pacific Hardware Co,Bookshelves,West,Perth DC,22,172.84,6133.02,13,1,245.32,buyer37@example.com
+2025-09-25,PO-2025-01125,Nordic Timber Supply,Chairs,North,Sydney DC,11,95.87,1700.99,6,0,0.0,buyer310@example.com
+2025-09-26,PO-2025-00593,Alpine Components,Media Consoles,East,Brisbane DC,17,294.17,8065.83,9,0,0.0,buyer40@example.com
+2025-09-26,PO-2025-00663,Pacific Hardware Co,Office Desks,West,Perth DC,1,352.42,568.42,8,0,0.0,buyer342@example.com
+2025-09-27,PO-2025-00415,Nordic Timber Supply,Bookshelves,North,Sydney DC,21,158.22,5358.94,9,0,0.0,buyer92@example.com
+2025-09-28,PO-2025-00071,Pacific Hardware Co,Office Desks,North,Sydney DC,17,304.77,8356.6,10,0,0.0,buyer269@example.com
+2025-09-28,PO-2025-01014,Pacific Hardware Co,Dining Tables,West,Perth DC,19,553.09,16949.48,3,0,0.0,buyer25@example.com
+2025-09-29,PO-2025-00547,Nordic Timber Supply,Office Desks,South,Melbourne DC,6,364.4,3526.44,8,0,0.0,buyer170@example.com
+2025-09-29,PO-2025-00700,Summit Upholstery,Media Consoles,West,Perth DC,15,269.46,6519.3,16,1,260.77,buyer35@example.com
+2025-09-29,PO-2025-00724,Alpine Components,Bookshelves,North,Sydney DC,7,174.58,1971.08,8,0,0.0,buyer181@example.com
+2025-09-30,PO-2025-00238,Summit Upholstery,Sideboards,South,Melbourne DC,9,438.72,6368.5,15,1,254.74,buyer390@example.com
+2025-09-30,PO-2025-00259,Harbour Furniture Imports,Chairs,East,Brisbane DC,20,105.73,3410.68,11,0,0.0,buyer219@example.com
+2025-09-30,PO-2025-01162,Pacific Hardware Co,Media Consoles,North,Sydney DC,19,252.97,7752.19,12,0,0.0,buyer327@example.com
+2025-10-01,PO-2025-00447,Pacific Hardware Co,Bookshelves,West,Perth DC,20,183.41,5916.59,2,0,0.0,buyer174@example.com
+2025-10-01,PO-2025-00449,Harbour Furniture Imports,Media Consoles,North,Sydney DC,21,263.19,8914.5,14,1,356.58,buyer288@example.com
+2025-10-01,PO-2025-00521,Summit Upholstery,Sideboards,North,Sydney DC,15,486.13,11761.1,13,1,470.44,buyer13@example.com
+2025-10-01,PO-2025-00703,Harbour Furniture Imports,Sideboards,South,Melbourne DC,19,434.91,13327.87,13,1,533.11,buyer385@example.com
+2025-10-01,PO-2025-00999,Nordic Timber Supply,Dining Tables,West,Perth DC,1,552.41,890.98,8,0,0.0,buyer315@example.com
+2025-10-01,PO-2025-01089,Summit Upholstery,Media Consoles,South,Melbourne DC,14,242.63,5478.84,13,1,219.15,buyer367@example.com
+2025-10-02,PO-2025-00153,Nordic Timber Supply,Chairs,North,Sydney DC,10,83.94,1353.9,8,0,0.0,buyer129@example.com
+2025-10-02,PO-2025-00182,Harbour Furniture Imports,Dining Tables,South,Melbourne DC,18,517.49,15023.85,14,1,600.95,buyer175@example.com
+2025-10-02,PO-2025-00344,Nordic Timber Supply,Office Desks,East,Brisbane DC,13,320.68,6724.04,15,1,268.96,buyer335@example.com
+2025-10-02,PO-2025-00401,Summit Upholstery,Chairs,North,Sydney DC,5,85.62,690.52,7,0,0.0,buyer37@example.com
+2025-10-02,PO-2025-00526,Pacific Hardware Co,Dining Tables,East,Brisbane DC,1,534.09,861.44,9,0,0.0,buyer1@example.com
+2025-10-03,PO-2025-00268,Harbour Furniture Imports,Dining Tables,North,Sydney DC,9,523.62,7600.96,14,1,304.04,buyer309@example.com
+2025-10-03,PO-2025-00739,Summit Upholstery,Bookshelves,North,Sydney DC,16,182.66,4713.87,10,0,0.0,buyer126@example.com
+2025-10-03,PO-2025-00981,Harbour Furniture Imports,Bookshelves,South,Melbourne DC,17,165.95,4550.28,8,0,0.0,buyer356@example.com
+2025-10-04,PO-2025-00443,Nordic Timber Supply,Office Desks,South,Melbourne DC,15,342.34,8282.35,9,0,0.0,buyer114@example.com
+2025-10-04,PO-2025-00477,Harbour Furniture Imports,Bookshelves,East,Brisbane DC,24,146.77,5681.45,10,0,0.0,buyer363@example.com
+2025-10-04,PO-2025-00620,Alpine Components,Dining Tables,North,Sydney DC,9,514.35,7466.36,9,0,0.0,buyer21@example.com
+2025-10-04,PO-2025-00752,Nordic Timber Supply,Media Consoles,North,Sydney DC,20,264.28,8525.11,11,0,0.0,buyer12@example.com
+2025-10-05,PO-2025-00503,Alpine Components,Office Desks,West,Perth DC,10,353.65,5703.95,8,0,0.0,buyer78@example.com
+2025-10-05,PO-2025-00606,Pacific Hardware Co,Dining Tables,West,Perth DC,3,548.65,2654.77,11,0,0.0,buyer245@example.com
+2025-10-05,PO-2025-00608,Nordic Timber Supply,Bookshelves,West,Perth DC,4,167.76,1082.34,9,0,0.0,buyer208@example.com
+2025-10-05,PO-2025-00690,Harbour Furniture Imports,Office Desks,South,Melbourne DC,18,329.18,9556.92,14,1,382.28,buyer125@example.com
+2025-10-05,PO-2025-01076,Nordic Timber Supply,Chairs,West,Perth DC,16,106.33,2743.96,12,0,0.0,buyer154@example.com
+2025-10-06,PO-2025-00407,Summit Upholstery,Office Desks,North,Sydney DC,21,348.45,11802.27,9,0,0.0,buyer353@example.com
+2025-10-06,PO-2025-00668,Pacific Hardware Co,Dining Tables,North,Sydney DC,7,525.32,5931.06,9,0,0.0,buyer371@example.com
+2025-10-06,PO-2025-00894,Summit Upholstery,Bookshelves,West,Perth DC,4,181.2,1169.03,11,0,0.0,buyer224@example.com
+2025-10-06,PO-2025-01108,Pacific Hardware Co,Office Desks,North,Sydney DC,19,348.44,10677.97,11,0,0.0,buyer315@example.com
+2025-10-06,PO-2025-01171,Alpine Components,Sideboards,North,Sydney DC,12,415.94,8050.51,7,0,0.0,buyer278@example.com
+2025-10-07,PO-2025-01000,Summit Upholstery,Chairs,West,Perth DC,12,92.71,1794.41,15,1,71.78,buyer243@example.com
+2025-10-08,PO-2025-00219,Harbour Furniture Imports,Office Desks,South,Melbourne DC,13,337.05,7067.08,15,1,282.68,buyer386@example.com
+2025-10-08,PO-2025-00662,Nordic Timber Supply,Bookshelves,North,Sydney DC,6,163.61,1583.37,12,0,0.0,buyer217@example.com
+2025-10-08,PO-2025-00802,Alpine Components,Sideboards,East,Brisbane DC,24,458.32,17741.51,17,1,709.66,buyer39@example.com
+2025-10-08,PO-2025-00857,Summit Upholstery,Office Desks,East,Brisbane DC,6,367.92,3560.48,15,1,142.42,buyer151@example.com
+2025-10-08,PO-2025-00863,Nordic Timber Supply,Sideboards,North,Sydney DC,7,425.31,4801.93,6,0,0.0,buyer187@example.com
+2025-10-08,PO-2025-01129,Harbour Furniture Imports,Chairs,North,Sydney DC,15,93.26,2256.4,15,1,90.26,buyer27@example.com
+2025-10-09,PO-2025-00814,Alpine Components,Sideboards,East,Brisbane DC,18,478.93,13904.42,18,1,556.18,buyer100@example.com
+2025-10-09,PO-2025-00850,Pacific Hardware Co,Bookshelves,North,Sydney DC,13,181.54,3806.54,15,1,152.26,buyer33@example.com
+2025-10-10,PO-2025-00774,Summit Upholstery,Chairs,North,Sydney DC,4,101.18,652.8,7,0,0.0,buyer357@example.com
+2025-10-10,PO-2025-01114,Pacific Hardware Co,Media Consoles,East,Brisbane DC,1,261.16,421.22,11,0,0.0,buyer97@example.com
+2025-10-11,PO-2025-00005,Summit Upholstery,Chairs,West,Perth DC,19,99.11,3037.24,13,1,121.49,buyer208@example.com
+2025-10-11,PO-2025-00468,Harbour Furniture Imports,Office Desks,West,Perth DC,3,326.87,1581.63,7,0,0.0,buyer200@example.com
+2025-10-12,PO-2025-00568,Summit Upholstery,Media Consoles,North,Sydney DC,1,295.74,477.01,11,0,0.0,buyer246@example.com
+2025-10-13,PO-2025-00621,Alpine Components,Media Consoles,North,Sydney DC,9,268.73,3900.91,15,1,156.04,buyer211@example.com
+2025-10-13,PO-2025-01103,Harbour Furniture Imports,Sideboards,North,Sydney DC,1,395.41,637.75,8,0,0.0,buyer291@example.com
+2025-10-14,PO-2025-00737,Alpine Components,Sideboards,South,Melbourne DC,18,471.86,13699.02,11,0,0.0,buyer360@example.com
+2025-10-15,PO-2025-00240,Nordic Timber Supply,Office Desks,West,Perth DC,6,321.59,3112.21,10,0,0.0,buyer372@example.com
+2025-10-15,PO-2025-00970,Pacific Hardware Co,Chairs,East,Brisbane DC,11,102.53,1819.03,12,0,0.0,buyer6@example.com
+2025-10-15,PO-2025-01158,Nordic Timber Supply,Chairs,North,Sydney DC,16,95.39,2461.55,16,1,98.46,buyer158@example.com
+2025-10-16,PO-2025-00578,Harbour Furniture Imports,Bookshelves,West,Perth DC,12,174.25,3372.55,12,0,0.0,buyer229@example.com
+2025-10-16,PO-2025-00607,Summit Upholstery,Office Desks,East,Brisbane DC,21,365.57,12382.35,14,1,495.29,buyer374@example.com
+2025-10-16,PO-2025-00692,Nordic Timber Supply,Bookshelves,East,Brisbane DC,8,149.33,1926.8,9,0,0.0,buyer83@example.com
+2025-10-17,PO-2025-00030,Summit Upholstery,Dining Tables,North,Sydney DC,5,454.55,3665.76,14,1,146.63,buyer291@example.com
+2025-10-17,PO-2025-00353,Summit Upholstery,Chairs,West,Perth DC,24,105.0,4064.56,11,0,0.0,buyer6@example.com
+2025-10-17,PO-2025-00465,Pacific Hardware Co,Dining Tables,North,Sydney DC,11,483.61,8580.1,12,0,0.0,buyer338@example.com
+2025-10-17,PO-2025-00501,Nordic Timber Supply,Bookshelves,North,Sydney DC,18,165.59,4807.49,11,0,0.0,buyer233@example.com
+2025-10-17,PO-2025-00598,Summit Upholstery,Chairs,East,Brisbane DC,2,90.8,292.89,9,0,0.0,buyer117@example.com
+2025-10-17,PO-2025-00895,Nordic Timber Supply,Chairs,East,Brisbane DC,1,102.96,166.07,13,1,6.64,buyer359@example.com
+2025-10-17,PO-2025-00976,Pacific Hardware Co,Media Consoles,West,Perth DC,6,256.5,2482.26,11,0,0.0,buyer237@example.com
+2025-10-18,PO-2025-00016,Summit Upholstery,Office Desks,South,Melbourne DC,2,362.42,1169.1,12,0,0.0,buyer224@example.com
+2025-10-18,PO-2025-01049,Pacific Hardware Co,Office Desks,West,Perth DC,3,305.14,1476.49,12,0,0.0,buyer189@example.com
+2025-10-19,PO-2025-00336,Harbour Furniture Imports,Chairs,North,Sydney DC,11,105.03,1863.52,12,0,0.0,buyer76@example.com
+2025-10-19,PO-2025-00665,Summit Upholstery,Bookshelves,North,Sydney DC,17,181.83,4985.68,12,0,0.0,buyer215@example.com
+2025-10-19,PO-2025-00974,Summit Upholstery,Sideboards,South,Melbourne DC,12,400.71,7755.73,7,0,0.0,buyer331@example.com
+2025-10-20,PO-2025-00285,Alpine Components,Chairs,East,Brisbane DC,14,91.97,2076.73,14,1,83.07,buyer125@example.com
+2025-10-20,PO-2025-00324,Harbour Furniture Imports,Chairs,South,Melbourne DC,18,103.27,2998.24,13,1,119.93,buyer144@example.com
+2025-10-20,PO-2025-00642,Summit Upholstery,Bookshelves,North,Sydney DC,12,184.93,3579.23,15,1,143.17,buyer20@example.com
+2025-10-21,PO-2025-00156,Nordic Timber Supply,Sideboards,North,Sydney DC,3,450.87,2181.62,11,0,0.0,buyer171@example.com
+2025-10-22,PO-2025-00241,Harbour Furniture Imports,Office Desks,South,Melbourne DC,2,367.15,1184.36,12,0,0.0,buyer156@example.com
+2025-10-22,PO-2025-01175,Nordic Timber Supply,Chairs,South,Melbourne DC,9,89.72,1302.32,6,0,0.0,buyer90@example.com
+2025-10-23,PO-2025-00183,Alpine Components,Office Desks,South,Melbourne DC,5,365.02,2943.67,17,1,117.75,buyer21@example.com
+2025-10-24,PO-2025-00316,Pacific Hardware Co,Chairs,West,Perth DC,8,105.21,1357.59,8,0,0.0,buyer389@example.com
+2025-10-24,PO-2025-01081,Harbour Furniture Imports,Chairs,East,Brisbane DC,15,84.46,2043.49,15,1,81.74,buyer228@example.com
+2025-10-25,PO-2025-00090,Pacific Hardware Co,Bookshelves,North,Sydney DC,8,157.59,2033.37,8,0,0.0,buyer3@example.com
+2025-10-25,PO-2025-00189,Pacific Hardware Co,Chairs,South,Melbourne DC,10,93.91,1514.73,2,0,0.0,buyer44@example.com
+2025-10-25,PO-2025-00256,Summit Upholstery,Chairs,East,Brisbane DC,24,95.01,3677.82,15,1,147.11,buyer322@example.com
+2025-10-25,PO-2025-01172,Alpine Components,Media Consoles,South,Melbourne DC,2,303.01,977.45,16,1,39.1,buyer196@example.com
+2025-10-26,PO-2025-00713,Alpine Components,Chairs,East,Brisbane DC,20,88.8,2864.63,12,0,0.0,buyer216@example.com
+2025-10-26,PO-2025-00904,Harbour Furniture Imports,Chairs,South,Melbourne DC,4,90.57,584.3,14,1,23.37,buyer69@example.com
+2025-10-27,PO-2025-00645,Pacific Hardware Co,Chairs,South,Melbourne DC,16,94.26,2432.49,8,0,0.0,buyer356@example.com
+2025-10-28,PO-2025-00357,Harbour Furniture Imports,Chairs,East,Brisbane DC,9,88.62,1286.49,16,1,51.46,buyer279@example.com
+2025-10-28,PO-2025-00570,Nordic Timber Supply,Office Desks,West,Perth DC,14,352.85,7967.55,9,0,0.0,buyer170@example.com
+2025-10-28,PO-2025-00805,Alpine Components,Bookshelves,North,Sydney DC,4,166.14,1071.85,10,0,0.0,buyer134@example.com
+2025-10-28,PO-2025-00877,Pacific Hardware Co,Sideboards,East,Brisbane DC,14,413.58,9338.93,7,0,0.0,buyer220@example.com
+2025-10-29,PO-2025-00109,Pacific Hardware Co,Dining Tables,South,Melbourne DC,7,460.4,5198.09,9,0,0.0,buyer304@example.com
+2025-10-29,PO-2025-00591,Pacific Hardware Co,Media Consoles,North,Sydney DC,13,296.91,6225.46,8,0,0.0,buyer399@example.com
+2025-10-29,PO-2025-00711,Summit Upholstery,Office Desks,North,Sydney DC,20,378.48,12208.93,11,0,0.0,buyer370@example.com
+2025-10-29,PO-2025-01122,Alpine Components,Media Consoles,East,Brisbane DC,4,277.86,1792.63,11,0,0.0,buyer42@example.com
+2025-10-30,PO-2025-00060,Alpine Components,Dining Tables,North,Sydney DC,15,518.94,12554.88,10,0,0.0,buyer96@example.com
+2025-10-30,PO-2025-00343,Alpine Components,Media Consoles,West,Perth DC,11,269.28,4777.51,10,0,0.0,buyer64@example.com
+2025-10-30,PO-2025-00799,Harbour Furniture Imports,Media Consoles,East,Brisbane DC,13,277.74,5823.65,16,1,232.95,buyer387@example.com
+2025-10-30,PO-2025-01138,Summit Upholstery,Bookshelves,North,Sydney DC,2,168.85,544.67,14,1,21.79,buyer156@example.com
+2025-10-31,PO-2025-00222,Nordic Timber Supply,Chairs,South,Melbourne DC,23,94.02,3487.83,13,1,139.51,buyer315@example.com
+2025-10-31,PO-2025-00385,Alpine Components,Bookshelves,North,Sydney DC,13,157.64,3305.33,11,0,0.0,buyer168@example.com
+2025-10-31,PO-2025-00420,Nordic Timber Supply,Office Desks,South,Melbourne DC,23,318.43,11812.83,7,0,0.0,buyer379@example.com
+2025-10-31,PO-2025-00497,Harbour Furniture Imports,Bookshelves,East,Brisbane DC,12,183.84,3558.25,12,0,0.0,buyer385@example.com
+2025-10-31,PO-2025-00750,Summit Upholstery,Dining Tables,South,Melbourne DC,10,546.86,8820.4,14,1,352.82,buyer395@example.com
+2025-11-01,PO-2025-00006,Pacific Hardware Co,Bookshelves,South,Melbourne DC,21,172.8,5853.03,12,0,0.0,buyer35@example.com
+2025-11-01,PO-2025-00609,Nordic Timber Supply,Office Desks,North,Sydney DC,22,382.73,13580.69,11,0,0.0,buyer387@example.com
+2025-11-01,PO-2025-00652,Pacific Hardware Co,Media Consoles,South,Melbourne DC,20,269.96,8708.37,10,0,0.0,buyer307@example.com
+2025-11-01,PO-2025-00702,Alpine Components,Media Consoles,North,Sydney DC,4,277.14,1787.98,10,0,0.0,buyer300@example.com
+2025-11-02,PO-2025-00624,Pacific Hardware Co,Sideboards,North,Sydney DC,3,466.4,2256.78,8,0,0.0,buyer294@example.com
+2025-11-04,PO-2025-00331,Pacific Hardware Co,Sideboards,West,Perth DC,12,386.84,7487.16,16,1,299.49,buyer193@example.com
+2025-11-04,PO-2025-00380,Nordic Timber Supply,Sideboards,East,Brisbane DC,4,395.08,2548.89,11,0,0.0,buyer312@example.com
+2025-11-04,PO-2025-00418,Pacific Hardware Co,Sideboards,South,Melbourne DC,24,429.32,16618.65,12,0,0.0,buyer183@example.com
+2025-11-04,PO-2025-00466,Alpine Components,Chairs,East,Brisbane DC,17,90.1,2470.53,11,0,0.0,buyer41@example.com
+2025-11-04,PO-2025-01124,Alpine Components,Office Desks,East,Brisbane DC,18,324.58,9423.15,13,1,376.93,buyer142@example.com
+2025-11-05,PO-2025-00122,Summit Upholstery,Office Desks,East,Brisbane DC,18,305.72,8875.76,13,1,355.03,buyer165@example.com
+2025-11-05,PO-2025-00123,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,20,287.04,9259.48,15,1,370.38,buyer255@example.com
+2025-11-05,PO-2025-00411,Alpine Components,Bookshelves,South,Melbourne DC,4,183.53,1184.07,12,0,0.0,buyer45@example.com
+2025-11-05,PO-2025-00489,Pacific Hardware Co,Office Desks,South,Melbourne DC,17,348.07,9543.98,14,1,381.76,buyer178@example.com
+2025-11-05,PO-2025-00627,Summit Upholstery,Dining Tables,South,Melbourne DC,13,550.16,11535.71,16,1,461.43,buyer64@example.com
+2025-11-05,PO-2025-00735,Pacific Hardware Co,Dining Tables,East,Brisbane DC,9,552.42,8019.01,11,0,0.0,buyer81@example.com
+2025-11-06,PO-2025-00186,Harbour Furniture Imports,Office Desks,East,Brisbane DC,2,324.84,1047.87,19,1,41.91,buyer269@example.com
+2025-11-06,PO-2025-00188,Alpine Components,Sideboards,North,Sydney DC,11,475.22,8431.29,16,1,337.25,buyer186@example.com
+2025-11-06,PO-2025-01147,Harbour Furniture Imports,Bookshelves,North,Sydney DC,9,181.48,2634.37,16,1,105.37,buyer164@example.com
+2025-11-07,PO-2025-00435,Harbour Furniture Imports,Chairs,North,Sydney DC,15,85.19,2060.98,16,1,82.44,buyer8@example.com
+2025-11-07,PO-2025-00612,Summit Upholstery,Office Desks,South,Melbourne DC,18,311.77,9051.52,9,0,0.0,buyer349@example.com
+2025-11-07,PO-2025-00946,Alpine Components,Office Desks,West,Perth DC,14,364.89,8239.53,20,1,329.58,buyer225@example.com
+2025-11-08,PO-2025-00564,Nordic Timber Supply,Bookshelves,North,Sydney DC,1,170.7,275.33,3,0,0.0,buyer334@example.com
+2025-11-08,PO-2025-00923,Nordic Timber Supply,Media Consoles,South,Melbourne DC,23,284.67,10560.4,12,0,0.0,buyer6@example.com
+2025-11-08,PO-2025-00965,Nordic Timber Supply,Bookshelves,North,Sydney DC,17,177.36,4863.13,13,1,194.53,buyer54@example.com
+2025-11-09,PO-2025-00037,Nordic Timber Supply,Bookshelves,South,Melbourne DC,19,145.63,4462.87,8,0,0.0,buyer230@example.com
+2025-11-09,PO-2025-00522,Pacific Hardware Co,Office Desks,North,Sydney DC,2,318.32,1026.85,5,0,0.0,buyer62@example.com
+2025-11-09,PO-2025-01062,Nordic Timber Supply,Office Desks,West,Perth DC,10,315.13,5082.74,7,0,0.0,buyer287@example.com
+2025-11-10,PO-2025-00313,Nordic Timber Supply,Dining Tables,North,Sydney DC,18,517.14,15013.81,5,0,0.0,buyer124@example.com
+2025-11-10,PO-2025-00744,Alpine Components,Office Desks,West,Perth DC,7,358.07,4042.77,7,0,0.0,buyer311@example.com
+2025-11-11,PO-2025-00558,Nordic Timber Supply,Sideboards,West,Perth DC,8,421.76,5442.09,7,0,0.0,buyer193@example.com
+2025-11-11,PO-2025-00745,Harbour Furniture Imports,Bookshelves,West,Perth DC,11,178.65,3169.61,11,0,0.0,buyer395@example.com
+2025-11-11,PO-2025-01008,Nordic Timber Supply,Office Desks,East,Brisbane DC,5,348.11,2807.35,15,1,112.29,buyer170@example.com
+2025-11-11,PO-2025-01032,Nordic Timber Supply,Chairs,North,Sydney DC,23,101.05,3748.74,8,0,0.0,buyer178@example.com
+2025-11-12,PO-2025-00172,Nordic Timber Supply,Office Desks,South,Melbourne DC,6,315.02,3048.56,11,0,0.0,buyer331@example.com
+2025-11-13,PO-2025-00204,Alpine Components,Chairs,North,Sydney DC,5,93.48,753.85,14,1,30.15,buyer306@example.com
+2025-11-13,PO-2025-00880,Pacific Hardware Co,Dining Tables,East,Brisbane DC,10,458.33,7392.35,15,1,295.69,buyer107@example.com
+2025-11-13,PO-2025-01068,Pacific Hardware Co,Office Desks,North,Sydney DC,23,339.96,12611.26,17,1,504.45,buyer139@example.com
+2025-11-15,PO-2025-00011,Pacific Hardware Co,Bookshelves,East,Brisbane DC,19,172.66,5291.17,8,0,0.0,buyer256@example.com
+2025-11-15,PO-2025-00079,Pacific Hardware Co,Sideboards,South,Melbourne DC,14,404.85,9141.85,10,0,0.0,buyer251@example.com
+2025-11-15,PO-2025-00165,Nordic Timber Supply,Office Desks,West,Perth DC,8,310.37,4004.83,11,0,0.0,buyer58@example.com
+2025-11-16,PO-2025-00146,Nordic Timber Supply,Bookshelves,East,Brisbane DC,18,145.43,4222.03,10,0,0.0,buyer220@example.com
+2025-11-16,PO-2025-00403,Pacific Hardware Co,Media Consoles,East,Brisbane DC,21,289.65,9810.58,12,0,0.0,buyer11@example.com
+2025-11-16,PO-2025-00475,Pacific Hardware Co,Media Consoles,East,Brisbane DC,5,247.92,1999.36,11,0,0.0,buyer78@example.com
+2025-11-17,PO-2025-00225,Harbour Furniture Imports,Dining Tables,West,Perth DC,16,493.75,12741.9,10,0,0.0,buyer119@example.com
+2025-11-18,PO-2025-00055,Nordic Timber Supply,Media Consoles,North,Sydney DC,15,256.48,6205.06,13,1,248.2,buyer310@example.com
+2025-11-18,PO-2025-00374,Pacific Hardware Co,Sideboards,East,Brisbane DC,20,395.09,12744.93,10,0,0.0,buyer272@example.com
+2025-11-18,PO-2025-01167,Harbour Furniture Imports,Dining Tables,East,Brisbane DC,18,502.46,14587.53,16,1,583.5,buyer226@example.com
+2025-11-19,PO-2025-00345,Nordic Timber Supply,Office Desks,North,Sydney DC,18,337.75,9805.74,6,0,0.0,buyer152@example.com
+2025-11-19,PO-2025-00782,Pacific Hardware Co,Dining Tables,East,Brisbane DC,16,514.33,13272.95,12,0,0.0,buyer313@example.com
+2025-11-19,PO-2025-01119,Nordic Timber Supply,Media Consoles,East,Brisbane DC,18,251.0,7286.98,13,1,291.48,buyer18@example.com
+2025-11-20,PO-2025-00834,Summit Upholstery,Office Desks,South,Melbourne DC,14,324.25,7321.68,10,0,0.0,buyer115@example.com
+2025-11-20,PO-2025-00919,Nordic Timber Supply,Chairs,North,Sydney DC,11,88.91,1577.37,12,0,0.0,buyer35@example.com
+2025-11-21,PO-2025-00286,Harbour Furniture Imports,Media Consoles,East,Brisbane DC,3,300.01,1451.68,14,1,58.07,buyer261@example.com
+2025-11-21,PO-2025-00454,Harbour Furniture Imports,Media Consoles,South,Melbourne DC,3,300.59,1454.46,14,1,58.18,buyer327@example.com
+2025-11-21,PO-2025-00543,Pacific Hardware Co,Chairs,West,Perth DC,9,91.02,1321.28,15,1,52.85,buyer155@example.com
+2025-11-21,PO-2025-00777,Summit Upholstery,Sideboards,West,Perth DC,17,431.88,11841.93,19,1,473.68,buyer56@example.com
+2025-11-21,PO-2025-00829,Harbour Furniture Imports,Dining Tables,North,Sydney DC,19,526.76,16142.75,17,1,645.71,buyer288@example.com
+2025-11-22,PO-2025-01054,Summit Upholstery,Office Desks,South,Melbourne DC,1,366.61,591.3,16,1,23.65,buyer145@example.com
+2025-11-23,PO-2025-00279,Pacific Hardware Co,Media Consoles,South,Melbourne DC,10,248.39,4006.26,8,0,0.0,buyer279@example.com
+2025-11-23,PO-2025-00371,Harbour Furniture Imports,Office Desks,West,Perth DC,23,305.18,11321.31,12,0,0.0,buyer399@example.com
+2025-11-23,PO-2025-00909,Harbour Furniture Imports,Office Desks,South,Melbourne DC,3,362.19,1752.54,12,0,0.0,buyer54@example.com
+2025-11-24,PO-2025-00003,Summit Upholstery,Chairs,West,Perth DC,9,101.36,1471.3,9,0,0.0,buyer326@example.com
+2025-11-24,PO-2025-00218,Alpine Components,Chairs,North,Sydney DC,24,105.7,4091.6,10,0,0.0,buyer324@example.com
+2025-11-24,PO-2025-00451,Summit Upholstery,Media Consoles,North,Sydney DC,14,253.68,5728.31,13,1,229.13,buyer81@example.com
+2025-11-24,PO-2025-00740,Summit Upholstery,Sideboards,South,Melbourne DC,17,445.15,12205.63,13,1,488.23,buyer288@example.com
+2025-11-25,PO-2025-00326,Summit Upholstery,Dining Tables,North,Sydney DC,20,459.72,14829.61,14,1,593.18,buyer179@example.com
+2025-11-26,PO-2025-00126,Pacific Hardware Co,Bookshelves,North,Sydney DC,2,164.58,530.92,7,0,0.0,buyer13@example.com
+2025-11-26,PO-2025-00174,Pacific Hardware Co,Sideboards,South,Melbourne DC,20,449.14,14488.24,10,0,0.0,buyer252@example.com
+2025-11-27,PO-2025-00416,Harbour Furniture Imports,Sideboards,East,Brisbane DC,9,450.01,6532.47,7,0,0.0,buyer304@example.com
+2025-11-28,PO-2025-00177,Nordic Timber Supply,Dining Tables,South,Melbourne DC,18,478.03,13878.23,5,0,0.0,buyer363@example.com
+2025-11-29,PO-2025-00196,Harbour Furniture Imports,Office Desks,North,Sydney DC,21,316.01,10703.44,16,1,428.14,buyer77@example.com
+2025-11-29,PO-2025-00509,Alpine Components,Sideboards,North,Sydney DC,17,389.56,10681.39,10,0,0.0,buyer267@example.com
+2025-11-30,PO-2025-00012,Pacific Hardware Co,Office Desks,South,Melbourne DC,17,353.83,9701.88,13,1,388.08,buyer363@example.com
+2025-11-30,PO-2025-00283,Summit Upholstery,Bookshelves,North,Sydney DC,2,152.42,491.67,9,0,0.0,buyer100@example.com
+2025-11-30,PO-2025-00356,Alpine Components,Chairs,North,Sydney DC,24,90.97,3521.26,11,0,0.0,buyer5@example.com
+2025-11-30,PO-2025-00525,Pacific Hardware Co,Media Consoles,South,Melbourne DC,10,250.63,4042.47,15,1,161.7,buyer197@example.com
+2025-11-30,PO-2025-00597,Nordic Timber Supply,Chairs,North,Sydney DC,22,87.62,3109.24,14,1,124.37,buyer161@example.com
+2025-11-30,PO-2025-00604,Nordic Timber Supply,Sideboards,East,Brisbane DC,20,490.28,15815.57,12,0,0.0,buyer195@example.com
+2025-12-01,PO-2025-00255,Alpine Components,Chairs,South,Melbourne DC,20,90.64,2923.88,9,0,0.0,buyer163@example.com
+2025-12-01,PO-2025-00288,Pacific Hardware Co,Media Consoles,South,Melbourne DC,11,250.45,4443.38,8,0,0.0,buyer387@example.com
+2025-12-01,PO-2025-00925,Nordic Timber Supply,Dining Tables,West,Perth DC,14,469.73,10606.83,8,0,0.0,buyer237@example.com
+2025-12-02,PO-2025-00282,Harbour Furniture Imports,Chairs,East,Brisbane DC,2,102.17,329.57,15,1,13.18,buyer169@example.com
+2025-12-03,PO-2025-00229,Pacific Hardware Co,Media Consoles,South,Melbourne DC,7,274.97,3104.45,15,1,124.18,buyer124@example.com
+2025-12-03,PO-2025-00511,Summit Upholstery,Dining Tables,East,Brisbane DC,16,435.37,11235.41,12,0,0.0,buyer278@example.com
+2025-12-03,PO-2025-00858,Summit Upholstery,Media Consoles,South,Melbourne DC,10,304.76,4915.47,15,1,196.62,buyer73@example.com
+2025-12-04,PO-2025-00907,Summit Upholstery,Media Consoles,West,Perth DC,9,283.23,4111.44,12,0,0.0,buyer284@example.com
+2025-12-04,PO-2025-01139,Pacific Hardware Co,Bookshelves,North,Sydney DC,9,159.07,2309.02,13,1,92.36,buyer162@example.com
+2025-12-05,PO-2025-00133,Harbour Furniture Imports,Office Desks,South,Melbourne DC,10,384.94,6208.67,10,0,0.0,buyer159@example.com
+2025-12-05,PO-2025-00959,Summit Upholstery,Chairs,North,Sydney DC,21,96.05,3253.37,13,1,130.13,buyer8@example.com
+2025-12-07,PO-2025-00676,Pacific Hardware Co,Sideboards,North,Sydney DC,24,453.01,17536.02,10,0,0.0,buyer329@example.com
+2025-12-07,PO-2025-00704,Alpine Components,Media Consoles,North,Sydney DC,19,252.98,7752.61,13,1,310.1,buyer24@example.com
+2025-12-08,PO-2025-00628,Alpine Components,Office Desks,North,Sydney DC,1,305.0,491.94,10,0,0.0,buyer14@example.com
+2025-12-08,PO-2025-00785,Pacific Hardware Co,Bookshelves,South,Melbourne DC,24,166.39,6441.07,13,1,257.64,buyer131@example.com
+2025-12-09,PO-2025-00312,Harbour Furniture Imports,Chairs,West,Perth DC,8,85.53,1103.61,13,1,44.14,buyer334@example.com
+2025-12-09,PO-2025-00464,Harbour Furniture Imports,Office Desks,West,Perth DC,2,324.71,1047.47,10,0,0.0,buyer147@example.com
+2025-12-09,PO-2025-00980,Harbour Furniture Imports,Bookshelves,North,Sydney DC,22,176.42,6259.98,16,1,250.4,buyer300@example.com
+2025-12-09,PO-2025-01011,Summit Upholstery,Office Desks,East,Brisbane DC,11,360.1,6388.92,16,1,255.56,buyer343@example.com
+2025-12-10,PO-2025-00541,Alpine Components,Dining Tables,East,Brisbane DC,8,528.53,6819.76,4,0,0.0,buyer49@example.com
+2025-12-10,PO-2025-00560,Alpine Components,Office Desks,West,Perth DC,8,334.0,4309.65,13,1,172.39,buyer31@example.com
+2025-12-10,PO-2025-00587,Nordic Timber Supply,Sideboards,West,Perth DC,17,389.43,10677.91,11,0,0.0,buyer314@example.com
+2025-12-10,PO-2025-01156,Alpine Components,Bookshelves,South,Melbourne DC,5,176.12,1420.36,12,0,0.0,buyer13@example.com
+2025-12-11,PO-2025-00000,Alpine Components,Dining Tables,East,Brisbane DC,14,511.07,11540.26,13,1,461.61,buyer76@example.com
+2025-12-11,PO-2025-00577,Pacific Hardware Co,Media Consoles,West,Perth DC,11,286.23,5078.21,4,0,0.0,buyer180@example.com
+2025-12-11,PO-2025-00879,Pacific Hardware Co,Bookshelves,South,Melbourne DC,11,171.8,3048.06,5,0,0.0,buyer283@example.com
+2025-12-12,PO-2025-00224,Pacific Hardware Co,Sideboards,North,Sydney DC,20,411.24,13265.71,11,0,0.0,buyer392@example.com
+2025-12-12,PO-2025-00775,Nordic Timber Supply,Office Desks,West,Perth DC,22,357.33,12679.45,10,0,0.0,buyer144@example.com
+2025-12-13,PO-2025-00203,Nordic Timber Supply,Media Consoles,South,Melbourne DC,12,283.52,5487.54,10,0,0.0,buyer179@example.com
+2025-12-13,PO-2025-00297,Nordic Timber Supply,Dining Tables,North,Sydney DC,21,471.86,15982.37,10,0,0.0,buyer391@example.com
+2025-12-13,PO-2025-00646,Harbour Furniture Imports,Chairs,South,Melbourne DC,2,102.97,332.17,9,0,0.0,buyer382@example.com
+2025-12-14,PO-2025-00211,Nordic Timber Supply,Dining Tables,South,Melbourne DC,8,461.31,5952.36,6,0,0.0,buyer201@example.com
+2025-12-14,PO-2025-00237,Harbour Furniture Imports,Media Consoles,West,Perth DC,11,301.66,5352.11,10,0,0.0,buyer144@example.com
+2025-12-14,PO-2025-00680,Nordic Timber Supply,Bookshelves,South,Melbourne DC,4,184.92,1193.02,12,0,0.0,buyer138@example.com
+2025-12-14,PO-2025-00917,Harbour Furniture Imports,Office Desks,North,Sydney DC,8,316.21,4080.16,11,0,0.0,buyer388@example.com
+2025-12-15,PO-2025-01098,Nordic Timber Supply,Chairs,North,Sydney DC,11,95.58,1695.78,12,0,0.0,buyer264@example.com
+2025-12-16,PO-2025-00667,Pacific Hardware Co,Chairs,South,Melbourne DC,12,103.79,2008.76,11,0,0.0,buyer40@example.com
+2025-12-17,PO-2025-00127,Pacific Hardware Co,Dining Tables,West,Perth DC,12,477.79,9247.58,13,1,369.9,buyer1@example.com
+2025-12-17,PO-2025-00267,Harbour Furniture Imports,Media Consoles,East,Brisbane DC,7,290.61,3281.12,14,1,131.24,buyer125@example.com
+2025-12-17,PO-2025-00678,Harbour Furniture Imports,Office Desks,East,Brisbane DC,19,307.24,9415.5,14,1,376.62,buyer27@example.com
+2025-12-18,PO-2025-00586,Harbour Furniture Imports,Bookshelves,North,Sydney DC,15,169.2,4093.61,12,0,0.0,buyer379@example.com
+2025-12-18,PO-2025-00839,Pacific Hardware Co,Media Consoles,East,Brisbane DC,2,245.53,792.03,13,1,31.68,buyer56@example.com
+2025-12-18,PO-2025-00881,Summit Upholstery,Chairs,West,Perth DC,16,96.34,2486.28,13,1,99.45,buyer131@example.com
+2025-12-18,PO-2025-01024,Summit Upholstery,Chairs,West,Perth DC,12,83.96,1625.13,14,1,65.01,buyer377@example.com
+2025-12-19,PO-2025-00065,Nordic Timber Supply,Sideboards,North,Sydney DC,21,426.48,14445.24,9,0,0.0,buyer186@example.com
+2025-12-19,PO-2025-00635,Pacific Hardware Co,Bookshelves,North,Sydney DC,4,159.87,1031.43,13,1,41.26,buyer227@example.com
+2025-12-20,PO-2025-00053,Harbour Furniture Imports,Dining Tables,East,Brisbane DC,5,528.15,4259.3,9,0,0.0,buyer335@example.com
+2025-12-20,PO-2025-00112,Harbour Furniture Imports,Dining Tables,West,Perth DC,2,438.91,1415.84,13,1,56.63,buyer295@example.com
+2025-12-20,PO-2025-00137,Alpine Components,Chairs,South,Melbourne DC,22,94.62,3357.43,9,0,0.0,buyer318@example.com
+2025-12-20,PO-2025-00159,Harbour Furniture Imports,Chairs,North,Sydney DC,8,104.91,1353.65,11,0,0.0,buyer258@example.com
+2025-12-21,PO-2025-00247,Pacific Hardware Co,Dining Tables,South,Melbourne DC,10,514.69,8301.46,10,0,0.0,buyer216@example.com
+2025-12-21,PO-2025-00299,Alpine Components,Dining Tables,East,Brisbane DC,13,545.09,11429.31,13,1,457.17,buyer384@example.com
+2025-12-21,PO-2025-00849,Pacific Hardware Co,Chairs,North,Sydney DC,6,91.37,884.19,11,0,0.0,buyer348@example.com
+2025-12-22,PO-2025-00614,Harbour Furniture Imports,Chairs,East,Brisbane DC,2,99.89,322.22,13,1,12.89,buyer391@example.com
+2025-12-22,PO-2025-00956,Harbour Furniture Imports,Chairs,South,Melbourne DC,9,99.33,1441.87,11,0,0.0,buyer347@example.com
+2025-12-23,PO-2025-01086,Alpine Components,Media Consoles,South,Melbourne DC,1,242.97,391.88,10,0,0.0,buyer38@example.com
+2025-12-23,PO-2025-01160,Alpine Components,Bookshelves,South,Melbourne DC,3,173.59,839.97,11,0,0.0,buyer30@example.com
+2025-12-24,PO-2025-00094,Summit Upholstery,Media Consoles,East,Brisbane DC,24,294.37,11394.78,10,0,0.0,buyer382@example.com
+2025-12-24,PO-2025-00215,Pacific Hardware Co,Media Consoles,South,Melbourne DC,17,297.39,8154.23,10,0,0.0,buyer227@example.com
+2025-12-24,PO-2025-01084,Pacific Hardware Co,Chairs,South,Melbourne DC,13,96.04,2013.69,7,0,0.0,buyer282@example.com
+2025-12-25,PO-2025-01170,Alpine Components,Media Consoles,North,Sydney DC,12,259.2,5016.83,9,0,0.0,buyer39@example.com
+2025-12-27,PO-2025-00033,Harbour Furniture Imports,Bookshelves,West,Perth DC,14,183.94,4153.45,12,0,0.0,buyer366@example.com
+2025-12-27,PO-2025-00206,Pacific Hardware Co,Chairs,West,Perth DC,10,88.93,1434.35,18,1,57.37,buyer310@example.com
+2025-12-28,PO-2025-00023,Summit Upholstery,Media Consoles,South,Melbourne DC,10,248.71,4011.47,11,0,0.0,buyer267@example.com
+2025-12-28,PO-2025-00926,Summit Upholstery,Dining Tables,West,Perth DC,23,494.25,18335.17,14,1,733.41,buyer282@example.com
+2025-12-29,PO-2025-00050,Harbour Furniture Imports,Chairs,North,Sydney DC,2,99.25,320.17,11,0,0.0,buyer36@example.com
+2025-12-29,PO-2025-00504,Summit Upholstery,Dining Tables,West,Perth DC,22,529.83,18800.3,15,1,752.01,buyer300@example.com
+2025-12-30,PO-2025-00462,Alpine Components,Chairs,North,Sydney DC,11,86.74,1538.92,15,1,61.56,buyer266@example.com
+2025-12-30,PO-2025-00542,Harbour Furniture Imports,Sideboards,South,Melbourne DC,4,440.29,2840.6,12,0,0.0,buyer103@example.com
+2025-12-30,PO-2025-00575,Harbour Furniture Imports,Office Desks,South,Melbourne DC,24,354.91,13738.5,14,1,549.54,buyer45@example.com
+2025-12-31,PO-2025-00178,Harbour Furniture Imports,Dining Tables,South,Melbourne DC,2,530.33,1710.75,13,1,68.43,buyer333@example.com
+2025-12-31,PO-2025-00766,Pacific Hardware Co,Office Desks,East,Brisbane DC,19,372.54,11416.51,11,0,0.0,buyer328@example.com

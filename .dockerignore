@@ -1,0 +1,8 @@
+.venv
+.git
+.env
+.streamlit/secrets.toml
+audit/audit_log.jsonl
+feedback/feedback_log.csv
+__pycache__
+.pytest_cache

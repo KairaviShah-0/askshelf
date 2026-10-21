@@ -1,7 +1,9 @@
 """Central configuration: brand palette, entity lists, and the data-privacy policy."""
 from __future__ import annotations
 
-APP_NAME = "Modern Furniture Co. AI Analytics Agent"
+APP_NAME = "AskShelf"
+APP_TAGLINE = "Retail Sales Intelligence Assistant"
+COMPANY = "Modern Furniture Co."
 
 # --- Entities (fixed order = fixed colour: colour follows the entity, never its rank) ---
 PRODUCTS = ["Bookshelf", "Dining Table", "Media Console", "Office Desk", "Sideboard"]
@@ -47,3 +49,7 @@ SCOPE_MESSAGE = (
 
 MAX_QUESTIONS_PER_SESSION = 30
 DEFAULT_MODELS = ["gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
+
+# --- Cost model assumptions (USD per million tokens) - update to the current price list of your Gemini model ---
+LLM_IN_PER_M = 0.30
+LLM_OUT_PER_M = 2.50

@@ -1012,5 +1012,7 @@ def run_tool(name: str, args: dict | None) -> ToolResult:
 
 # advanced predictive tools register themselves here (tools_pro imports helpers from this module, so it must load last)
 from . import tools_pro as _pro  # noqa: E402
+from . import tools_supply as _supply  # noqa: E402
 
 REGISTRY.update(_pro.PRO_REGISTRY)
+REGISTRY.update(_supply.SUPPLY_REGISTRY)

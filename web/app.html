@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AskShelf | App</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%230b1220'/%3E%3Crect x='8' y='14' width='5' height='14' rx='1.2' fill='%232563eb'/%3E%3Crect x='14.5' y='9' width='4.5' height='19' rx='1.2' fill='%2334d399'/%3E%3Crect x='20.5' y='12' width='5.5' height='16' rx='1.2' fill='%23fbbf24'/%3E%3Crect x='27.5' y='16' width='4.5' height='12' rx='1.2' fill='%23f472b6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/site.css"><link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body class="appbody">
+<div class="shell">
+  <aside class="side" id="side">
+    <a href="/" class="logo"><span id="lg"></span><span>Ask<i>Shelf</i></span></a>
+    <div class="side-sub">Retail Sales Intelligence</div>
+    <nav id="nav"></nav>
+    <div class="side-foot">
+      <div class="modebox" id="modebox"></div>
+      <a href="/" class="sidelink"><i data-icon="logout"></i> Back to website</a>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <header class="top">
+      <button class="iconbtn menu" id="menu" aria-label="Menu"><i data-icon="menu"></i></button>
+      <div><h1 id="ptitle">Ask AskShelf</h1><div class="psub" id="psub"></div></div>
+      <div class="top-right">
+        <label class="rolepick" title="Switch role to see access control in action"><i data-icon="users"></i>
+          <select id="role" aria-label="Role"></select></label>
+      </div>
+    </header>
+    <main id="view" class="view"></main>
+  </div>
+</div>
+<div id="toasts" class="toasts"></div>
+<div id="modal" class="modal" hidden></div>
+<script src="/static/vendor/plotly.min.js"></script>
+<script src="/static/js/icons.js"></script>
+<script src="/static/js/app.js"></script>
+</body></html>
