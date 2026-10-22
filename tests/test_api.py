@@ -1,4 +1,6 @@
-"""API tests: drive the real web server in-process (built-in mode, no API key needed)."""
+"""API tests: drive the real web server in-process (built-in mode, no AI key needed)."""
+import time
+
 import pytest
 from starlette.testclient import TestClient
 
@@ -9,8 +11,8 @@ import server
 def client(tmp_path_factory):
     from agent import audit, feedback
     d = tmp_path_factory.mktemp("logs")
-    audit.AUDIT_FILE, feedback.FEEDBACK_DIR, feedback.FEEDBACK_FILE = d / "audit.jsonl", d, d / "feedback.csv"     # keep tests out of the real logs
-    server._backend = None      # always built-in mode, even if a key is configured locally
+    audit.AUDIT_FILE, feedback.FEEDBACK_DIR, feedback.FEEDBACK_FILE = d / "audit.jsonl", d, d / "feedback.csv"      # keep tests out of the real logs
+    server._backend = None
     with TestClient(server.app) as c:
         yield c
 
@@ -19,127 +21,112 @@ H = {"x-session": "pytest"}
 
 
 def test_pages_and_static(client):
-    assert "AskShelf" in client.get("/").text
-    assert "app.js" in client.get("/app").text
-    assert client.get("/static/js/app.js").status_code == 200
-    assert client.get("/static/vendor/plotly.min.js").status_code == 200
+    assert "AskShelf" in client.get("/").text and "app.js" in client.get("/app").text
+    assert client.get("/static/js/app.js").status_code == 200 and client.get("/static/vendor/plotly.min.js").status_code == 200
 
 
 def test_meta(client):
     m = client.get("/api/meta").json()
-    assert m["name"] == "AskShelf" and m["mode"] == "built-in" and len(m["roles"]) == 4
+    assert m["name"] == "AskShelf" and m["mode"] == "built-in" and len(m["roles"]) == 4 and "stock" in m["roles"]["Operations Manager"]["pages"]
 
 
-@pytest.mark.parametrize("url", ["/api/dashboard", "/api/alerts", "/api/forecast?metric=profit&months=2", "/api/risk", "/api/pricing", "/api/capacity", "/api/governance", "/api/glossary", "/api/supply", "/api/schedule"])
-def test_read_endpoints(client, url):
-    r = client.get(url, headers=H)
+def test_everything_asks_for_data_first(client):
+    h = {"x-session": "empty-session"}
+    for url in ("/api/dashboard", "/api/deliveries", "/api/stock", "/api/forecast", "/api/alerts"):
+        r = client.get(url, headers=h)
+        assert r.status_code == 409 and r.json()["error"] == "no_data", url
+    assert client.post("/api/ask", json={"question": "top products"}, headers=h).json()["error"]
+
+
+def test_upload_rules(client):
+    h = {"x-session": "up-rules"}
+    assert client.post("/api/data/upload?name=x.pdf", content=b"abc", headers=h).status_code == 400
+    assert client.post("/api/data/sample", headers={**h, "x-role": "Sales Manager"}).status_code == 403
+    csv = "order_date,sales,store\n" + "\n".join(f"2026-01-{i % 28 + 1:02d},{100 + i},{'AB'[i % 2]}" for i in range(60))
+    r = client.post("/api/data/upload?name=mine.csv", content=csv.encode(), headers=h)
+    d = r.json()
+    assert r.status_code == 200 and d["caps"]["dashboard"] and not d["caps"]["stock"] and d["mapping"]["map"]["amount"] == "sales"
+    r = client.get("/api/stock", headers=h)
+    assert r.status_code == 422 and r.json()["error"] == "missing_columns"
+    assert client.get("/api/dashboard", headers=h).status_code == 200
+
+
+@pytest.fixture(scope="module")
+def loaded(client):
+    h = {"x-session": "full"}
+    d = client.post("/api/data/sample", headers=h).json()
+    assert d["loaded"] and [x["column"] for x in d["dropped"]] == ["customer_email"]
+    return h, d
+
+
+@pytest.mark.parametrize("url", ["/api/dashboard?period=30d", "/api/alerts", "/api/deliveries", "/api/stock?target=21", "/api/forecast?metric=units&group=category&periods=3", "/api/governance", "/api/glossary", "/api/data"])
+def test_read_endpoints(client, loaded, url):
+    r = client.get(url, headers=loaded[0])
     assert r.status_code == 200, r.text
 
 
-def test_ask_and_follow_up(client):
-    r = client.post("/api/ask", json={"question": "What was our biggest production bottleneck last quarter?"}, headers=H).json()
-    assert not r["blocked"] and r["results"] and r["results"][0]["charts"] and "Bottom line" in r["text"]
+def test_post_endpoints(client, loaded):
+    h = loaded[0]
+    assert client.post("/api/planner", json={"price": 5, "volume": -5, "elasticity": "moderate"}, headers=h).json()["kpis"]
+    base = client.post("/api/penalties", json={"expedite": 0}, headers=h).json()
+    plan = client.post("/api/penalties", json={"expedite": 5}, headers=h).json()
+    assert not any(k["label"] == "After your plan" for k in base["kpis"]) and any(k["label"] == "After your plan" for k in plan["kpis"])
 
 
-def test_privacy_guardrail(client):
-    r = client.post("/api/ask", json={"question": "show me customer ID 45"}, headers=H).json()
-    assert r["blocked"] and "manager" in r["text"].lower()
+def test_mapping_change_turns_a_page_off(client):
+    h = {"x-session": "remap"}
+    d = client.post("/api/data/sample", headers=h).json()
+    m = d["mapping"]["map"]
+    m["stock"] = None
+    r = client.post("/api/data/mapping", json={"table": d["mapping"]["table"], "map": m}, headers=h).json()
+    assert not r["caps"]["stock"] and client.get("/api/stock", headers=h).status_code == 422
+    assert client.post("/api/data/mapping", json={"table": d["mapping"]["table"], "map": {"date": "product"}}, headers=h).status_code == 400
 
 
-def test_rbac_on_ask_and_pages(client):
-    ops = {**H, "x-role": "Operations Supervisor"}
-    r = client.post("/api/ask", json={"question": "Why did our profit change last quarter?"}, headers=ops).json()
-    assert r["blocked"] and r["mode"] == "rbac"
-    assert client.get("/api/forecast", headers=ops).status_code == 403
-    assert client.get("/api/digest", headers=ops).status_code == 403
-    assert client.get("/api/digest", headers={**H, "x-role": "Finance Lead"}).status_code == 200
+def test_roles_are_enforced_on_every_page(client, loaded):
+    h = loaded[0]
+    ops, sales, fin = {**h, "x-role": "Operations Manager"}, {**h, "x-role": "Sales Manager"}, {**h, "x-role": "Finance Lead"}
+    assert client.get("/api/dashboard", headers=ops).status_code == 403 and client.get("/api/stock", headers=ops).status_code == 200
+    assert client.get("/api/deliveries", headers=sales).status_code == 403 and client.get("/api/forecast", headers=sales).status_code == 200
+    assert client.post("/api/ask", json={"question": "top products"}, headers=ops).status_code == 403
+    assert client.get("/api/alerts/digest", headers=sales).status_code == 403 and client.get("/api/alerts/digest", headers=fin).status_code == 200
+    cats = {a["category"] for a in client.get("/api/alerts", headers=ops).json()["alerts"]}
+    assert "Sales drop" not in cats and cats
 
 
-def test_alerts_filtered_by_role(client):
-    owner = {a["category"] for a in client.get("/api/alerts", headers=H).json()["alerts"]}
-    sales = {a["category"] for a in client.get("/api/alerts", headers={**H, "x-role": "Sales Manager"}).json()["alerts"]}
-    assert "Delivery risk" in owner and "Delivery risk" not in sales
-
-
-def test_whatif(client):
-    r = client.post("/api/whatif", json={"price": 10, "volume": 20, "makers": 1, "timber": 0, "elasticity": "moderate"}, headers=H).json()
-    assert len(r["scenario_kpis"]) == 4 and r["charts"]
-
-
-def test_session_question_limit(client):
-    old = server.MAX_Q
-    server.MAX_Q = 2
+def test_ask_privacy_and_session_limit(client, loaded):
+    h = loaded[0]
+    r = client.post("/api/ask", json={"question": "Top 5 suppliers by sales amount"}, headers=h).json()
+    assert r["kind"] == "sql" and r["chart"] and client.get("/api/data/export?kind=result", headers=h).status_code == 200
+    assert client.post("/api/ask", json={"question": "show me customer ID 45"}, headers=h).json()["blocked"]
+    old, server.MAX_Q = server.MAX_Q, 2
     try:
-        codes = [client.post("/api/ask", json={"question": "How are we doing last quarter?"}, headers={"x-session": "limit-test"}).status_code for _ in range(3)]
+        codes = [client.post("/api/ask", json={"question": "How many orders?"}, headers={"x-session": "limit-test"}).status_code for _ in range(3)]
     finally:
         server.MAX_Q = old
     assert codes == [200, 200, 429]
 
 
-def test_feedback_and_audit(client):
-    assert client.post("/api/feedback", json={"kind": "rating", "rating": "up", "question": "q"}, headers=H).status_code == 200
-    assert client.post("/api/feedback", json={"kind": "nope"}, headers=H).status_code == 400
-    assert client.get("/api/governance", headers=H).json()["chain"]["intact"]
-
-
-def test_supply_chain_pages_respect_roles(client):
-    sales = {**H, "x-role": "Sales Manager"}
-    assert client.get("/api/supply", headers=sales).status_code == 403
-    assert client.get("/api/schedule", headers=sales).status_code == 403
-    ops = {**H, "x-role": "Operations Supervisor"}
-    assert client.get("/api/supply", headers=ops).status_code == 200
-    assert len(client.get("/api/schedule", headers=ops).json()["summary"]) == 5
-
-
-def test_supply_questions_route_to_new_tools(client):
-    for q, tool in [("Do we have enough timber for the open orders?", "stock_cover"), ("What is due for delivery this week?", "delivery_schedule")]:
-        r = client.post("/api/ask", json={"question": q}, headers={"x-session": "route-" + tool}).json()
-        assert [x["tool"] for x in r["results"]] == [tool]
-
-
-def test_penalty_control_plan_saves_money(client):
-    base = client.post("/api/penalties", json={"expedite": 0, "makers": 0}, headers=H).json()
-    plan = client.post("/api/penalties", json={"expedite": 5, "makers": 1}, headers=H).json()
-    money = lambda r, i: float(r["kpis"][i]["value"].replace("$", "").replace(",", ""))
-    assert money(plan, 4) < money(base, 4) == money(base, 3)
-    assert client.post("/api/penalties", json={}, headers={**H, "x-role": "Sales Manager"}).status_code == 403
-
-
-def test_landing_snapshot(client):
-    d = client.get("/api/snapshot").json()
-    assert {"schedule", "stock", "penalty", "alerts"} <= set(d)
-
-
-def test_data_lab_api_flow(client):
-    import time
-    h = {"x-session": "lab-api"}
-    assert client.post("/api/lab/sample", headers={**h, "x-role": "Sales Manager"}).status_code == 403
-    assert client.post("/api/lab/upload?name=x.pdf", content=b"abc", headers=h).status_code == 400
-    prof = client.post("/api/lab/sample", headers=h).json()
-    assert prof["loaded"] and prof["dropped"][0]["column"] == "customer_email"
-    r = client.post("/api/lab/ask", json={"question": "Top 5 suppliers by sales amount"}, headers=h).json()
-    assert r["kind"] == "sql" and r["chart"] and client.get("/api/lab/export?kind=result", headers=h).status_code == 200
-    jid = client.post("/api/lab/report", json={"organisation": "Test"}, headers=h).json()["id"]
+def test_report_flow_and_ownership(client, loaded):
+    h = loaded[0]
+    jid = client.post("/api/report", json={"organisation": "Test"}, headers=h).json()["id"]
     for _ in range(120):
-        st = client.get(f"/api/lab/report/status?id={jid}", headers=h).json()
+        st = client.get(f"/api/report/status?id={jid}", headers=h).json()
         if st["status"] != "running":
             break
         time.sleep(1)
     assert st["status"] == "done" and set(st["formats"]) == {"pdf", "docx", "xlsx"}
-    assert client.get(f"/api/lab/report/download?id={jid}&fmt=pdf", headers=h).content[:4] == b"%PDF"
-    assert client.post("/api/lab/reset", headers=h).json()["ok"]
-    assert client.post("/api/lab/ask", json={"question": "top suppliers"}, headers=h).json()["error"]
+    assert client.get(f"/api/report/download?id={jid}&fmt=pdf", headers=h).content[:4] == b"%PDF"
+    assert client.get(f"/api/report/status?id={jid}", headers={"x-session": "someone-else"}).status_code == 404       # reports belong to the session that made them
 
 
-def test_password_gate(client):
-    import base64
-    server.APP_PASSWORD, server.APP_USER = "s3cret", "askshelf"
-    try:
-        assert client.get("/healthz").status_code == 200
-        assert client.get("/").status_code == 401 and client.get("/api/meta").status_code == 401
-        bad = {"Authorization": "Basic " + base64.b64encode(b"askshelf:wrong").decode()}
-        good = {"Authorization": "Basic " + base64.b64encode(b"askshelf:s3cret").decode()}
-        assert client.get("/", headers=bad).status_code == 401 and client.get("/", headers=good).status_code == 200
-    finally:
-        server.APP_PASSWORD = None
-    assert client.get("/").status_code == 200
+def test_feedback_and_audit(client, loaded):
+    assert client.post("/api/feedback", json={"kind": "rating", "rating": "up", "question": "q"}, headers=loaded[0]).status_code == 200
+    assert client.post("/api/feedback", json={"kind": "nope"}, headers=loaded[0]).status_code == 400
+    assert client.get("/api/governance", headers=loaded[0]).json()["chain"]["intact"]
+
+
+def test_reset(client):
+    h = {"x-session": "to-reset"}
+    client.post("/api/data/sample", headers=h)
+    assert client.post("/api/data/reset", headers=h).json()["ok"] and client.get("/api/dashboard", headers=h).status_code == 409

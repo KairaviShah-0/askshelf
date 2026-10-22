@@ -20,7 +20,7 @@ import pandas as pd
 from . import datalab as D
 from . import guardrails as G
 from .labai import fmt_num, offline_explain, plan_with_ai, stats_text
-from .llm import _json_loads
+from .gemini import _json_loads
 
 
 @dataclass
@@ -95,12 +95,12 @@ REFERENCES = [
     "Taylor, S. J., & Letham, B. (2018). Forecasting at scale. The American Statistician, 72(1), 37-45. https://doi.org/10.1080/00031305.2017.1380080",
 ]
 
-SECTION_SYSTEM = """You are a senior data analyst writing one section of a formal analytical report. Use ONLY numbers that appear in the data provided; never invent or estimate figures.
+SECTION_SYSTEM = """Do not state or assume a currency (no 'dollars' or '$') unless the column name says so; write plain numbers. You are a senior data analyst writing one section of a formal analytical report. Use ONLY numbers that appear in the data provided; never invent or estimate figures.
 Write in a formal, third-person, past/present tense register ("The analysis indicates...", "X accounted for..."). No first person, no markdown symbols, no emojis.
 Return JSON only: {"paragraphs":["two paragraphs of 2-4 sentences each: (1) what the figure/table shows with specific numbers, (2) what it implies for the business"],
 "key_finding":"one sentence stating the single most important result with its number","bullets":[]}"""
 
-SUMMARY_SYSTEM = """You are a senior data analyst finishing a formal report. Use ONLY figures that appear in the findings provided. Formal third-person register, no markdown symbols.
+SUMMARY_SYSTEM = """Do not state or assume a currency (no 'dollars' or '$') unless the column name says so; write plain numbers. You are a senior data analyst finishing a formal report. Use ONLY figures that appear in the findings provided. Formal third-person register, no markdown symbols.
 Return JSON only: {"executive_summary":["2 paragraphs: scope and data, then the main findings with key numbers"],
 "conclusions":["4 to 5 one-sentence conclusions, each tied to a finding"],
 "recommendations":[{"title":"short action title","detail":"1-2 sentences: the action and the finding that justifies it"}],

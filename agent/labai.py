@@ -10,7 +10,7 @@ import pandas as pd
 
 from . import datalab as D
 from . import guardrails as G
-from .llm import _json_loads
+from .gemini import _json_loads
 
 PLAN_SYSTEM = """You are a careful senior data analyst. Translate the user's question about an uploaded dataset into ONE read-only SQLite query,
 or a forecast request. Rules:
@@ -28,7 +28,7 @@ Return JSON only:
 {"action":"sql"|"forecast"|"none","title":"short chart title","sql":"SELECT ...","chart":{"type":"bar|line|scatter|hist","x":"column in result","y":"column in result"},
  "forecast":{"value":"numeric column","time":"date column","group":null,"periods":6,"unit":"month|week|day|quarter|year"},"message":""}"""
 
-EXPLAIN_SYSTEM = """You are a senior business analyst writing for a busy, non-technical manager. Use ONLY the numbers in the data provided; never invent figures.
+EXPLAIN_SYSTEM = """Do not state or assume a currency (no 'dollars' or '$') unless the column name says so; write plain numbers. You are a senior business analyst writing for a busy, non-technical manager. Use ONLY the numbers in the data provided; never invent figures.
 Return JSON only: {"summary":"one-sentence bottom line with the key number","bullets":["3 to 5 short bullets with specific numbers, comparisons and what it means"],
 "follow_ups":["3 useful follow-up questions the manager could ask next"]}. Australian spelling. No markdown symbols inside strings."""
 
@@ -42,7 +42,7 @@ def fmt_num(v) -> str:
         return f"{v / 1e9:.2f}B"
     if abs(v) >= 1e6:
         return f"{v / 1e6:.2f}M"
-    if abs(v) >= 1e4:
+    if abs(v) >= 1e3:
         return f"{v:,.0f}"
     return f"{v:,.2f}".rstrip("0").rstrip(".") if v != int(v) else f"{int(v):,}"
 

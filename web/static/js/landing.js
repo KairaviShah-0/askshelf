@@ -22,22 +22,14 @@ const io = new IntersectionObserver(es => es.forEach(e => {
 }), { threshold: .2 });
 document.querySelectorAll('.rv, .stat').forEach(el => io.observe(el));
 
-// ---------- live numbers from the API
-fetch('/api/meta').then(r => r.json()).then(m => {
-  const s = m.stats; if (!s) return;
-  $('#s-auc').textContent = s.late_auc.toFixed(2); $('#p-late').textContent = s.late_orders; $('#p-del').textContent = s.delivered;
-  const el = $('#p-pen'), to = s.penalties, t0 = performance.now();
-  el.textContent = fmt$(to);
-}).catch(() => {});
-
 // ---------- hero mock: conversations that type themselves
 const SCEN = [
-  { q: 'Which orders are most likely to be late?', a: '<b>16 of 17 open orders</b> are at high risk of finishing late. About <b>$5,567</b> of penalties are exposed. Pull the top orders forward and warn those customers.',
-    k: [['Open orders', '17'], ['High risk', '16', 'r'], ['Exposure', '$5.6k']], bars: [92, 86, 80, 74, 62, 55, 44, 36, 28, 20], hot: 4 },
-  { q: 'Do we have enough stock for the open orders?', a: '<b>2 of 3 materials are short.</b> American Walnut is 3 units short and Tasmanian Oak is 3 short. Raise purchase orders now so stock lands before milling.',
-    k: [['Materials', '3'], ['Short', '2', 'r'], ['Cover', '13 days']], bars: [60, 100, 78], hot: 2, labels: true },
-  { q: 'What is due for delivery this week?', a: '<b>6 orders are due in the next 7 days</b> and 1 is already overdue. Call that customer today and agree a new date.',
-    k: [['Due in 7 days', '6'], ['Overdue', '1', 'r'], ['Next week', '7']], bars: [30, 55, 80, 65, 100, 45, 25], hot: 1 },
+  { q: 'Which suppliers deliver late most often?', a: '<b>One supplier is late on about a third of orders</b>, well above the rest. Review its terms or move volume to a faster supplier.',
+    k: [['Late rate', '34%', 'r'], ['Best supplier', '7%'], ['Orders', '1,200']], bars: [34, 21, 15, 11, 9, 7], hot: 2 },
+  { q: 'Which products are about to run out of stock?', a: '<b>3 products are out of stock and 8 are below their reorder level.</b> Raise purchase orders now; suggested quantities are on the Stock page.',
+    k: [['Out of stock', '3', 'r'], ['Low cover', '8'], ['Weekly sales at risk', '7.7K']], bars: [0, 2, 4, 9, 14, 30, 62], hot: 3 },
+  { q: 'Forecast sales for the next 6 months', a: '<b>Sales are expected to dip then recover</b>, with an 80% range and the back-test error shown so you can plan to the range, not a single number.',
+    k: [['Next 6 months', '519K'], ['Back-test error', '23%'], ['History', '24 mo']], bars: [40, 55, 70, 58, 45, 52, 66, 80], hot: 0 },
 ];
 const mq = $('#mq'), ma = $('#ma'), mk = $('#mk'), mc = $('#mc');
 function setPanel(s, show) {
@@ -67,14 +59,14 @@ if (!REDUCED && matchMedia('(hover:hover)').matches) {
 
 // ---------- solutions
 const UCS = [
-  { tab: 'Purchasing', h: 'Order before the shelf is empty', p: 'See days of cover for every product line and which open orders will outrun stock, so purchase orders go out in time.',
-    li: ['Days of cover and reorder cadence', 'Stock vs what open orders still need', 'Low-stock alerts with a recommended action'], q: 'Do we have enough stock for the open orders?', a: 'American Walnut is 3 units short against open orders and has about 13 days of cover. Raise a purchase order now so it lands before milling.' },
-  { tab: 'Warehouse and logistics', h: 'Run the delivery schedule with confidence', p: 'Every open order on a timeline to its due date, coloured by predicted lateness, with overdue orders flagged first.',
-    li: ['Orders due this week and next', 'Predicted lateness for every open order', 'Capacity and hiring planner'], q: 'What is due for delivery this week?', a: '6 orders are due in the next 7 days and 1 is already overdue. 16 of 17 open orders carry high late risk, driven by workshop load.' },
-  { tab: 'Sales and accounts', h: 'Promise dates you can keep', p: 'Check what is at risk before you commit to a customer, and see why quotes are won or lost.',
-    li: ['Quote-to-delivery funnel', 'Win-rate trends and price what-ifs', 'Demand forecasts with honest ranges'], q: 'Should we raise our prices? What drives winning quotes?', a: 'Price shows almost no link to win rate in the data, but the effect cannot be proven. A 5% rise adds profit in two of three customer-reaction scenarios.' },
-  { tab: 'Finance and owners', h: 'See what late deliveries really cost', p: 'Track penalties, walk the profit bridge between periods and export board-ready briefings.',
-    li: ['Penalty exposure on open orders', 'Profit bridge versus prior period', 'One-click executive briefing'], q: 'What do late deliveries cost us?', a: 'Late orders forfeit 10% of their final payment. The exposure on current open orders is about $5,567, concentrated in the highest-value jobs.' },
+  { tab: 'Purchasing', h: 'Order before the shelf is empty', p: 'See days of cover for every product and a suggested order quantity, so purchase orders go out in time.',
+    li: ['Days of cover at the recent sales rate', 'Reorder-level and out-of-stock alerts', 'Suggested order quantities'], q: 'Which products will run out of stock this week?', a: 'Example: 3 products are out of stock and 8 more have under a week of cover. The Stock page lists each one with a suggested order quantity.' },
+  { tab: 'Operations', h: 'Catch late deliveries before they are late', p: 'Rank open orders by predicted lateness using a model trained on your own delivery history, and see which suppliers cause the delays.',
+    li: ['Late rate by supplier and store', 'Late-risk score on every open order', 'Penalty exposure and an expedite plan'], q: 'Which open orders are most likely to be late?', a: 'Example: the model flags the highest-risk open orders and shows its own accuracy, so you know how far to trust it.' },
+  { tab: 'Sales and category', h: 'Know what is selling and what is not', p: 'Track revenue and margin by product, category and store, and spot products that are declining before they become a problem.',
+    li: ['Top products and category mix', 'Margin by category', 'Declining-product alerts'], q: 'Why did sales drop in October?', a: 'Example: ask in plain English and get a chart, the key numbers and the read-only query that produced them.' },
+  { tab: 'Finance and owners', h: 'Plan with forecasts you can defend', p: 'Forecast revenue, units and orders with a back-tested error, test price and volume changes, and export a formal report.',
+    li: ['Prophet forecasts with an 80% range', 'Scenario planner for price, volume and cost', 'PDF, Word and Excel reports'], q: 'Forecast sales for the next 6 months.', a: 'Example: expected sales over the period with a range, plus how large the forecast error was on recent months.' },
 ];
 const tabs = $('#uc-tabs'), card = $('#uc-card');
 function showUC(i) {
@@ -88,7 +80,7 @@ showUC(0);
 
 // ---------- pipeline diagram (animated rails + travelling dots)
 (function pipeline() {
-  const N = [['Your data', 'orders, stock, deliveries'], ['Privacy filter', 'IDs and pay removed'], ['Role check', 'access before any data'], ['AI picks analysis', '1 of 22 vetted tools'], ['Models run', 'risk, forecast, what-if'], ['Answer + action', 'chart, numbers, sources']];
+  const N = [['Your files', 'Excel or CSV'], ['Privacy filter', 'IDs and pay removed'], ['Role check', 'access before any data'], ['AI picks analysis', 'AI plans a read-only query'], ['Models run', 'risk, forecast, what-if'], ['Answer + action', 'chart, numbers, sources']];
   const w = 1000, gap = (w - 140) / (N.length - 1), y = 75, path = `M70 ${y} H${w - 70}`;
   const nodes = N.map(([t, s], i) => { const x = 70 + i * gap; return `<g class="node" style="--i:${i}"><rect class="pn-box" x="${x - 66}" y="${y - 34}" width="132" height="68" rx="14"/><text class="pn-txt" x="${x}" y="${y - 3}">${t}</text><text class="pn-sub" x="${x}" y="${y + 17}">${s}</text></g>`; }).join('');
   const dots = REDUCED ? '' : [0, -1.6, -3.2].map(b => `<circle r="6" fill="#2563eb"><animateMotion dur="5s" begin="${b}s" repeatCount="indefinite" path="${path}"/></circle><circle r="12" fill="#2563eb" opacity=".18"><animateMotion dur="5s" begin="${b}s" repeatCount="indefinite" path="${path}"/></circle>`).join('');
@@ -145,6 +137,3 @@ function calc() {
 ['c-u', 'c-s', 'c-a', 'c-h', 'c-r', 'c-p'].forEach(id => document.getElementById(id).addEventListener('input', calc));
 calc();
 
-// live numbers on the feature cards
-fetch('/api/snapshot').then(r => r.json()).then(d => { for (const k of ['schedule', 'stock', 'penalty', 'alerts']) { const el = document.getElementById('live-' + k); if (el && d[k]) el.textContent = d[k]; } })
-  .catch(() => document.querySelectorAll('.live-line').forEach(e => e.remove()));

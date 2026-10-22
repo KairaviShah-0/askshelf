@@ -20,7 +20,7 @@ ALLOW = [
     "Show me the impact of employee resignations on our on-time delivery rate.", "How many customers did we lose overall?",
     "What is the average wage by skill level?", "How is our team made up, and how high is staff turnover?",
     "Why are we losing so many quotes? Does price matter?", "What does demand look like for the next 3 months?",
-    "Which timber runs low most often?", "how are we doing in Q3 2026", "tell me about customer demand for desks",
+    "Which products run low most often?", "how are we doing in Q3 2026", "tell me about customer demand for chairs",
     "Compare sideboards and dining tables in 2025",
 ]
 

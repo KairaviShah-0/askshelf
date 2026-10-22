@@ -1,70 +1,57 @@
 """Role-based access control (RBAC).
 
-Each role may use only some analysis tools. The check runs inside the pipeline *after* the LLM has chosen its tools and
-*before* any tool runs, so a role can never receive data it is not cleared for, whatever the question says.
+Roles decide which pages (and therefore which analyses) a person can open, whether they may load or reset data, and whether they may export.
+The check runs on every API call, so hiding a menu item in the browser is never the only protection.
 """
 from __future__ import annotations
 
 from dataclasses import dataclass
 
-from . import tools as T
+PAGES = ["data", "ask", "dashboard", "alerts", "deliveries", "penalties", "stock", "forecasts", "planner", "reports", "governance", "knowledge"]
 
 
 @dataclass(frozen=True)
 class Role:
     name: str
     blurb: str
-    groups: frozenset[str]
+    pages: frozenset[str]
+    can_upload: bool = False
     can_export: bool = False
 
 
+_ALL = frozenset(PAGES)
 ROLES: dict[str, Role] = {
-    "Owner / General Manager": Role("Owner / General Manager", "Full access to every analysis and export.",
-                                    frozenset({"Overview", "Profitability", "Operations", "People", "Materials", "Sales", "Predictive", "Help"}), True),
-    "Sales Manager": Role("Sales Manager", "Sales, quotes, pricing, demand and forecasts. No workforce or cost-structure detail.",
-                          frozenset({"Overview", "Sales", "Predictive", "Help"})),
-    "Operations Supervisor": Role("Operations Supervisor", "Production, delivery, materials and capacity. No pricing or profit detail.",
-                                  frozenset({"Operations", "Materials", "People", "Help"})),
-    "Finance Lead": Role("Finance Lead", "Profit, margins, cash trends and forecasts. Can export reports.",
-                         frozenset({"Overview", "Profitability", "Predictive", "Help"}), True),
+    "Owner / General Manager": Role("Owner / General Manager", "Full access: every page, data loading and exports.", _ALL, True, True),
+    "Sales Manager": Role("Sales Manager", "Sales, forecasts and planning. Cannot load data or see delivery, penalty or stock detail.",
+                          frozenset({"data", "ask", "dashboard", "alerts", "forecasts", "planner", "knowledge"})),
+    "Operations Manager": Role("Operations Manager", "Deliveries, penalties and stock. Can load data. No sales planning or reports.",
+                               frozenset({"data", "alerts", "deliveries", "penalties", "stock", "knowledge"}), True),
+    "Finance Lead": Role("Finance Lead", "Dashboard, forecasts, planning, penalties and reports. Can load data and export.",
+                         frozenset({"data", "ask", "dashboard", "alerts", "penalties", "forecasts", "planner", "reports", "governance", "knowledge"}), True, True),
 }
 DEFAULT_ROLE = "Owner / General Manager"
-
-# Predictive tools that expose another function's data are narrowed per role (group-level access is too coarse for these).
-_TOOL_DENY = {
-    "Sales Manager": {"capacity_planner", "late_risk_radar", "penalty_control"},
-    "Finance Lead": {"capacity_planner"},
-}
-_TOOL_ALLOW_EXTRA = {"Operations Supervisor": {"late_risk_radar", "capacity_planner"}, "Finance Lead": {"penalty_control"}}
+ALERT_PAGE = {"sales": "dashboard", "delivery": "deliveries", "stock": "stock"}
 
 
-def allowed_tools(role: str) -> set[str]:
-    r = ROLES.get(role, ROLES[DEFAULT_ROLE])
-    out = {n for n, s in T.REGISTRY.items() if s["group"] in r.groups}
-    out -= _TOOL_DENY.get(r.name, set())
-    out |= _TOOL_ALLOW_EXTRA.get(r.name, set())
-    if r.name == "Operations Supervisor":
-        out -= {"forecast_outlook", "scenario_simulator", "price_strategy_analysis"}
-    return out
+def can_view(role: str, page: str) -> bool:
+    return page in ROLES.get(role, ROLES[DEFAULT_ROLE]).pages
 
 
-def can(role: str, tool: str) -> bool:
-    return tool in allowed_tools(role)
-
-
-def denial_message(role: str, tools: list[str]) -> str:
-    return (f"Your role ({role}) is not cleared for this analysis ({', '.join(t.replace('_', ' ') for t in tools)}). "
-            "Please ask the Owner / General Manager for access. I can still help with: "
-            + ", ".join(sorted({T.REGISTRY[t]['group'].lower() for t in allowed_tools(role) if t != 'data_dictionary'})) + ".")
+def denial_message(role: str, page: str) -> str:
+    return f"Your role ({role}) cannot open the {page} page. Ask the Owner / General Manager for access."
 
 
 def access_matrix():
-    """Rows = tools, columns = roles (for the Security page)."""
+    """Rows = pages, columns = roles (for the Governance page)."""
     import pandas as pd
+    labels = {"data": "Data (upload, mapping)", "ask": "Ask", "dashboard": "Dashboard", "alerts": "Alerts", "deliveries": "Deliveries", "penalties": "Penalties", "stock": "Stock",
+              "forecasts": "Forecasts", "planner": "Scenario planner", "reports": "Reports", "governance": "Governance", "knowledge": "Knowledge base"}
     rows = []
-    for n, s in T.REGISTRY.items():
-        row = {"Analysis": n.replace("_", " ").title(), "Area": s["group"]}
-        for rn in ROLES:
-            row[rn] = "Allowed" if can(rn, n) else "Blocked"
+    for p in PAGES:
+        row = {"Page": labels[p]}
+        for rn, r in ROLES.items():
+            row[rn] = "Allowed" if p in r.pages else "Blocked"
         rows.append(row)
+    for label, attr in (("Upload / reset data", "can_upload"), ("Export files", "can_export")):
+        rows.append({"Page": label, **{rn: ("Allowed" if getattr(r, attr) else "Blocked") for rn, r in ROLES.items()}})
     return pd.DataFrame(rows)

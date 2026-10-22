@@ -118,6 +118,10 @@ class Lab:
     last_result: dict | None = None
     qa_log: list[dict] = field(default_factory=list)
     cache: dict = field(default_factory=dict)
+    mapping: dict | None = None                # column roles for the main table (see retail.py)
+    map_table: str | None = None
+    mapping_auto: bool = True
+    canon_cache: object = None
 
     # ---------------- ingest
     def add_file(self, filename: str, content: bytes) -> dict:
@@ -192,6 +196,7 @@ class Lab:
                     out[c] = out[c].dt.strftime("%Y-%m-%d")
             out.to_sql(nm, self.conn, index=False)
         self.cache.clear()
+        self.mapping, self.map_table, self.mapping_auto, self.canon_cache = None, None, True, None
 
     def reset(self) -> None:
         if self.conn is not None:
@@ -199,6 +204,7 @@ class Lab:
         self.frames, self.tables, self.dropped, self.files, self.conn = [], {}, [], [], None
         self.fusion_note, self.last_result, self.qa_log = "", None, []
         self.cache.clear()
+        self.mapping, self.map_table, self.mapping_auto, self.canon_cache = None, None, True, None
 
     @property
     def loaded(self) -> bool:
@@ -388,7 +394,8 @@ def _match(cols: list[str], words: list[str]) -> str | None:
 
 
 def pick_columns(lab: Lab, question: str = "") -> dict:
-    nm, df = max(lab.tables.items(), key=lambda kv: len(kv[1]))
+    mp = lab.mapping if (lab.mapping and lab.map_table in lab.tables) else None
+    nm, df = (lab.map_table, lab.tables[lab.map_table]) if mp else max(lab.tables.items(), key=lambda kv: len(kv[1]))
     prof_kinds = {c: kind_of(df[c]) for c in df.columns}
     nums = [c for c, k in prof_kinds.items() if k == "numeric" and not re.search(r"(^id$|_id$|^id_|code|zip|post|year|month)", c)]
     cats = [c for c, k in prof_kinds.items() if k == "categorical"]
@@ -397,7 +404,10 @@ def pick_columns(lab: Lab, question: str = "") -> dict:
     by = re.search(r"\b(?:by|per|across|for each|each)\s+([a-z_ ]+?)(?:\s+(?:in|for|over|during|and|last|this)\b|[?.,]|$)", question.lower())
     dim = _match(cats, _words(by.group(1))) if by else None
     dim = dim or _match(cats, [x for x in w if x not in (measure or "").split("_")]) or (cats[0] if cats else None)
-    return {"table": nm, "df": df, "measure": measure, "dimension": dim, "time": detect_time(df), "numerics": nums, "categoricals": cats}
+    if mp:                                                    # the user's confirmed column roles beat guessing from names
+        measure = mp.get("amount") or mp.get("qty") or measure
+        dim = next((mp[k] for k in ("supplier", "category", "product", "region") if mp.get(k) in df.columns), dim) if not by else dim
+    return {"table": nm, "df": df, "measure": measure, "dimension": dim, "time": (mp.get("date") if mp and mp.get("date") in df.columns else detect_time(df)), "numerics": nums, "categoricals": cats}
 
 
 def heuristic_plan(lab: Lab, question: str) -> dict:
