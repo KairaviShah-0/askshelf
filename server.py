@@ -520,9 +520,24 @@ def plotly_js(request: Request):
     return FileResponse(Path(plotly.__file__).parent / "package_data" / "plotly.min.js", media_type="text/javascript", headers={"Cache-Control": "public, max-age=86400"})
 
 
+def asset_version() -> str:
+    """Changes whenever any front-end file changes, so browsers never run stale JavaScript against a newer server."""
+    return str(int(max((f.stat().st_mtime for f in (WEB / "static").rglob("*") if f.is_file()), default=0)))
+
+
+class FreshStatic(StaticFiles):
+    async def get_response(self, path, scope):
+        resp = await super().get_response(path, scope)
+        resp.headers["Cache-Control"] = "no-cache"          # always revalidate; unchanged files still answer 304
+        return resp
+
+
 def page(name: str):
     def handler(request: Request):
-        return FileResponse(WEB / name, headers={"Cache-Control": "no-cache"})
+        v = asset_version()
+        html = (WEB / name).read_text(encoding="utf-8")
+        html = html.replace('.css"', f'.css?v={v}"').replace('.js"', f'.js?v={v}"')
+        return Response(html, media_type="text/html", headers={"Cache-Control": "no-store"})
     return handler
 
 
@@ -539,7 +554,7 @@ routes = [
     Route("/api/stock", api_stock), Route("/api/forecast", api_forecast), Route("/api/planner", api_planner, methods=["POST"]), Route("/api/alerts", api_alerts), Route("/api/alerts/digest", api_digest),
     Route("/api/report", api_report, methods=["POST"]), Route("/api/report/status", api_report_status), Route("/api/report/download", api_report_download),
     Route("/api/governance", api_governance), Route("/api/audit/download", api_audit_download), Route("/api/feedback", api_feedback, methods=["POST"]), Route("/api/glossary", api_glossary),
-    Route("/static/vendor/plotly.min.js", plotly_js), Mount("/static", StaticFiles(directory=WEB / "static"), name="static"),
+    Route("/static/vendor/plotly.min.js", plotly_js), Mount("/static", FreshStatic(directory=WEB / "static"), name="static"),
 ]
 app = Starlette(routes=routes, lifespan=lifespan)
 
